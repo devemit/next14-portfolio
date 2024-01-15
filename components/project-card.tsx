@@ -1,16 +1,16 @@
 import { ProjectProps } from '@/types/types';
-import ButtonLink from './button';
+import Button from './button';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const ProjectCard: React.FC<ProjectProps> = ({
+export default function ProjectCard({
   title,
   description,
   tech,
   seeCode,
   liveSite,
   imgUrl,
-}) => {
+}: ProjectProps) {
   return (
     <div className='py-6'>
       <h2 className='my-2 text-xl'>{title}</h2>
@@ -21,21 +21,15 @@ const ProjectCard: React.FC<ProjectProps> = ({
       <div className='my-2'>
         Technology used:
         {tech.map((el, id) => (
-          <button className='mx-1 text-sky-600' key={id}>
+          <button className='mx-1 text-indigo-600' key={id}>
             {el}
           </button>
         ))}
-        <div className='flex my-2 gap-1'>
-          <Link href={seeCode} target='_blank' className='w-1/2'>
-            <ButtonLink label='See Code' href={seeCode} />
-          </Link>
-          <Link href={liveSite} target='_blank' className='w-1/2'>
-            <ButtonLink label='Live Preview' href={liveSite} />
-          </Link>
+        <div className='flex my-2 gap-4'>
+          <Button to={seeCode}>See Code</Button>
+          <Button to={liveSite}>Live Preview</Button>
         </div>
       </div>
     </div>
   );
-};
-
-export default ProjectCard;
+}

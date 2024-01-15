@@ -2,20 +2,18 @@ import Link from 'next/link';
 import { FiArrowUpRight } from 'react-icons/fi';
 
 interface ButtonProps {
-  label: string;
-  href: string;
+  to: string;
+  children: React.ReactNode;
 }
-const ButtonLink: React.FC<ButtonProps> = ({ label, href }) => {
+export default function Button({ to, children }: ButtonProps) {
   return (
     <Link
-      href={href}
       target='_blank'
-      className='w-[100%] flex justify-between items-center text-white border-gray-500 border hover:bg-[#737373] p-2 hover:-translate-y-1 transition ease-in-out'
+      href={to}
+      className={`flex gap-6 items-center text-white border-gray-500 border hover:bg-[#737373] p-2 hover:-translate-y-1 transition ease-in-out`}
     >
-      <button>{label}</button>
+      {children}
       <FiArrowUpRight />
     </Link>
   );
-};
-
-export default ButtonLink;
+}
