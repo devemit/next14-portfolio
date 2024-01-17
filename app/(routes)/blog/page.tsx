@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { blogs } from '@/blogs';
 export default function Blog() {
   return (
-    <div className='ml-8 lg:ml-20 mb-20 flex flex-col text-white text-2xl font-bold'>
+    <div className='lg:ml-20 mb-20 flex flex-col text-white text-2xl font-bold'>
       <h3 className='mb-8 text-slate-300'>my blogs</h3>
       <span className='text-base mb-6'>the blogs are random till mine are finished</span>
       <section className='flex flex-col gap-4'>
