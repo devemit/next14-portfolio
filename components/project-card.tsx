@@ -1,6 +1,5 @@
 import { ProjectProps } from '@/types/types';
 import Button from './button';
-import Link from 'next/link';
 import Image from 'next/image';
 
 export default function ProjectCard({
