@@ -15,18 +15,18 @@ export default function About() {
         fueled by a commitment to crafting clean, efficient, and scalable code.
         <br />
         <br /> Proficient in
-        <span className='text-indigo-600 font-semibold '> Javascript</span> and{' '}
-        <span className='text-indigo-600 font-semibold '> Typescript</span>, I specialize in
-        building dynamic applications that resonate across web and mobile platforms. With{' '}
-        <span className='text-indigo-600 font-semibold '> React</span> and{' '}
-        <span className='text-indigo-600 font-semibold '> React Native </span>, I focus on creating
+        <span className='text-blue-200 font-extrabold '> Javascript</span> and{' '}
+        <span className='text-blue-200 font-extrabold '> Typescript</span>, I specialize in building
+        dynamic applications that resonate across web and mobile platforms. With{' '}
+        <span className='text-blue-200 font-extrabold '> React</span> and{' '}
+        <span className='text-blue-200 font-extrabold '> React Native </span>, I focus on creating
         visually appealing interfaces that seamlessly merge aesthetics with intuitive user
         experiences. My styling expertise encompasses{' '}
-        <span className='text-indigo-600 font-semibold '> CSS </span> and{' '}
-        <span className='text-indigo-600 font-semibold '> Tailwind CSS </span>, ensuring
-        applications boast not just functionality, but also a responsive and visually engaging
-        design. In the realm of server components, I harness the power of{' '}
-        <span className='text-indigo-600 font-semibold '> Nextjs </span>
+        <span className='text-blue-200 font-extrabold '> CSS </span> and{' '}
+        <span className='text-blue-200 font-extrabold '> Tailwind CSS </span>, ensuring applications
+        boast not just functionality, but also a responsive and visually engaging design. In the
+        realm of server components, I harness the power of{' '}
+        <span className='text-blue-200 font-extrabold '> Nextjs </span>
         to optimize performance, delivering fast and efficient user experiences. This commitment to
         both form and function underscores my approach to development.
         <br />
