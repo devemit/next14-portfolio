@@ -29,6 +29,11 @@ export default function About() {
         <span className='text-blue-200 font-extrabold '> Nextjs </span>
         to optimize performance, delivering fast and efficient user experiences. This commitment to
         both form and function underscores my approach to development.
+        <br />I am particularly well-versed in the basics of{' '}
+        <span className='text-blue-200 font-extrabold '>Docker </span> containerization.
+        Additionally, I possess a solid understanding of{' '}
+        <span className='text-blue-200 font-extrabold '>SQL </span> fundamentals, coupled with
+        practical experience in designing and querying relational databases.
         <br />
         <br /> Beyond coding, I actively stay abreast of industry trends, collaborate with cross
         functional teams, and relish the challenge of continuous skill refinement. Exploring new

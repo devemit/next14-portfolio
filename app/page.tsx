@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
+  const config = 'title';
+
   return (
     <main>
       <h1 className='text-[#E5E5E5] text-4xl  uppercase'>{name}</h1>
