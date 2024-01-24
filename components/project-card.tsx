@@ -20,7 +20,7 @@ export default function ProjectCard({
       <div className='my-2'>
         Technology used:
         {tech.map((el, id) => (
-          <button className='mx-1 text-indigo-600' key={id}>
+          <button className='mx-1 text-blue-500' key={id}>
             {el}
           </button>
         ))}
