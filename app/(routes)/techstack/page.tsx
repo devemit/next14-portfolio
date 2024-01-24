@@ -2,7 +2,7 @@ import Image from 'next/image';
 export default function TechStack() {
   const stack = [
     { src: '/css&html.png', label: 'HTML&CSS' },
-    { src: '/Javascript.png', label: 'Javascrpit' },
+    { src: '/Javascript.png', label: 'Javascript' },
     { src: '/Typescript.png', label: 'Typescript' },
     { src: '/React.png', label: 'React' },
     { src: '/Astro.png', label: 'Astro' },
