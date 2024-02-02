@@ -9,7 +9,7 @@ export default function TechStack() {
     { src: '/Astro.png', label: 'AstroJS' },
     { src: '/nextjs.png', label: 'NextJS' },
     { src: '/Tailwind CSS.png', label: 'TailwindCSS' },
-    { src: '/rnative.png', label: 'React Native' },
+    { src: '/React.png', label: 'React Native' },
     { src: '/node.png', label: 'NodeJS' },
     { src: '/MySQL.png', label: 'SQL' },
     { src: '/Docker.png', label: 'Docker' },
