@@ -1,13 +1,16 @@
 import Image from 'next/image';
 export default function TechStack() {
   const stack = [
-    { src: '/css&html.png', label: 'HTML&CSS' },
+    { src: '/css&html.png', label: 'HTML & CSS' },
     { src: '/Javascript.png', label: 'Javascript' },
     { src: '/Typescript.png', label: 'Typescript' },
-    { src: '/React.png', label: 'React' },
-    { src: '/Astro.png', label: 'Astro' },
-    { src: '/Tailwind CSS.png', label: 'Tailwind' },
+    { src: '/React.png', label: 'ReactJS' },
+    { src: '/Vue.png', label: 'VueJS' },
+    { src: '/Astro.png', label: 'AstroJS' },
+    { src: '/nextjs.png', label: 'NextJS' },
+    { src: '/Tailwind CSS.png', label: 'TailwindCSS' },
     { src: '/React.png', label: 'React Native' },
+    { src: '/nodejs.png', label: 'NodeJS' },
     { src: '/MySQL.png', label: 'SQL' },
     { src: '/Docker.png', label: 'Docker' },
   ];
