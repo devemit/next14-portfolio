@@ -12,7 +12,6 @@ export default function TechStack() {
     { src: '/Javascript.png', label: 'Javascript' },
     { src: '/Typescript.png', label: 'Typescript' },
     { src: '/React.png', label: 'ReactJS' },
-    { src: '/Vue.png', label: 'VueJS' },
     { src: '/Astro.png', label: 'AstroJS' },
     { src: '/nextjs.png', label: 'NextJS' },
     { src: '/Tailwind CSS.png', label: 'TailwindCSS' },
