@@ -10,10 +10,10 @@ export default function About() {
     <section>
       <h1 className='text-white text-4xl'>About Me.</h1>
       <p className='my-4 text-[#E5E5E5]'>
-        👋 Hello! I'm Mitko, a passionate and detail-oriented frontend developer with a knack for
-        crafting engaging and responsive user interfaces. My journey in the world of web development
-        has equipped me with a diverse skill set that allows me to bring ideas to life with
-        precision and creativity.
+        👋 Hello! I&apos;m Mitko, a passionate and detail-oriented frontend developer with a knack
+        for crafting engaging and responsive user interfaces. My journey in the world of web
+        development has equipped me with a diverse skill set that allows me to bring ideas to life
+        with precision and creativity.
       </p>
       <br />
       <p className=' text-[#E5E5E5]'>
@@ -36,7 +36,7 @@ export default function About() {
       <br />
       <p className=' text-[#E5E5E5]'>
         🌐 My toolkit also includes <span className='text-blue-200'> Vue.js</span>, allowing me to
-        approach projects with versatility and a keen eye for user-centric design.While I'm
+        approach projects with versatility and a keen eye for user-centric design.While I&apos;m
         passionate about frontend development, my knowledge of backend technologies like{' '}
         <span className='text-blue-200'>Node.js</span> is at a basic level. Similarly, I navigate
         <span className='text-blue-200'> SQL</span> for basic database management, ensuring
