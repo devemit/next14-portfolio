@@ -16,6 +16,7 @@ export default function TechStack() {
     { src: '/nextjs.png', label: 'NextJS' },
     { src: '/Tailwind CSS.png', label: 'TailwindCSS' },
     { src: '/React.png', label: 'React Native' },
+    { src: '/Vue.png', label: 'VueJS' },
     { src: '/node.png', label: 'NodeJS' },
     { src: '/MySQL.png', label: 'SQL' },
     { src: '/Docker.png', label: 'Docker' },
