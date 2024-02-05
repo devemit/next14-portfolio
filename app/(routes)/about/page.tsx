@@ -10,37 +10,46 @@ export default function About() {
     <section>
       <h1 className='text-white text-4xl'>About Me.</h1>
       <p className='my-4 text-[#E5E5E5]'>
-        Greetings! I am Mitko, a dedicated developer passionate about transforming concepts into
-        tangible and user-friendly digital experiences. My journey in software development has been
-        fueled by a commitment to crafting clean, efficient, and scalable code.
-        <br />
-        <br /> Proficient in
-        <span className='text-blue-200 font-extrabold '> Javascript</span> and{' '}
-        <span className='text-blue-200 font-extrabold '> Typescript</span>, I specialize in building
-        dynamic applications that resonate across web and mobile platforms. With{' '}
-        <span className='text-blue-200 font-extrabold '> React</span> and{' '}
-        <span className='text-blue-200 font-extrabold '> React Native </span>, I focus on creating
-        visually appealing interfaces that seamlessly merge aesthetics with intuitive user
-        experiences. My styling expertise encompasses{' '}
-        <span className='text-blue-200 font-extrabold '> CSS </span> and{' '}
-        <span className='text-blue-200 font-extrabold '> Tailwind CSS </span>, ensuring applications
-        boast not just functionality, but also a responsive and visually engaging design. In the
-        realm of server components, I harness the power of{' '}
-        <span className='text-blue-200 font-extrabold '> Nextjs </span>
-        to optimize performance, delivering fast and efficient user experiences. This commitment to
-        both form and function underscores my approach to development.
-        <br />I am particularly well-versed in the basics of{' '}
-        <span className='text-blue-200 font-extrabold '>Docker </span> containerization.
-        Additionally, I possess a solid understanding of{' '}
-        <span className='text-blue-200 font-extrabold '>SQL </span> fundamentals, coupled with
-        practical experience in designing and querying relational databases.
-        <br />
-        <br /> Beyond coding, I actively stay abreast of industry trends, collaborate with cross
-        functional teams, and relish the challenge of continuous skill refinement. Exploring new
-        technologies, contributing to open source projects, and infusing creativity into my
-        endeavors are integral parts of my journey. Lets connect and explore the exciting
-        possibilities of bringing your ideas to life!
+        👋 Hello! I'm Mitko, a passionate and detail-oriented frontend developer with a knack for
+        crafting engaging and responsive user interfaces. My journey in the world of web development
+        has equipped me with a diverse skill set that allows me to bring ideas to life with
+        precision and creativity.
       </p>
+      <br />
+      <p className=' text-[#E5E5E5]'>
+        💡 Proficient in <span className='text-blue-200'>JavaScript</span> and{' '}
+        <span className='text-blue-200'> TypeScript</span>, I specialize in leveraging cutting-edge
+        technologies to build dynamic and interactive web applications. My expertise extends to
+        popular frontend frameworks like <span className='text-blue-200'> React.js</span>, where I
+        design and implement scalable components to ensure seamless user experiences.
+      </p>
+      <br />
+      <p className=' text-[#E5E5E5]'>
+        🚀 I am well-versed in the world of server-side rendering and static site generation,
+        utilizing tools such as <span className='text-blue-200'> Next.js</span> and{' '}
+        <span className='text-blue-200'>Astro.js</span> to optimize performance and enhance user
+        accessibility. This commitment to efficiency extends to my mastery of{' '}
+        <span className='text-blue-200'>CSS</span> and{' '}
+        <span className='text-blue-200'>Tailwind CSS</span>, enabling me to create visually stunning
+        and responsive designs across various devices.
+      </p>
+      <br />
+      <p className=' text-[#E5E5E5]'>
+        🌐 My toolkit also includes <span className='text-blue-200'> Vue.js</span>, allowing me to
+        approach projects with versatility and a keen eye for user-centric design.While I'm
+        passionate about frontend development, my knowledge of backend technologies like{' '}
+        <span className='text-blue-200'>Node.js</span> is at a basic level. Similarly, I navigate
+        <span className='text-blue-200'> SQL</span> for basic database management, ensuring
+        organized and accessible data for seamless frontend-backend interactions.
+      </p>
+      <br />
+      <p className=' text-[#E5E5E5]'>
+        🤝 Collaborative by nature, I thrive in dynamic team environments, valuing open
+        communication and the exchange of ideas. I am driven by a passion for staying up-to-date
+        with the latest industry trends, continuously refining my skill set to deliver high-quality
+        solutions.
+      </p>
+      <br />
       <div className='flex gap-2'>
         <Button to={'https://github.com/devemit'}>Github</Button>
         <Button to={'https://www.linkedin.com/in/mitko-iliev/'}>Linkedin</Button>
