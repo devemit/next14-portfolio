@@ -18,7 +18,7 @@ export default function TechStack() {
     { src: '/React.png', label: 'React Native' },
     { src: '/jets.jpg', label: 'Jest Testing' },
     { src: '/node.png', label: 'NodeJS' },
-    { src: '/MySQL.png', label: 'SQL' },
+    { src: '/MySQL.png', label: 'MySQL' },
     { src: '/Docker.png', label: 'Docker' },
   ];
 
