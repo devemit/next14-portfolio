@@ -14,7 +14,7 @@ export default [
     imgUrl:
       'https://github.com/devemit/cinemania-movies/assets/107273888/ee3ded3a-4506-48d7-9052-89ce06269465',
     tech: ['Typescript', 'NextJS-14', 'Tailwind CSS'],
-    liveSite: 'https://ultrashopmk.vercel.app/',
+    liveSite: 'https://diamondshop.vercel.app/',
     seeCode: 'https://https://github.com/devemit/next14-ecommerce',
     description:
       'This project is a modern e-commerce website developed using Next14(SSR) with TypeScript and styled with Tailwind CSS. The website provides users with a seamless shopping experience, allowing them to browse through a variety of products, view detailed product information, and add items to their shopping cart.',
