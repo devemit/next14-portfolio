@@ -43,7 +43,7 @@ export default function About() {
          <br />
          <p className=' text-[#E5E5E5]'>
             Take a stroll through my portfolio to explore my past creations and discover how we can
-            collaborate to bring your vision to life. Let's embark on this journey together and
+            collaborate to bring your vision to life. Let&apos;s embark on this journey together and
             create something extraordinary!
          </p>
          <br />
