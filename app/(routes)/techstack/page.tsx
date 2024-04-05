@@ -14,9 +14,10 @@ export default function TechStack() {
       { src: '/bl.png', label: '.NET Blazor' },
       { src: '/React.png', label: 'React.js' },
       { src: '/Astro.png', label: 'Astro.js' },
-      { src: '/nextjs.png', label: 'Next.js' },
+      { src: '/nxt.jpeg', label: 'Next.js' },
       { src: '/Tailwind CSS.png', label: 'TailwindCSS' },
       { src: '/jest.jpg', label: 'Jest Testing' },
+      { src: '/csharp.png', label: 'C#' },
       { src: '/node.png', label: 'Node.js' },
       { src: '/MySQL.png', label: 'MySQL' },
       { src: '/Docker.png', label: 'Docker' },
@@ -32,7 +33,7 @@ export default function TechStack() {
          <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mt-10'>
             {stack.map((ele, index) => (
                <div className='flex items-center gap-5' key={index}>
-                  <Image src={ele.src} width={50} height={50} alt='' />
+                  <Image src={ele.src} width={60} height={60} alt='' className='rounded-sm' />
                   <span className='text-xl text-[#e5e5e5]'>{ele.label}</span>
                </div>
             ))}
