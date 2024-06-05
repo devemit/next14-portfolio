@@ -12,6 +12,7 @@ export default function TechStack() {
         { src: '/Javascript.png', label: 'Javascript' },
         { src: '/Typescript.png', label: 'Typescript' },
         { src: '/netlogo.svg', label: '.NET' },
+        { src: '/bl.png', label: 'Blazor' },
         { src: '/React.png', label: 'React.js' },
         { src: '/Astro.png', label: 'Astro.js' },
         { src: '/nxt.jpeg', label: 'Next.js' },
