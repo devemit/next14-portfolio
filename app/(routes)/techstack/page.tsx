@@ -26,8 +26,8 @@ export default function TechStack() {
 
     return (
         <section className='flex flex-col gap-4'>
-            <h1 className='text-3xl text-[#E5E5E5]'>Tech Stack</h1>
-            <p className='max-w-sm md:max-w-md text-md text-[#E5E5E5]'>
+            <h1 className='text-3xl text-[#D4D4D4]'>Tech Stack</h1>
+            <p className='max-w-sm md:max-w-md text-md text-[#D4D4D4]'>
                 Here is my favourite Tech Stack, languages and frameworks that i use every day in
                 most of my projects.
             </p>
@@ -35,7 +35,7 @@ export default function TechStack() {
                 {stack.map((ele, index) => (
                     <div className='flex items-center gap-5' key={index}>
                         <Image src={ele.src} width={50} height={50} alt='' className='rounded-sm' />
-                        <span className='text-lg text-[#e5e5e5]'>{ele.label}</span>
+                        <span className='text-lg text-[#D4D4D4]'>{ele.label}</span>
                     </div>
                 ))}
             </div>

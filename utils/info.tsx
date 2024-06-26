@@ -1,6 +1,6 @@
 import mit from '../public/mit.jpg';
 
-export const name = 'Mitko Iliev.';
+export const name = "hey, i'm mitko 👋";
 export const me = mit;
 export const about = () => {
     return (
@@ -11,5 +11,5 @@ export const about = () => {
     );
 };
 export const info = () => {
-    return <>Hey, I am Mitko, front-end developer,optimist and digital architect.</>;
+    return <>I'm a front-end developer,optimist and digital architect.</>;
 };

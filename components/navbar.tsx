@@ -10,14 +10,16 @@ export default function Navbar() {
 
     return (
         <nav>
-            <SiMonzo className='text-[#E5E5E5]' size={32} />
+            <Link href='/'>
+                <SiMonzo className='text-[#D4D4D4]' size={32} />
+            </Link>
             <ul className='flex gap-4 py-2 md:flex-col md:mt-4'>
                 {pages.map((page) => (
                     <li key={page.label}>
                         <Link
                             className={`${
-                                pathname === page.href && 'text-[#E5E5E5]'
-                            } text-[#737373] text-lg hover:text-[#E5E5E5]`}
+                                pathname === page.href && 'text-[#D4D4D4]'
+                            } text-[#737373] text-lg hover:text-[#D4D4D4] transition delay-75 duration-75 ease-in-out`}
                             href={page.href}
                         >
                             {page.label}
