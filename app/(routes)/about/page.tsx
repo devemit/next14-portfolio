@@ -7,8 +7,8 @@ export const metadata: Metadata = {
 };
 export default function About() {
     return (
-        <section>
-            <h1 className='text-[#D4D4D4] text-4xl'>About Me.</h1>
+        <section className='py-2'>
+            <h1 className='text-[#D4D4D4] text-2xl'>Bio</h1>
             <p className='my-4 text-[#D4D4D4]'>
                 Hello! I&apos;m Mitko, a passionate and detail-oriented frontend developer with a
                 knack for crafting engaging and responsive user interfaces. My journey in the world

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
     return (
-        <main>
+        <main className='py-2'>
             <h1 className='text-[#D4D4D4] text-2xl font-bold'>{name}</h1>
             <p className='text-[#D4D4D4] my-6 text-base'>{info()}</p>
             <div className='flex gap-5'>

@@ -13,7 +13,7 @@ export default function Navbar() {
             <Link href='/'>
                 <SiMonzo className='text-[#D4D4D4]' size={32} />
             </Link>
-            <ul className='flex gap-4 py-2 md:flex-col md:mt-4'>
+            <ul className='flex gap-4 py-4 md:flex-col md:mt-4'>
                 {pages.map((page) => (
                     <li key={page.label}>
                         <Link
