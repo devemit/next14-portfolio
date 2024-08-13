@@ -1,4 +1,4 @@
-import mit from '../public/mit.jpg';
+import mit from '../public/avatar.jpg';
 
 export const name = "hey, i'm mitko 👋";
 export const me = mit;
