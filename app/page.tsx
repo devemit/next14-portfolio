@@ -38,6 +38,7 @@ export default function Home() {
                 </div>
             </div>
             <p className='text-[#D4D4D4] my-4 text-base max-w-lg'>{about()}</p>
+            <p className='text-[#D4D4D4] my-4 text-[10px]'>© 2023 Mitko Devemit</p>
         </main>
     );
 }
