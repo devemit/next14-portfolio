@@ -14,7 +14,7 @@ export default function Page() {
    const blog: Blog | undefined = blogs.find((blog) => blog.slug === params.id);
 
    return (
-      <div className='text-[#D4D4D4] max-w-md mx-auto py-4 px-6'>
+      <div className='text-[#D4D4D4] max-w-md mx-auto'>
          <h1 className='text-2xl font-bold mb-4'>{blog?.name}</h1>
          <div className='leading-6 mb-4'>{blog?.description}</div>
          <br />

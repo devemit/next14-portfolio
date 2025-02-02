@@ -1,7 +1,4 @@
-import mit from '../public/avatar.jpg';
-
 export const name = "hey, i'm mitko 👋";
-export const me = mit;
 export const about = () => {
    return (
       <>
