@@ -14,25 +14,24 @@ export default function Home() {
       <main className='py-2'>
          <h1 className='text-[#D4D4D4] text-2xl font-bold'>{name}</h1>
          <p className='text-[#D4D4D4] my-6 text-base'>{info()}</p>
-         <div className='flex gap-5'>
-            <Image className='rounded-full my-2' src={me} alt='portrait' width={110} height={110} />
-            <div className='mt-6'>
+         <p className='text-[#D4D4D4] my-4 text-base max-w-lg'>{about()}</p>
+         <div className='mt-6 justify-between flex'>
+            <div className='flex gap-2'>
                <Link href='https://github.com/devemit' target='_blank'>
                   <AiFillGithub
-                     size={28}
+                     size={22}
                      className='text-[#A3A3A3] my-2 cursor-pointer hover:text-[#D4D4D4]'
                   />
                </Link>
                <Link href='https://www.linkedin.com/in/mitko-iliev/' target='_blank'>
                   <AiFillLinkedin
-                     size={28}
+                     size={22}
                      className='text-[#A3A3A3] my-2 cursor-pointer hover:text-[#D4D4D4]'
                   />
                </Link>
             </div>
+            <p className='text-[#D4D4D4] my-4 text-[10px]'>© 2025 Mitko Devemit</p>
          </div>
-         <p className='text-[#D4D4D4] my-4 text-base max-w-lg'>{about()}</p>
-         <p className='text-[#D4D4D4] my-4 text-[10px]'>© 2025 Mitko Devemit</p>
       </main>
    );
 }
