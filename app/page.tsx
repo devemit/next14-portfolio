@@ -1,9 +1,10 @@
 import { Metadata } from 'next';
 import { name, about, info } from '../utils/info';
+import Link from 'next/link';
 
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
-import Link from 'next/link';
+import { ContactForm } from '@/components/contact-form';
 
 export const metadata: Metadata = {
    title: 'Mitko',
@@ -32,6 +33,9 @@ export default function Home() {
                </Link>
             </div>
             <p className='text-[#D4D4D4] my-4 text-[10px]'>© 2025 Mitko Devemit</p>
+         </div>
+         <div className='absolute bottom-0 right-0'>
+            <ContactForm />
          </div>
       </main>
    );
