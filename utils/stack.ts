@@ -1,8 +1,8 @@
 export const stack = [
-   { src: '/css&html.png', label: 'HTML & CSS' },
    { src: '/Javascript.png', label: 'Javascript' },
    { src: '/Typescript.png', label: 'Typescript' },
    { src: '/netlogo.svg', label: '.NET' },
+   { src: '/prisma.png', label: 'Prisma' },
    { src: '/bl.png', label: 'Blazor' },
    { src: '/React.png', label: 'React.js' },
    { src: '/Astro.png', label: 'Astro.js' },

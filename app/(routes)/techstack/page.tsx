@@ -19,8 +19,10 @@ export default function TechStack() {
          <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mt-10'>
             {stack.map((ele, index) => (
                <div className='flex items-center gap-5' key={index}>
-                  <Image src={ele.src} width={50} height={50} alt='/' className='rounded-sm' />
-                  <span className='text-lg text-[#D4D4D4]'>{ele.label}</span>
+                  <Image src={ele.src} width={38} height={38} alt='tech' className='rounded-sm' />
+                  <span className=' text-[#D4D4D4] text-sm uppercase tracking-wider '>
+                     {ele.label}
+                  </span>
                </div>
             ))}
          </div>

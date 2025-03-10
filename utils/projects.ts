@@ -30,6 +30,16 @@ export default [
          'This project is a modern e-commerce website developed using Next14(SSR) with TypeScript and styled with Tailwind CSS. The website provides users with a seamless shopping experience, allowing them to browse through a variety of products, view detailed product information, and add items to their shopping cart.',
    },
    {
+      title: 'Easy Travel',
+      status: 'Work in progress',
+      imgUrl: 'https://github.com/user-attachments/assets/eec04cfa-c5b0-4457-8247-4b6ae2c61729',
+      tech: ['Typescript', 'NextJS-15', 'Tailwind CSS', 'PostgreSQL', 'Prisma'],
+      liveSite: 'https://smart-travel-ecru.vercel.app',
+      seeCode: 'https://github.com/devemit/smart-travel',
+      description:
+         'TravelEase is your all-in-one travel planning companion. Discover destinations, check real-time weather, and create personalized itineraries—all in one place. Whether you are anning a weekend getaway or a global adventure, TravelEase makes trip planning seamless, stress-free, and fun. Sign up today and start exploring the world with ease',
+   },
+   {
       title: 'Notify | Notes App',
       imgUrl:
          'https://github.com/devemit/codeart-test-project/assets/107273888/7075015b-6d2f-4964-aaa5-8fce6eeecb2c',
