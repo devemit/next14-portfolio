@@ -5,6 +5,7 @@ export const stack = [
    { src: '/prisma.png', label: 'Prisma' },
    { src: '/bl.png', label: 'Blazor' },
    { src: '/React.png', label: 'React.js' },
+   { src: '/svelte.png', label: 'Svelte' },
    { src: '/Astro.png', label: 'Astro.js' },
    { src: '/nxt.jpeg', label: 'Next.js' },
    { src: '/csharp.png', label: 'C#' },
