@@ -3,9 +3,9 @@ export default [
       date: '04.25.2025',
       slug: 'aduvi',
       name: 'Aduvi',
-      tools: 'React, Redux',
+      tools: 'React, Redux, Laravel',
       description:
-         'Currently, I am working at Technoperia, where we are building a modern business management solution (https://aduvi.com/) that serves as a comprehensive business hub for teams. Our platform offers powerful features including job management with multiple view options (events, projects, kanban, or timelines), online booking capabilities for assets and teams, staff and affiliate management with customizable permissions, automated contract and invoice generation with client portal access, task management with timeline visualization, and business automation tools to streamline operations.',
+         'As a frontend developer at Technoperia, I am part of the team building Aduvi, a modern business management platform. Working alongside talented developers, we are creating an intuitive interface that transforms how businesses manage their operations. Our frontend team has developed key features like multi-view job management (events, projects, kanban, timelines), real-time booking systems, and comprehensive staff management tools. We have also implemented automated contract generation, task visualization, and business automation features, all while ensuring a seamless user experience across the platform. You can see more details about our platform at https://aduvi.com/',
       skills:
          'React: Used for building the modern, responsive user interface, Redux: Employed for managing complex application state and data flow, Ant-Design: Applied for creating an intuitive and visually appealing design.',
    },
@@ -19,16 +19,7 @@ export default [
       skills:
          'Blazor: Utilized for developing interactive web components and managing state within the application, JavaScript: Employed to create dynamic page functionalities and handle complex interactions with the DOM,CSS: Applied for styling and ensuring consistent visual presentation of the ECG data and other UI elements.',
    },
-   {
-      date: '15.01.2025',
-      slug: 'curenntly-working',
-      name: 'Developing a CRM with React and Redux',
-      tools: 'React, Redux, PHP',
-      description:
-         'Currently, I am part of a team working on a Customer Relationship Management (CRM) system using React and Redux for the frontend and PHP for the backend. The project focuses on creating a user-friendly interface for managing customer interactions and data, with features such as user authentication and data visualization for customer analytics.',
-      skills:
-         'React: Used for building the user interface and creating reusable components, Redux: Employed for managing application state and ensuring predictable state transitions, PHP: Used for backend development to handle data processing and server-side logic, CSS: Applied for styling the application and ensuring a responsive layout.',
-   },
+
    {
       date: '01.02.2025',
       slug: 'online-book-reader',
