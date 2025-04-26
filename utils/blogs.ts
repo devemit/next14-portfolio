@@ -1,5 +1,15 @@
 export default [
    {
+      date: '04.25.2025',
+      slug: 'aduvi',
+      name: 'Aduvi',
+      tools: 'React, Redux',
+      description:
+         'Currently, I am working at Technoperia, where we are building a modern business management solution (https://aduvi.com/) that serves as a comprehensive business hub for teams. Our platform offers powerful features including job management with multiple view options (events, projects, kanban, or timelines), online booking capabilities for assets and teams, staff and affiliate management with customizable permissions, automated contract and invoice generation with client portal access, task management with timeline visualization, and business automation tools to streamline operations.',
+      skills:
+         'React: Used for building the modern, responsive user interface, Redux: Employed for managing complex application state and data flow, Ant-Design: Applied for creating an intuitive and visually appealing design.',
+   },
+   {
       date: '12.05.2024',
       slug: 'previous-works',
       name: 'Enhancing ECG Viewer',
