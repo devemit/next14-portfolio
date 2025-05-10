@@ -7,7 +7,7 @@ export default [
       liveSite: 'https://travelsmart-devemits-projects.vercel.app/',
       seeCode: 'https://github.com/devemit/smart-travel',
       description:
-         'TravelEase is your all-in-one travel planning companion. Discover destinations, check real-time weather, and create personalized itineraries—all in one place. Whether you are anning a weekend getaway or a global adventure, TravelEase makes trip planning seamless, stress-free, and fun. Sign up today and start exploring the world with ease',
+         'Easy Travel is an innovative travel web application currently in beta phase, allowing users to explore destinations, check the weather, and plan their trips with the help of AI. Users can browse featured locations, access essential travel information, and receive personalized recommendations to enhance their travel experience. With a user-friendly interface, Easy Travel makes trip planning simple and enjoyable.',
    },
    {
       title: 'Reform Beach&Bar',
