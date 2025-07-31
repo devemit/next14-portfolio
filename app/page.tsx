@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { name, about, info } from '../utils/info';
+import { greet, about, info } from '../utils/info';
 import Link from 'next/link';
 
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function Home() {
    return (
       <main className='py-2'>
-         <h1 className='text-[#D4D4D4] text-2xl font-bold'>{name}</h1>
+         <h1 className='text-[#D4D4D4] text-2xl font-bold'>{greet}</h1>
          <p className='text-[#D4D4D4] my-6 text-base'>{info()}</p>
          <p className='text-[#D4D4D4] my-4 text-base max-w-lg'>{about()}</p>
          <div className='mt-6 justify-between flex'>
