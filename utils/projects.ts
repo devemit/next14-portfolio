@@ -10,6 +10,15 @@ export default [
          'Easy Travel is an innovative travel web application currently in beta phase, allowing users to explore destinations, check the weather, and plan their trips with the help of AI. Users can browse featured locations, access essential travel information, and receive personalized recommendations to enhance their travel experience. With a user-friendly interface, Easy Travel makes trip planning simple and enjoyable.',
    },
    {
+      title: 'Dependency Checker',
+      imgUrl: 'https://i.postimg.cc/d1KZwQVs/test.png',
+      tech: ['NodeJS', 'CLI', 'NPM'],
+      liveSite: 'https://www.npmjs.com/package/cli-depsnap',
+      seeCode: 'https://github.com/devemit/cli-depsnap',
+      description:
+         'A high-performance CLI tool for checking npm dependencies, security vulnerabilities, and update recommendations. What it does: Dependency Analysis: Check which packages are outdated and need updates Security Auditing: Scan for known vulnerabilities in your dependencies Smart Recommendations: Get safe update suggestions with breaking change warnings High Performance: Parallel processing, caching, and connection pooling for speed Key Features: Multiple Output Formats: Table, JSON, CSV for different use cases Safety-First Updates: Shows safe patch/minor updates by default, major updates with warnings Ready-to-Use Commands: Provides exact npm commands you can copy-paste Performance Optimized: Handles large projects efficiently with configurable concurrency',
+   },
+   {
       title: 'Reform Beach&Bar',
       imgUrl:
          'https://user-images.githubusercontent.com/107273888/229608163-2a1aeed4-a133-4549-98cd-35f5abe72a35.png',

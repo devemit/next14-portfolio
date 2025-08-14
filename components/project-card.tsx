@@ -1,6 +1,7 @@
 import { ProjectProps } from '@/types/types';
 import Button from './button';
 import Image from 'next/image';
+import TruncatedText from './truncated-text';
 
 export default function ProjectCard({
    title,
@@ -31,7 +32,7 @@ export default function ProjectCard({
             />
          </div>
          <div className='pb-4'>
-            <p className='my-2 text-base'>{description}</p>
+            <TruncatedText text={description} maxLength={350} className='my-2 text-base' />
             <div className='my-3'>
                <span className='text-sm text-gray-300 mr-2'>Stack:</span>
                {tech.map((el, id) => (
