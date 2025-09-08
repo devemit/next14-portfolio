@@ -14,10 +14,10 @@ export default function ProjectCard({
 }: ProjectProps) {
    return (
       <div className='py-2  rounded-lg overflow-hidden'>
-         <div className='flex justify-between items-center px-4 pt-3'>
+         <div className='flex justify-between items-center pt-3'>
             <h2 className='text-xl font-semibold'>{title}</h2>
             {status && (
-               <span className='text-xs px-2 py-1 rounded-full bg-red-900/30 text-red-200'>
+               <span className='text-xs px-2 py-1 rounded-md bg-red-900/30 text-red-200'>
                   {status}
                </span>
             )}
@@ -34,9 +34,8 @@ export default function ProjectCard({
          <div className='pb-4'>
             <TruncatedText text={description} maxLength={350} className='my-2 text-base' />
             <div className='my-3'>
-               <span className='text-sm text-gray-300 mr-2'>Stack:</span>
                {tech.map((el, id) => (
-                  <button className='mx-1 text-blue-400 text-sm hover:underline' key={id}>
+                  <button className='mx-1 text-slate-300 text-xs' key={id}>
                      {el}
                   </button>
                ))}

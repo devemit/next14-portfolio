@@ -3,7 +3,7 @@ export default [
       title: 'Easy Travel',
       status: 'Work in progress',
       imgUrl: 'https://github.com/user-attachments/assets/eec04cfa-c5b0-4457-8247-4b6ae2c61729',
-      tech: ['Typescript', 'NextJS-15', 'Tailwind CSS', 'PostgreSQL', 'Prisma'],
+      tech: ['Typescript', 'NextJS', 'Tailwind CSS', 'PostgreSQL', 'Prisma'],
       liveSite: 'https://travelsmart-devemits-projects.vercel.app/',
       seeCode: 'https://github.com/devemit/smart-travel',
       description:
@@ -14,7 +14,7 @@ export default [
       imgUrl: 'https://i.postimg.cc/d1KZwQVs/test.png',
       tech: ['NodeJS', 'CLI', 'NPM'],
       liveSite: 'https://www.npmjs.com/package/cli-depsnap',
-      seeCode: 'https://github.com/devemit/cli-depsnap',
+      seeCode: 'https://github.com/devemit/npm-dependency-checker',
       description:
          'A high-performance CLI tool for checking npm dependencies, security vulnerabilities, and update recommendations. What it does: Dependency Analysis: Check which packages are outdated and need updates Security Auditing: Scan for known vulnerabilities in your dependencies Smart Recommendations: Get safe update suggestions with breaking change warnings High Performance: Parallel processing, caching, and connection pooling for speed Key Features: Multiple Output Formats: Table, JSON, CSV for different use cases Safety-First Updates: Shows safe patch/minor updates by default, major updates with warnings Ready-to-Use Commands: Provides exact npm commands you can copy-paste Performance Optimized: Handles large projects efficiently with configurable concurrency',
    },
@@ -22,7 +22,7 @@ export default [
       title: 'Reform Beach&Bar',
       imgUrl:
          'https://user-images.githubusercontent.com/107273888/229608163-2a1aeed4-a133-4549-98cd-35f5abe72a35.png',
-      tech: ['Typescript', 'React', 'CSS'],
+      tech: ['Typescript', 'ReactJS', 'CSS'],
       liveSite: 'https://reformbeachbar.vercel.app/',
       seeCode: 'https://github.com/devemit/reform-menu',
       description:
@@ -32,7 +32,7 @@ export default [
       title: 'Chapter Flow',
       status: 'Work in progress',
       imgUrl: 'https://i.postimg.cc/nL9zr1gZ/Screenshot.png',
-      tech: ['Typescript', 'React', 'Supabase'],
+      tech: ['Typescript', 'ReactJS', 'Supabase'],
       liveSite: 'https://chapter-flow-app.vercel.app',
       seeCode: 'https://github.com/devemit/chapter-flow-app',
       description:
@@ -42,7 +42,7 @@ export default [
       title: 'Next14 E-commerce',
       imgUrl:
          'https://github.com/devemit/cinemania-movies/assets/107273888/ee3ded3a-4506-48d7-9052-89ce06269465',
-      tech: ['Typescript', 'NextJS-14', 'Tailwind CSS'],
+      tech: ['Typescript', 'NextJS', 'Tailwind CSS'],
       liveSite: 'https://diamondshop.vercel.app/',
       seeCode: 'https://https://github.com/devemit/next14-ecommerce',
       description:
@@ -53,7 +53,7 @@ export default [
       title: 'Notify | Notes App',
       imgUrl:
          'https://github.com/devemit/codeart-test-project/assets/107273888/7075015b-6d2f-4964-aaa5-8fce6eeecb2c',
-      tech: ['Typescript', 'NextJS-13', 'TailwindCSS'],
+      tech: ['Typescript', 'NextJS', 'TailwindCSS'],
       liveSite: 'https://notifypro.vercel.app/',
       seeCode: 'https://github.com/devemit/todo-app',
       description:
@@ -63,7 +63,7 @@ export default [
       title: 'Password Generator',
       imgUrl:
          'https://github.com/devemit/Weather-app-JS/assets/107273888/447b98a4-2149-444d-8bcb-cd561a29bfe1',
-      tech: ['Typescript', 'NextJS-13', 'Tailwind CSS'],
+      tech: ['Typescript', 'NextJS', 'Tailwind CSS'],
       liveSite: 'https://password-generator-pro.vercel.app/',
       seeCode: 'https://github.com/devemit/password-generator',
       description:
@@ -73,7 +73,7 @@ export default [
       title: 'Crypto DEFI',
       imgUrl:
          'https://user-images.githubusercontent.com/107273888/218598621-557e03c0-f16e-42bc-aafa-d67373c9943d.png',
-      tech: ['Typescript', 'React', 'Tailwind CSS'],
+      tech: ['Typescript', 'ReactJS', 'Tailwind CSS'],
       liveSite: 'https://cryptowebdefi.netlify.app/',
       seeCode: 'https://github.com/devemit/crypto-react',
       description:
@@ -84,7 +84,7 @@ export default [
       title: 'E-Commerce Website',
       imgUrl:
          'https://user-images.githubusercontent.com/107273888/226775835-86d65498-a4f5-4216-8379-c348160de964.png',
-      tech: ['React', 'Tailwind CSS'],
+      tech: ['ReactJS', 'Tailwind CSS'],
       liveSite: 'https://mitkos-shop-site.netlify.app',
       seeCode: 'https://github.com/devemit/E-commerce-Website',
       description:
@@ -94,7 +94,7 @@ export default [
       title: 'Cinemania/Netflix UI',
       imgUrl:
          'https://user-images.githubusercontent.com/107273888/217918647-c52b31f1-a7be-4edb-a1e2-d6eba1305442.png',
-      tech: ['Typescript', 'React', 'Tailwind CSS'],
+      tech: ['Typescript', 'ReactJS', 'Tailwind CSS'],
       liveSite: 'https://cinemaniamovs.netlify.app/',
       seeCode: 'https://github.com/devemit/cinemania-movies',
       description:
@@ -104,7 +104,7 @@ export default [
       title: 'Travel Blog',
       imgUrl:
          'https://github.com/devemit/Weather-app-JS/assets/107273888/fd3dfece-0ef1-4c3d-87f0-3e8c98822fbe',
-      tech: ['Typescript', 'NextJS-13', 'CSS'],
+      tech: ['Typescript', 'NextJS', 'CSS'],
       liveSite: 'https://traveldotblog.vercel.app/',
       seeCode: 'https://github.com/devemit/travel-blog',
       description:
@@ -115,7 +115,7 @@ export default [
       title: 'Glass Maestros',
       imgUrl:
          'https://github.com/devemit/codeart-test-project/assets/107273888/9a3b30e2-983a-4257-96b0-239b11b58d22',
-      tech: ['Typescript', 'NextJS-13', 'TailwindCSS'],
+      tech: ['Typescript', 'NextJS', 'TailwindCSS'],
       liveSite: 'https://glassmaestros.vercel.app/',
       seeCode: 'https://github.com/devemit/business-promote-website',
       description:
@@ -135,7 +135,7 @@ export default [
       title: 'Landing Page',
       imgUrl:
          'https://github.com/devemit/cinemania-movies/assets/107273888/1c92ebbf-6c58-449a-b66e-f72807a6aae7',
-      tech: ['NextJS-14', 'CSS', 'Framer Motion'],
+      tech: ['NextJS', 'CSS', 'Framer Motion'],
       liveSite: 'https://managepro.vercel.app/',
       seeCode: 'https://github.com/devemit/next14-landing-page-manage',
       description:

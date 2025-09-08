@@ -16,7 +16,7 @@ export default function Home() {
       <main className='py-2'>
          <h1 className='text-[#D4D4D4] text-2xl font-bold'>{greet}</h1>
          <p className='text-[#D4D4D4] my-4 text-base max-w-lg leading-relaxed'>{about()}</p>
-         <div className='mt-6 justify-between flex'>
+         <div className='mt-6 justify-between flex items-center'>
             <div className='flex gap-2'>
                <Link href='https://github.com/devemit' target='_blank'>
                   <AiFillGithub
@@ -31,9 +31,6 @@ export default function Home() {
                   />
                </Link>
             </div>
-            <p className='text-[#D4D4D4] my-4 text-[10px]'>© 2025 Mitko Devemit</p>
-         </div>
-         <div className='absolute bottom-0 right-0'>
             <ContactForm />
          </div>
       </main>
