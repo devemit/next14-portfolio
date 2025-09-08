@@ -3,11 +3,16 @@ export const greet = `hey, i'm ${name} 👋`;
 export const about = () => {
    return (
       <>
-         A Frontend focused Web Developer building the Frontend of Websites and Web Applications
-         that leads to the success of the overall product.
+         Software Developer, Designer and Creator.
+         <br />
+         <br />
+         I'm a self-taught Software Developer and made the transition from my previous career to
+         tech in 2023.
+         <br />
+         <br />
+         I’ve had the pleasure of working alongside some incredible engineers, designers. I’m
+         passionate about code standards, ECMAScript, strongly typed interfaces, and reactive
+         Javascript frameworks (React is my jam).
       </>
    );
-};
-export const info = () => {
-   return <>I'm a front-end developer,optimist and digital architect.</>;
 };

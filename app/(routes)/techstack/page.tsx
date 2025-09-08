@@ -12,7 +12,7 @@ export default function TechStack() {
    return (
       <section className='flex flex-col gap-4 py-2'>
          <h1 className='text-2xl text-[#D4D4D4]'>Tech Stack</h1>
-         <p className='max-w-sm md:max-w-md text-md text-[#D4D4D4]'>
+         <p className='max-w-sm md:max-w-md text-md text-[#D4D4D4] leading-relaxed'>
             Here is my favourite Tech Stack, languages and frameworks that i use every day in most
             of my projects.
          </p>

@@ -16,7 +16,7 @@ const graphik = localFont({
 });
 
 export const metadata: Metadata = {
-   title: 'Mitko',
+   title: 'Mitko | Developer, Designer, Creator',
    description: 'Portfolio Application',
 };
 

@@ -11,7 +11,12 @@ export default function Navbar() {
    return (
       <nav>
          <Link href='/'>
-            <SiMonzo className='text-[#D4D4D4]' size={32} />
+            <SiMonzo
+               className={`${
+                  pathname === '/' && 'text-[#D4D4D4]'
+               } text-[#737373] text-lg hover:text-[#D4D4D4] transition delay-75 duration-75 ease-in-out`}
+               size={32}
+            />
          </Link>
          <ul className='flex gap-4 py-4 md:flex-col md:mt-4'>
             {pages.map((page) => (
