@@ -11,7 +11,7 @@ export default [
    },
    {
       date: '06.03.2025 - current',
-      slug: 'previous-works',
+      slug: 'easy-travel',
       name: 'Easy Travel',
       tools: 'Typescript, Next.js, Tailwind CSS, Shadcn UI, Prisma, PostgreSQL',
       description:
@@ -21,7 +21,7 @@ export default [
    },
    {
       date: '12.05.2024',
-      slug: 'previous-works',
+      slug: 'view-ecg',
       name: 'Enhancing ECG Viewer',
       tools: 'Blazor .NET',
       description:

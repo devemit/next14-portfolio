@@ -1,13 +1,32 @@
 export default [
    {
       title: 'Easy Travel',
-      status: 'Work in progress',
+      status: 'wip',
       imgUrl: 'https://github.com/user-attachments/assets/eec04cfa-c5b0-4457-8247-4b6ae2c61729',
       tech: ['Typescript', 'NextJS', 'Tailwind CSS', 'PostgreSQL', 'Prisma'],
       liveSite: 'https://travelsmart-devemits-projects.vercel.app/',
       seeCode: 'https://github.com/devemit/smart-travel',
       description:
          'Easy Travel is an innovative travel web application currently in beta phase, allowing users to explore destinations, check the weather, and plan their trips with the help of AI. Users can browse featured locations, access essential travel information, and receive personalized recommendations to enhance their travel experience. With a user-friendly interface, Easy Travel makes trip planning simple and enjoyable.',
+   },
+   {
+      title: 'Aduvi – Business Management Platform',
+      status: '',
+      imgUrl: 'https://i.ibb.co/Sw6mckj3/aduvi.png',
+      tech: ['Typescript', 'ReactJS', 'SASS', 'Redux', 'Ant Design'],
+      liveSite: 'https://aduvi.com/',
+      seeCode: 'https://aduvi.com/',
+      description:
+         'Aduvi is an all-in-one solution for managing leads, bookings, events, custom forms, and client communication through a dedicated portal. I worked on the frontend team, focusing on building responsive, user-friendly interfaces and ensuring a smooth user experience across the platform.',
+   },
+   {
+      title: 'View ECG',
+      status: 'wip',
+      imgUrl: 'https://i.ibb.co/1GCFK08T/viewecg.png',
+      tech: ['.NET C# Blazor CSS'],
+      liveSite: 'https://viewecg.com/',
+      seeCode: 'https://viewecg.com/',
+      description: 'A platform for ECG monitoring and reporting tools',
    },
    {
       title: 'Dependency Checker',
@@ -30,7 +49,7 @@ export default [
    },
    {
       title: 'Chapter Flow',
-      status: 'Work in progress',
+      status: 'wip',
       imgUrl: 'https://i.postimg.cc/nL9zr1gZ/Screenshot.png',
       tech: ['Typescript', 'ReactJS', 'Supabase'],
       liveSite: 'https://chapter-flow-app.vercel.app',
