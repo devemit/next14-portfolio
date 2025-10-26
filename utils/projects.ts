@@ -22,20 +22,11 @@ export default [
   {
     title: 'View ECG',
     status: 'wip',
-    imgUrl: 'https://i.ibb.co/1GCFK08T/viewecg.png',
+    imgUrl: 'https://i.ibb.co/G4rF2Sdq/viewecg.png',
     tech: ['.NET C# Blazor CSS'],
     liveSite: 'https://viewecg.com/',
     seeCode: 'https://viewecg.com/',
     description: 'A platform for ECG monitoring and reporting tools',
-  },
-  {
-    title: 'Dependency Checker',
-    imgUrl: 'https://i.postimg.cc/d1KZwQVs/test.png',
-    tech: ['NodeJS', 'CLI', 'NPM'],
-    liveSite: 'https://www.npmjs.com/package/cli-depsnap',
-    seeCode: 'https://github.com/devemit/npm-dependency-checker',
-    description:
-      'A high-performance CLI tool for checking npm dependencies, security vulnerabilities, and update recommendations. What it does: Dependency Analysis: Check which packages are outdated and need updates Security Auditing: Scan for known vulnerabilities in your dependencies Smart Recommendations: Get safe update suggestions with breaking change warnings High Performance: Parallel processing, caching, and connection pooling for speed Key Features: Multiple Output Formats: Table, JSON, CSV for different use cases Safety-First Updates: Shows safe patch/minor updates by default, major updates with warnings Ready-to-Use Commands: Provides exact npm commands you can copy-paste Performance Optimized: Handles large projects efficiently with configurable concurrency',
   },
   {
     title: 'Reform Beach&Bar',
@@ -46,6 +37,15 @@ export default [
     seeCode: 'https://github.com/devemit/reform-menu',
     description:
       'Beach Bar Reform is a React web application designed to enhance the dining experience in restaurants by providing a seamless QR-scanning menu for customers. The application aims to reduce physical contact between customers and menus, making it more hygienic and convenient, especially in a post-pandemic world.',
+  },
+  {
+    title: 'Dependency Checker',
+    imgUrl: 'https://i.postimg.cc/d1KZwQVs/test.png',
+    tech: ['NodeJS', 'CLI', 'NPM'],
+    liveSite: 'https://www.npmjs.com/package/cli-depsnap',
+    seeCode: 'https://github.com/devemit/npm-dependency-checker',
+    description:
+      'A high-performance CLI tool for checking npm dependencies, security vulnerabilities, and update recommendations. What it does: Dependency Analysis: Check which packages are outdated and need updates Security Auditing: Scan for known vulnerabilities in your dependencies Smart Recommendations: Get safe update suggestions with breaking change warnings High Performance: Parallel processing, caching, and connection pooling for speed Key Features: Multiple Output Formats: Table, JSON, CSV for different use cases Safety-First Updates: Shows safe patch/minor updates by default, major updates with warnings Ready-to-Use Commands: Provides exact npm commands you can copy-paste Performance Optimized: Handles large projects efficiently with configurable concurrency',
   },
   {
     title: 'Chapter Flow',
