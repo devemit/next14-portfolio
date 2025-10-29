@@ -3,15 +3,20 @@ import Loading from './loading'
 
 import Navbar from '@/components/navbar'
 
-import localFont from 'next/font/local'
+import { Inter, JetBrains_Mono } from 'next/font/google'
 import { Suspense } from 'react'
 
 import './globals.css'
 
-const graphik = localFont({
-  src: '../public/fonts/GraphikRegular.otf',
-  weight: '400',
-  variable: '--font-graphik',
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-jetbrains-mono',
   display: 'swap',
 })
 
@@ -22,8 +27,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={graphik.className}>
-      <body className="bg-[#111010]">
+    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
+      <body className="bg-[#111010] font-sans">
         <Suspense fallback={<Loading />}>
           <div className="mx-4 flex max-w-4xl flex-col gap-12 px-4 py-12 md:mt-20 md:flex-row lg:mx-auto lg:mt-32">
             <Navbar />
