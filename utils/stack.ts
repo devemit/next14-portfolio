@@ -9,9 +9,12 @@ export const stack = [
   { src: '/Astro.png', label: 'Astro.js' },
   { src: '/nxt.jpeg', label: 'Next.js' },
   { src: '/csharp.png', label: 'C#' },
-  { src: '/Tailwind CSS.png', label: 'TailwindCSS' },
+  { src: '/Tailwind CSS.png', label: 'Tailwind' },
   { src: '/jest.jpg', label: 'Jest Testing' },
   { src: '/node.png', label: 'Node.js' },
   { src: '/MySQL.png', label: 'MySQL' },
   { src: '/Docker.png', label: 'Docker' },
+  { src: '', label: 'User Experience' },
+  { src: '', label: 'Git' },
+  { src: '', label: 'UI Design' },
 ]
