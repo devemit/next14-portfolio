@@ -9,6 +9,8 @@ export const metadata: Metadata = {
 }
 
 export default function TechStack() {
+  const shuffledStack = [...stack].sort(() => Math.random() - 0.5)
+
   return (
     <section className="flex flex-col gap-4 py-2">
       <h1 className="text-2xl text-[#D4D4D4]">Tech Stack</h1>
@@ -17,12 +19,14 @@ export default function TechStack() {
         projects.
       </p>
       <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2">
-        {stack.map((ele, index) => (
+        {shuffledStack.map((ele, index) => (
           <div className="flex items-center gap-5" key={index}>
-            {ele.src && (
+            {ele.src ? (
               <Image src={ele.src} width={30} height={30} alt="tech" className="rounded-sm" />
+            ) : (
+              <div className="h-8 w-8 rounded-sm bg-[#111016]" />
             )}
-            <span className="bg-slate-900 p-1 text-sm tracking-wider text-[#D4D4D4]">
+            <span className="rounded-sm bg-slate-900 p-1 text-sm tracking-wider text-[#D4D4D4]">
               {ele.label}
             </span>
           </div>
