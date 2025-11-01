@@ -34,7 +34,7 @@ export default function ProjectCard({
         <TruncatedText text={description} maxLength={350} className="my-2 text-base" />
         <div className="my-3">
           {tech.map((el, id) => (
-            <button className="mx-1 text-xs text-slate-300" key={id}>
+            <button className="mx-1 text-xs text-slate-400" key={id}>
               {el}
             </button>
           ))}
