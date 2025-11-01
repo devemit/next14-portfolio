@@ -86,7 +86,7 @@ export const ContactForm = () => {
   return (
     <div>
       <FaRobot
-        className="cursor-pointer text-2xl text-white"
+        className="animate-pulse cursor-pointer text-2xl text-white"
         onClick={() => setIsModalOpen(true)}
       />
       {isModalOpen && (
