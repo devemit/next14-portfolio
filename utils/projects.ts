@@ -11,14 +11,14 @@ export default [
   },
   {
     title: 'View ECG',
-    status: 'wip',
+    status: '',
     imgUrl:
       'https://i.postimg.cc/xTNL6R8f/screencapture-viewecg-Doctor-Monitoring-b374668e-ee0f-4395-a019-ed0e94e577fb-2025-11-01-18-10-32.png',
     tech: ['.NET C# Blazor'],
     liveSite: 'https://viewecg.com/',
     seeCode: 'https://viewecg.com/',
     description:
-      'An AI platform that connects doctors and patient. Our cloud system seamlessly integrates with the measurement from your phone and enables you to analyze your data. Our special beat detection and classification algorithms are designed by a team of doctors and computer scientists. Among the things we measure are:\nBeat classification (Normal, PVC, VEB, PAC, SVEB)\nRun-to-run identification (ventricular and supraventricular couplets, short and long runs)\nEpisode identification (atrial fibrillation, ventricular tachycardia, bigeminy, trigeminy)',
+      "Current Work: I joined the development team in August 2025 to work on this innovative AI-powered healthcare platform that connects doctors and patients. Working alongside a multidisciplinary team of healthcare professionals and developers, I contribute to building and enhancing the cloud-based ECG monitoring system. Our cloud system seamlessly integrates with measurements from mobile devices and enables comprehensive data analysis. The platform features special beat detection and classification algorithms designed by a team of doctors and computer scientists. Among the capabilities we've developed are:\nBeat classification (Normal, PVC, VEB, PAC, SVEB)\nRun-to-run identification (ventricular and supraventricular couplets, short and long runs)\nEpisode identification (atrial fibrillation, ventricular tachycardia, bigeminy, trigeminy)",
   },
   {
     title: 'Aduvi – Business Management Platform',
@@ -28,12 +28,11 @@ export default [
     liveSite: 'https://aduvi.com/',
     seeCode: 'https://aduvi.com/',
     description:
-      'Aduvi is an all-in-one solution for managing leads, bookings, events, custom forms, and client communication through a dedicated portal. I worked on the frontend team, focusing on building responsive, user-friendly interfaces and ensuring a smooth user experience across the platform.',
+      'Current Work: I joined the frontend development team at Technoperia in September 2024 to work on Aduvi, a comprehensive enterprise business management platform serving 2000+ clients across multiple industries. Working collaboratively with a talented team of developers, I contribute to building this all-in-one solution for managing leads, bookings, events, custom forms, and client communication through a dedicated portal. My focus is on developing responsive, user-friendly interfaces and ensuring a smooth user experience across the platform, while implementing advanced features like real-time data synchronization, multi-view management systems, and comprehensive business automation tools.',
   },
   {
     title: 'Reform Beach&Bar',
-    imgUrl:
-      'https://user-images.githubusercontent.com/107273888/229608163-2a1aeed4-a133-4549-98cd-35f5abe72a35.png',
+    imgUrl: 'https://user-images.githubusercontent.com/107273888/229608163-2a1aeed4-a133-4549-98cd-35f5abe72a35.png',
     tech: ['Typescript', 'ReactJS', 'CSS'],
     liveSite: 'https://reformbeachbar.vercel.app/',
     seeCode: 'https://github.com/devemit/reform-menu',
@@ -51,8 +50,7 @@ export default [
   },
   {
     title: 'Next14 E-commerce',
-    imgUrl:
-      'https://i.postimg.cc/N0c89Hgv/screencapture-diamondshop-vercel-app-2025-11-01-18-10-57.png',
+    imgUrl: 'https://i.postimg.cc/N0c89Hgv/screencapture-diamondshop-vercel-app-2025-11-01-18-10-57.png',
     tech: ['Typescript', 'NextJS', 'Tailwind CSS'],
     liveSite: 'https://diamondshop.vercel.app/',
     seeCode: 'https://https://github.com/devemit/next14-ecommerce',
@@ -61,8 +59,7 @@ export default [
   },
   {
     title: 'Crypto DEFI',
-    imgUrl:
-      'https://i.postimg.cc/FFWxWzZt/screencapture-cryptowebdefi-netlify-app-2025-11-01-18-11-36.png',
+    imgUrl: 'https://i.postimg.cc/FFWxWzZt/screencapture-cryptowebdefi-netlify-app-2025-11-01-18-11-36.png',
     tech: ['Typescript', 'ReactJS', 'Tailwind CSS, Crypyo API'],
     liveSite: 'https://cryptowebdefi.netlify.app/',
     seeCode: 'https://github.com/devemit/crypto-react',
@@ -71,8 +68,7 @@ export default [
   },
   {
     title: 'Travel Blog',
-    imgUrl:
-      'https://github.com/devemit/Weather-app-JS/assets/107273888/fd3dfece-0ef1-4c3d-87f0-3e8c98822fbe',
+    imgUrl: 'https://github.com/devemit/Weather-app-JS/assets/107273888/fd3dfece-0ef1-4c3d-87f0-3e8c98822fbe',
     tech: ['Typescript', 'NextJS', 'CSS'],
     liveSite: 'https://traveldotblog.vercel.app/',
     seeCode: 'https://github.com/devemit/travel-blog',
@@ -81,8 +77,7 @@ export default [
   },
   {
     title: 'Glass Maestros',
-    imgUrl:
-      'https://i.postimg.cc/J4FPn0Dm/screencapture-glassmaestros-vercel-app-2025-11-01-18-12-01.png',
+    imgUrl: 'https://i.postimg.cc/J4FPn0Dm/screencapture-glassmaestros-vercel-app-2025-11-01-18-12-01.png',
     tech: ['Typescript', 'NextJS', 'TailwindCSS'],
     liveSite: 'https://glassmaestros.vercel.app/',
     seeCode: 'https://github.com/devemit/business-promote-website',
@@ -91,8 +86,7 @@ export default [
   },
   {
     title: 'Landing Page',
-    imgUrl:
-      'https://github.com/devemit/cinemania-movies/assets/107273888/1c92ebbf-6c58-449a-b66e-f72807a6aae7',
+    imgUrl: 'https://github.com/devemit/cinemania-movies/assets/107273888/1c92ebbf-6c58-449a-b66e-f72807a6aae7',
     tech: ['NextJS', 'CSS', 'Framer Motion'],
     liveSite: 'https://managepro.vercel.app/',
     seeCode: 'https://github.com/devemit/next14-landing-page-manage',
@@ -101,8 +95,7 @@ export default [
   },
   {
     title: 'Notify | Notes App',
-    imgUrl:
-      'https://github.com/devemit/codeart-test-project/assets/107273888/7075015b-6d2f-4964-aaa5-8fce6eeecb2c',
+    imgUrl: 'https://github.com/devemit/codeart-test-project/assets/107273888/7075015b-6d2f-4964-aaa5-8fce6eeecb2c',
     tech: ['Typescript', 'NextJS', 'TailwindCSS'],
     liveSite: 'https://notifypro.vercel.app/',
     seeCode: 'https://github.com/devemit/todo-app',
@@ -111,8 +104,7 @@ export default [
   },
   {
     title: 'Password Generator',
-    imgUrl:
-      'https://github.com/devemit/Weather-app-JS/assets/107273888/447b98a4-2149-444d-8bcb-cd561a29bfe1',
+    imgUrl: 'https://github.com/devemit/Weather-app-JS/assets/107273888/447b98a4-2149-444d-8bcb-cd561a29bfe1',
     tech: ['Typescript', 'NextJS', 'Tailwind CSS'],
     liveSite: 'https://password-generator-pro.vercel.app/',
     seeCode: 'https://github.com/devemit/password-generator',

@@ -3,22 +3,12 @@ import Button from './button'
 import Image from 'next/image'
 import TruncatedText from './truncated-text'
 
-export default function ProjectCard({
-  title,
-  description,
-  tech,
-  seeCode,
-  liveSite,
-  imgUrl,
-  status,
-}: ProjectProps) {
+export default function ProjectCard({ title, description, tech, seeCode, liveSite, imgUrl, status }: ProjectProps) {
   return (
     <div className="overflow-hidden rounded-lg py-2">
       <div className="flex items-center justify-between pt-3">
         <h2 className="text-xl font-semibold">{title}</h2>
-        {status && (
-          <span className="rounded-md bg-red-900/30 px-2 py-1 text-xs text-red-200">{status}</span>
-        )}
+        {status && <span className="rounded-md bg-red-900/30 px-2 py-1 text-xs text-red-200">{status}</span>}
       </div>
       <div className="group relative my-3 h-[250px] w-full overflow-hidden rounded-lg border border-gray-700/30 bg-gray-800/30 transition-all duration-300 hover:border-gray-600/50">
         <Image
