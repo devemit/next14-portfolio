@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function Blogs() {
   return (
     <>
-      <h1 className="mb-2 py-2 text-2xl text-[#D4D4D4]">Blogs</h1>
+      <h1 className="mb-2 py-2 text-2xl text-[#D6D6DC]">Blogs</h1>
       <main className="flex flex-col gap-2">
         {blogs.map((blog, index) => {
           return (
@@ -19,13 +19,13 @@ export default function Blogs() {
               <Link href={`/blog/${blog.slug}`}>
                 <div className="flex cursor-pointer items-center justify-between gap-4 rounded-md border p-2 transition ease-in-out hover:scale-105">
                   <div>
-                    <div className="mb-1 text-xs text-[#D4D4D4]">{blog.date}</div>
-                    <div className="text-[#D4D4D4]">{blog.name}</div>
-                    <span className="text-xs text-[#D4D4D4]">{blog.tools}</span>
+                    <div className="mb-1 text-xs text-[#D6D6DC]">{blog.date}</div>
+                    <div className="text-[#D6D6DC]">{blog.name}</div>
+                    <span className="text-xs text-[#D6D6DC]">{blog.tools}</span>
                   </div>
 
                   <div>
-                    <span className="text-[#D4D4D4]">
+                    <span className="text-[#D6D6DC]">
                       <FiArrowUpRight />
                     </span>
                   </div>

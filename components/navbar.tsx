@@ -12,9 +12,7 @@ export default function Navbar() {
     <nav>
       <Link href="/">
         <SiMonzo
-          className={`${
-            pathname === '/' && 'text-[#D4D4D4]'
-          } text-lg text-[#737373] transition delay-75 duration-75 ease-in-out hover:text-[#D4D4D4]`}
+          className={`${pathname === '/' && 'text-[#D6D6DC]'} text-lg text-[#8B8B9C] transition delay-75 duration-75 ease-in-out`}
           size={32}
         />
       </Link>
@@ -23,8 +21,8 @@ export default function Navbar() {
           <li key={page.label}>
             <Link
               className={`${
-                pathname.startsWith(page.href) && 'text-[#D4D4D4]'
-              } text-lg text-[#737373] transition delay-75 duration-75 ease-in-out hover:text-[#D4D4D4]`}
+                pathname.startsWith(page.href) && 'text-[#D6D6DC]'
+              } text-lg text-[#8B8B9C] transition delay-75 duration-75 ease-in-out`}
               href={page.href}
             >
               {page.label}

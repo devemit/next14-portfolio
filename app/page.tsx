@@ -14,21 +14,15 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="py-2">
-      <h1 className="text-2xl font-bold text-[#D4D4D4]">{greet}</h1>
-      <p className="my-4 max-w-lg text-base leading-relaxed text-[#D4D4D4]">{about()}</p>
+      <h1 className="text-2xl font-bold text-[#D6D6DC]">{greet}</h1>
+      <p className="my-4 max-w-lg text-base text-[#D6D6DC]">{about()}</p>
       <div className="mt-6 flex items-center justify-between">
         <div className="flex gap-2">
           <Link href="https://github.com/devemit" target="_blank">
-            <AiFillGithub
-              size={22}
-              className="my-2 cursor-pointer text-[#A3A3A3] hover:text-[#333333]"
-            />
+            <AiFillGithub size={22} className="my-2 cursor-pointer text-[#A3A3A3] hover:text-[#333333]" />
           </Link>
           <Link href="https://www.linkedin.com/in/mitko-iliev/" target="_blank">
-            <AiFillLinkedin
-              size={22}
-              className="my-2 cursor-pointer text-[#A3A3A3] hover:text-[#0A66C2]"
-            />
+            <AiFillLinkedin size={22} className="my-2 cursor-pointer text-[#A3A3A3] hover:text-[#0A66C2]" />
           </Link>
         </div>
         <ContactForm />

@@ -1,4 +1,4 @@
-export default [
+const projects = [
   {
     title: 'Aduvi – Business Management Platform',
     status: '',
@@ -49,31 +49,13 @@ export default [
       'A high-performance CLI tool for checking npm dependencies, security vulnerabilities, and update recommendations. What it does: Dependency Analysis: Check which packages are outdated and need updates Security Auditing: Scan for known vulnerabilities in your dependencies Smart Recommendations: Get safe update suggestions with breaking change warnings High Performance: Parallel processing, caching, and connection pooling for speed Key Features: Multiple Output Formats: Table, JSON, CSV for different use cases Safety-First Updates: Shows safe patch/minor updates by default, major updates with warnings Ready-to-Use Commands: Provides exact npm commands you can copy-paste Performance Optimized: Handles large projects efficiently with configurable concurrency',
   },
   {
-    title: 'Next14 E-commerce',
-    imgUrl: 'https://i.postimg.cc/N0c89Hgv/screencapture-diamondshop-vercel-app-2025-11-01-18-10-57.png',
-    tech: ['Typescript', 'NextJS', 'Tailwind CSS'],
-    liveSite: 'https://diamondshop.vercel.app/',
-    seeCode: 'https://https://github.com/devemit/next14-ecommerce',
-    description:
-      'This project is a modern e-commerce website developed using Next14(SSR) with TypeScript and styled with Tailwind CSS. The website provides users with a seamless shopping experience, allowing them to browse through a variety of products, view detailed product information, and add items to their shopping cart.',
-  },
-  {
     title: 'Crypto DEFI',
     imgUrl: 'https://i.postimg.cc/FFWxWzZt/screencapture-cryptowebdefi-netlify-app-2025-11-01-18-11-36.png',
     tech: ['Typescript', 'ReactJS', 'Tailwind CSS, Crypyo API'],
     liveSite: 'https://cryptowebdefi.netlify.app/',
     seeCode: 'https://github.com/devemit/crypto-react',
     description:
-      'In my recent project, I delved into the fascinating realm of cryptocurrencies by designing and developing a comprehensive website aimed at providing users with valuable insights, news, and resources related to the world of digital assets. This project was driven by the goal of creating a platform where both beginners and experienced enthusiasts can learn, stay updated, and engage with the rapidly evolving cryptocurrency landscape. ',
-  },
-  {
-    title: 'Travel Blog',
-    imgUrl: 'https://github.com/devemit/Weather-app-JS/assets/107273888/fd3dfece-0ef1-4c3d-87f0-3e8c98822fbe',
-    tech: ['Typescript', 'NextJS', 'CSS'],
-    liveSite: 'https://traveldotblog.vercel.app/',
-    seeCode: 'https://github.com/devemit/travel-blog',
-    description:
-      'A web-based Travel Blog built using React and TypeScript. This project allows users to share their travel experiences, including photos and stories, in an interactive and visually appealing format.',
+      'This was one of the first projects I shipped when I started coding. It’s a straightforward crypto hub that pulls market news and stats, and it taught me how to connect APIs, organise data-heavy screens, and keep things readable for anyone curious about digital assets.',
   },
   {
     title: 'Glass Maestros',
@@ -82,7 +64,7 @@ export default [
     liveSite: 'https://glassmaestros.vercel.app/',
     seeCode: 'https://github.com/devemit/business-promote-website',
     description:
-      'Glass Maestros: A TypeScript and Tailwind CSS website that showcases the artistry of a glass installation firm, promoting their craftsmanship with a gallery of stunning installations and essential service information.The website not only demonstrates the companys proficiency in working with glass but also provides essential information about their services, contact details, and perhaps even client testimonials.',
+      'Another early build, this site highlights the work of a glass installation studio. I focused on clear storytelling, simple navigation, and responsive galleries so the team could show off their projects without needing a complicated CMS.',
   },
   {
     title: 'Landing Page',
@@ -91,16 +73,7 @@ export default [
     liveSite: 'https://managepro.vercel.app/',
     seeCode: 'https://github.com/devemit/next14-landing-page-manage',
     description:
-      'Manage is a sleek and responsive landing page built with Next.js and CSS, offering a user-friendly interface for efficient project management. This modern web application ensures seamless navigation on various devices, providing a seamless experience for users.',
-  },
-  {
-    title: 'Notify | Notes App',
-    imgUrl: 'https://github.com/devemit/codeart-test-project/assets/107273888/7075015b-6d2f-4964-aaa5-8fce6eeecb2c',
-    tech: ['Typescript', 'NextJS', 'TailwindCSS'],
-    liveSite: 'https://notifypro.vercel.app/',
-    seeCode: 'https://github.com/devemit/todo-app',
-    description:
-      'A web-based note-taking application built with React and TypeScript. Users can create, edit, view, and delete notes. Notes are saved locally using localStorage for persistence.',
+      'Also from my first wave of projects, this Next.js landing page let me practice clean layouts, subtle animations, and making sure the design stayed sharp on every screen size.',
   },
   {
     title: 'Password Generator',
@@ -109,6 +82,8 @@ export default [
     liveSite: 'https://password-generator-pro.vercel.app/',
     seeCode: 'https://github.com/devemit/password-generator',
     description:
-      'Create a secure and customizable password generator with this TypeScript and React application. Generate strong passwords with various options like length, special characters, and numbers. Easily copy the generated passwords to your clipboard for enhanced security and convenience.',
+      'This early utility app generates secure passwords and gave me a chance to understand component structure, simple state management, and practical UX touches like copy-to-clipboard.',
   },
 ]
+
+export default projects

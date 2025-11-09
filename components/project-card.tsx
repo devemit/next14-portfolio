@@ -21,10 +21,10 @@ export default function ProjectCard({ title, description, tech, seeCode, liveSit
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
       </div>
       <div className="pb-4">
-        <TruncatedText text={description} maxLength={350} className="my-2 text-base" />
+        <TruncatedText text={description} maxLength={320} className="my-2 text-base" />
         <div className="my-3">
           {tech.map((el, id) => (
-            <button className="mx-1 text-xs text-slate-400" key={id}>
+            <button className="mx-1 text-xs text-blue-400" key={id}>
               {el}
             </button>
           ))}

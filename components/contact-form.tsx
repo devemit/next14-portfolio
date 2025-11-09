@@ -85,10 +85,7 @@ export const ContactForm = () => {
 
   return (
     <div>
-      <FaRobot
-        className="animate-pulse cursor-pointer text-2xl text-white"
-        onClick={() => setIsModalOpen(true)}
-      />
+      <FaRobot className="animate-pulse cursor-pointer text-2xl text-white" onClick={() => setIsModalOpen(true)} />
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-6">
           <div
@@ -99,10 +96,7 @@ export const ContactForm = () => {
             }}
             className="relative w-96 rounded-lg bg-white p-6 shadow-lg"
           >
-            <button
-              onClick={() => setIsModalOpen(false)}
-              className="absolute right-2 top-2 text-gray-500 hover:text-gray-700"
-            >
+            <button onClick={() => setIsModalOpen(false)} className="absolute right-2 top-2 text-gray-500 hover:text-gray-700">
               ×
             </button>
             <h2 className="mb-4 text-xl font-bold">Leave a message!</h2>
@@ -162,13 +156,7 @@ export const ContactForm = () => {
             </form>
 
             {status.message && (
-              <div
-                className={`mt-4 rounded p-2 ${
-                  status.type === 'success'
-                    ? 'bg-green-100 text-green-700'
-                    : 'bg-red-100 text-red-700'
-                }`}
-              >
+              <div className={`mt-4 rounded p-2 ${status.type === 'success' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
                 {status.message}
               </div>
             )}

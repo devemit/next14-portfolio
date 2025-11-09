@@ -14,8 +14,8 @@ interface TruncatedTextProps {
 export default function TruncatedText({
   text,
   maxLength,
-  showMoreText = 'See more',
-  showLessText = 'See less',
+  showMoreText = 'more',
+  showLessText = 'less',
   className = '',
 }: TruncatedTextProps) {
   const [isExpanded, setIsExpanded] = useState(false)
@@ -24,16 +24,13 @@ export default function TruncatedText({
   const displayText = isExpanded ? text : truncateText(text, maxLength)
 
   if (!needsTruncation) {
-    return <p className={className}>{text}</p>
+    return <p className={`${className} text-[#D6D6DC]`}>{text}</p>
   }
 
   return (
     <div className={className}>
-      <p>{displayText}</p>
-      <button
-        onClick={() => setIsExpanded(!isExpanded)}
-        className="mt-1 text-sm font-medium text-blue-400 transition-colors hover:text-blue-300"
-      >
+      <p className="text-[#D6D6DC]">{displayText}</p>
+      <button onClick={() => setIsExpanded(!isExpanded)} className="mt-1 text-sm font-medium text-yellow-400">
         {isExpanded ? showLessText : showMoreText}
       </button>
     </div>

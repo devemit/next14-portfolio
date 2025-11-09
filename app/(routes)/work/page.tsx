@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <div className="grid gap-x-6 gap-y-1 text-[#D4D4D4] md:grid-cols-2">
+    <div className="grid gap-x-6 gap-y-1 text-[#D6D6DC] md:grid-cols-2">
       {projects.map((project) => (
         <ProjectCard
           key={project.title}

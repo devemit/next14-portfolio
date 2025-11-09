@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: grey;
+  background: grey;
 }
 
 @layer base {
   :root {
-        --radius: 0.5rem;
-    }
+    --radius: 0.5rem;
+  }
 }
