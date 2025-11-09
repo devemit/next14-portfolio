@@ -15,13 +15,13 @@ export default function TechStack() {
     <section className="flex flex-col gap-4 py-2">
       <h1 className="text-xl italic text-[#e87d7d]">tech stack</h1>
       <p className="max-w-sm text-sm text-[#D6D6DC] md:max-w-md">
-        here is my favourite Tech Stack, languages and frameworks that i use every day in most of my projects.
+        here is my favourite tech stack, languages and frameworks that i use every day in most of my projects.
       </p>
       <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2">
         {shuffledStack.map((ele, index) => (
           <div className="flex items-center gap-5" key={index}>
             {ele.src ? (
-              <Image src={ele.src} width={30} height={30} alt="tech" className="rounded-sm" />
+              <Image src={ele.src} width={26} height={26} alt="tech" className="rounded-sm" />
             ) : (
               <div className="h-8 w-8 rounded-sm bg-[#111016]" />
             )}

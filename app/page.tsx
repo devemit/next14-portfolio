@@ -19,10 +19,10 @@ export default function Home() {
       <div className="mt-6 flex items-center justify-between">
         <div className="flex gap-2">
           <Link href="https://github.com/devemit" target="_blank">
-            <AiFillGithub size={22} className="my-2 cursor-pointer text-[#A3A3A3] hover:text-[#333333]" />
+            <AiFillGithub size={20} className="my-2 cursor-pointer text-[#A3A3A3] hover:text-[#333333]" />
           </Link>
           <Link href="https://www.linkedin.com/in/mitko-iliev/" target="_blank">
-            <AiFillLinkedin size={22} className="my-2 cursor-pointer text-[#A3A3A3] hover:text-[#0A66C2]" />
+            <AiFillLinkedin size={20} className="my-2 cursor-pointer text-[#A3A3A3] hover:text-[#0A66C2]" />
           </Link>
         </div>
         <ContactForm />
