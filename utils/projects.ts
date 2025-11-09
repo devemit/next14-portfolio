@@ -93,6 +93,7 @@ export const experiences = [
     time: '24 - present',
     description:
       'Contributing to Aduvi, an enterprise platform used by 2000+ clients, with a focus on responsive UI, multi-view management, and real-time data sync across the frontend.',
+    href: 'https://technoperia.com/',
   },
   {
     workplace: 'Innovation Dooel',
@@ -100,5 +101,6 @@ export const experiences = [
     time: '24 - present',
     description:
       'Building an AI-powered ECG monitoring experience—integrating Grok-assisted workflows, real-time device data, and clinician dashboards to deliver clearer diagnostics.',
+    href: 'https://innovation.mk/',
   },
 ]

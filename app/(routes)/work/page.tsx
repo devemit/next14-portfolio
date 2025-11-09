@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Link from 'next/link'
 import ProjectCard from '@/components/project-card'
 import { experiences, projects } from '@/utils/projects'
 
@@ -17,7 +18,22 @@ const page = () => {
         <div className="space-y-8">
           {experiences.map((experience) => (
             <article key={experience.workplace} className="space-y-2">
-              <div className="text-base font-semibold text-white">{experience.workplace}</div>
+              <Link
+                href={experience.href}
+                className="group inline-flex items-center text-base font-semibold text-white transition-colors duration-150 hover:text-[#FACC15]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="relative inline-flex items-center">
+                  <span
+                    aria-hidden
+                    className="absolute -left-4 inline-block text-xs text-[#FACC15] opacity-0 transition-all duration-150 group-hover:-left-6 group-hover:opacity-100"
+                  >
+                    →
+                  </span>
+                  <span>{experience.workplace}</span>
+                </span>
+              </Link>
               <div className="text-[#9CA3AF]">
                 <div className="text-xs lowercase">{experience.position}</div>
                 <div className="text-xs lowercase text-[#6B7280]">{formatTime(experience.time)}</div>
