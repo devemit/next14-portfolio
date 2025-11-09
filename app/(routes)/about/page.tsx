@@ -16,13 +16,13 @@ export default function About() {
         management, and ensuring cross-device compatibility to deliver seamless user experiences.
       </p>
       <br />
-      <p className="text-[#D6D6DC]">
+      <p className="text-sm text-[#D6D6DC]">
         In addition to my core front-end skills, I possess substantial experience working with Blazor .NET, where I have developed
         interactive web components and managed complex state solutions for enterprise-scale healthcare and business applications. My
         comprehensive understanding of various development paradigms enables me to create robust, scalable solutions.
       </p>
       <br />
-      <p className="text-[#D6D6DC]">
+      <p className="text-sm text-[#D6D6DC]">
         I am proficient with modern CSS frameworks like Tailwind CSS, Ant-Design, server-side rendering with Next.js, and some basic
         knowledge of Node/Express.js, allowing me to deliver full-stack applications that prioritize performance, maintainability, and
         user-centric design.
