@@ -17,7 +17,7 @@ export default function Blogs() {
           return (
             <ul key={index}>
               <Link href={`/blog/${blog.slug}`}>
-                <div className="flex cursor-pointer items-center justify-between gap-4 rounded-md transition ease-in-out hover:scale-105">
+                <div className="flex cursor-pointer items-center justify-between gap-4">
                   <div>
                     <div className="mb-1 text-xs text-[#D6D6DC]">{blog.date}</div>
                     <div className="text-sm text-[#D6D6DC]">{blog.name}</div>

@@ -14,8 +14,8 @@ export default function Page() {
 
   return (
     <div className="mx-auto max-w-md text-[#D6D6DC]">
-      <h1 className="mb-4 text-2xl font-bold">{blog?.name}</h1>
-      <div className="mb-4">{blog?.description}</div>
+      <h1 className="mb-4 text-xl font-bold">{blog?.name}</h1>
+      <div className="mb-4 text-sm">{blog?.description}</div>
     </div>
   )
 }

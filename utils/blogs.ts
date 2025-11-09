@@ -10,7 +10,7 @@ I’m using TypeScript with strict mode and custom types to keep the data model 
 
 Prisma and PostgreSQL manage the itinerary data with proper relationships and caching so I can store and revisit past trips. I use Grok AI to plan both weekend getaways and longer trips by asking for itineraries that match my budget, vibe, and time constraints.
 
-Grok helps shortlist destinations, flag visa or safety notes, and returns realistic daily routes that I can edit. The app blends those recommendations with live weather forecasts, cost breakdowns, packing reminders, and calendar exports. Solving that messy planning workflow lets me go from dream board to booked ticket without the spreadsheet fatigue.`,
+Grok helps shortlist destinations, flag visa or safety notes, and returns realistic daily routes that I can edit. The app blends those recommendations with live weather forecasts, cost breakdowns. It’s still very much a work in progress—this is the initial version I’m using to prove out the workflow before layering in more automation and collaboration. Solving that messy planning workflow lets me go from dream board to booked ticket without the spreadsheet fatigue.`,
     category: 'Personal Project',
     status: 'Beta Phase',
   },
