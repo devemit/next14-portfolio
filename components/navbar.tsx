@@ -22,7 +22,7 @@ export default function Navbar() {
             <Link
               className={`${
                 pathname.startsWith(page.href) && 'text-[#D6D6DC]'
-              } text-lg text-[#8B8B9C] transition delay-75 duration-75 ease-in-out`}
+              } text-sm text-[#8B8B9C] transition delay-75 duration-75 ease-in-out`}
               href={page.href}
             >
               {page.label}

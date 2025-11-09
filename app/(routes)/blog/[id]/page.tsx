@@ -6,7 +6,6 @@ export interface Blog {
   slug: string
   name: string
   description: string
-  skills: string
 }
 
 export default function Page() {
@@ -17,9 +16,6 @@ export default function Page() {
     <div className="mx-auto max-w-md text-[#D6D6DC]">
       <h1 className="mb-4 text-2xl font-bold">{blog?.name}</h1>
       <div className="mb-4">{blog?.description}</div>
-      <br />
-      <p className="my-1 text-base font-semibold">Tools used:</p>
-      <div className="text-[#D6D6DC]">{blog?.skills}</div>
     </div>
   )
 }

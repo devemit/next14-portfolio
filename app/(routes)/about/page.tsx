@@ -8,9 +8,9 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <section className="py-2">
-      <h1 className="text-2xl text-[#D6D6DC]">What I do</h1>
+      <h1 className="text-xl italic text-[#e87d7d]">what i do</h1>
       <br />
-      <p className="text-[#D6D6DC]">
+      <p className="text-sm text-[#D6D6DC]">
         I have nearly two years of professional experience specializing in React, TypeScript, and Redux, primarily at Technoperia, where I
         contribute to the development of Aduvi. My expertise includes designing reusable components, implementing efficient state
         management, and ensuring cross-device compatibility to deliver seamless user experiences.

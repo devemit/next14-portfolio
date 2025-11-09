@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
-import projects from '@/utils/projects'
 import ProjectCard from '@/components/project-card'
+import { experiences, projects } from '@/utils/projects'
 
 export const metadata: Metadata = {
   title: 'Some of my work',
@@ -9,21 +9,39 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <div className="grid gap-x-6 gap-y-1 text-[#D6D6DC] md:grid-cols-2">
-      {projects.map((project) => (
-        <ProjectCard
-          key={project.title}
-          title={project.title}
-          description={project.description}
-          imgUrl={project.imgUrl}
-          seeCode={project.seeCode}
-          liveSite={project.liveSite}
-          tech={project.tech}
-          status={project.status}
-        />
-      ))}
+    <div className="space-y-12 text-[#D6D6DC]">
+      <section className="space-y-6">
+        <h2 className="text-xs text-yellow-400">work</h2>
+        <div className="space-y-8">
+          {experiences.map((experience) => (
+            <article key={experience.workplace} className="space-y-2">
+              <div className="text-base font-semibold text-white">{experience.workplace}</div>
+              <div className="text-[#9CA3AF]">
+                <div className="text-xs lowercase">{experience.position}</div>
+                <div className="text-xs lowercase text-[#6B7280]">{experience.time}</div>
+              </div>
+              <p className="text-xs lowercase text-[#D1D5DB]">{experience.description}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <h2 className="text-xs text-yellow-400">projects</h2>
+      <section className="grid gap-x-6 gap-y-1 md:grid-cols-2">
+        {projects.map((project) => (
+          <ProjectCard
+            key={project.title}
+            title={project.title}
+            description={project.description}
+            imgUrl={project.imgUrl}
+            seeCode={project.seeCode}
+            liveSite={project.liveSite}
+            tech={project.tech}
+            status={project.status}
+          />
+        ))}
+      </section>
     </div>
   )
 }
-
 export default page

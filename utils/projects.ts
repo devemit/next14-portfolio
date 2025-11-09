@@ -1,4 +1,4 @@
-const projects = [
+export const projects = [
   {
     title: 'Aduvi – Business Management Platform',
     status: '',
@@ -86,4 +86,19 @@ const projects = [
   },
 ]
 
-export default projects
+export const experiences = [
+  {
+    workplace: 'Technoperia',
+    position: 'Frontend Developer',
+    time: '24 - present',
+    description:
+      'Contributing to Aduvi, an enterprise platform used by 2000+ clients, with a focus on responsive UI, multi-view management, and real-time data sync across the frontend.',
+  },
+  {
+    workplace: 'Innovation Dooel',
+    position: 'Software Developer',
+    time: '24 - present',
+    description:
+      'Building an AI-powered ECG monitoring experience—integrating Grok-assisted workflows, real-time device data, and clinician dashboards to deliver clearer diagnostics.',
+  },
+]

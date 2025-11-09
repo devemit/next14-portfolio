@@ -13,9 +13,9 @@ export default function TechStack() {
 
   return (
     <section className="flex flex-col gap-4 py-2">
-      <h1 className="text-2xl text-[#D6D6DC]">Tech Stack</h1>
-      <p className="text-md max-w-sm text-[#D6D6DC] md:max-w-md">
-        Here is my favourite Tech Stack, languages and frameworks that i use every day in most of my projects.
+      <h1 className="text-xl italic text-[#e87d7d]">tech stack</h1>
+      <p className="max-w-sm text-sm text-[#D6D6DC] md:max-w-md">
+        here is my favourite Tech Stack, languages and frameworks that i use every day in most of my projects.
       </p>
       <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2">
         {shuffledStack.map((ele, index) => (
@@ -25,7 +25,7 @@ export default function TechStack() {
             ) : (
               <div className="h-8 w-8 rounded-sm bg-[#111016]" />
             )}
-            <span className="rounded-sm bg-slate-900 p-1 text-sm tracking-wider text-[#D6D6DC]">{ele.label}</span>
+            <span className="rounded-sm bg-slate-900 p-1 text-xs tracking-wider text-[#D6D6DC]">{ele.label}</span>
           </div>
         ))}
       </div>

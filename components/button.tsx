@@ -11,7 +11,7 @@ export default function Button({ to, children }: ButtonProps) {
     <Link
       target="_blank"
       href={to}
-      className={`flex items-center gap-2 whitespace-nowrap border border-gray-500 px-2 py-1 text-[#D6D6DC] transition ease-in-out hover:-translate-y-1 hover:bg-[#737373]`}
+      className={`flex items-center gap-2 whitespace-nowrap border border-gray-500 px-2 py-1 text-xs text-[#D6D6DC] transition ease-in-out hover:-translate-y-1 hover:bg-[#737373]`}
     >
       {children}
       <FiArrowUpRight />

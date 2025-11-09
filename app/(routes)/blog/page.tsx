@@ -11,16 +11,17 @@ export const metadata: Metadata = {
 export default function Blogs() {
   return (
     <>
-      <h1 className="mb-2 py-2 text-2xl text-[#D6D6DC]">Blogs</h1>
+      <h1 className="mb-2 py-2 text-xl italic text-[#e87d7d]">blog</h1>
       <main className="flex flex-col gap-2">
         {blogs.map((blog, index) => {
           return (
             <ul key={index}>
               <Link href={`/blog/${blog.slug}`}>
-                <div className="flex cursor-pointer items-center justify-between gap-4 rounded-md border p-2 transition ease-in-out hover:scale-105">
+                <div className="flex cursor-pointer items-center justify-between gap-4 rounded-md transition ease-in-out hover:scale-105">
                   <div>
                     <div className="mb-1 text-xs text-[#D6D6DC]">{blog.date}</div>
-                    <div className="text-[#D6D6DC]">{blog.name}</div>
+                    <div className="text-sm text-[#D6D6DC]">{blog.name}</div>
+                    <br />
                     <span className="text-xs text-[#D6D6DC]">{blog.tools}</span>
                   </div>
 

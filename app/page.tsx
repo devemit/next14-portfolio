@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="py-2">
-      <h1 className="text-2xl font-bold text-[#D6D6DC]">{greet}</h1>
-      <p className="my-4 max-w-lg text-base text-[#D6D6DC]">{about()}</p>
+      <h1 className="text-lg font-bold text-[#D6D6DC]">{greet}</h1>
+      <p className="my-4 max-w-lg text-sm text-[#D6D6DC]">{about()}</p>
       <div className="mt-6 flex items-center justify-between">
         <div className="flex gap-2">
           <Link href="https://github.com/devemit" target="_blank">
