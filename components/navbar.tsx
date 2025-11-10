@@ -23,7 +23,7 @@ export default function Navbar() {
         {pages.map((page) => (
           <li key={page.label}>
             <Link
-              className={`relative inline-flex text-sm text-[#8B8B9C] transition-colors duration-200 ease-out after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-yellow-400 after:transition-transform after:duration-200 after:ease-out hover:text-[#D6D6DC] hover:after:scale-x-100 ${
+              className={`relative inline-flex text-sm text-[#8B8B9C] transition-colors duration-200 ease-out after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-yellow-400 after:transition-transform after:duration-200 after:ease-out hover:text-[#D6D6DC] hover:after:scale-x-100 xl:text-base ${
                 pathname.startsWith(page.href) ? 'text-[#D6D6DC] after:scale-x-100' : ''
               }`}
               href={page.href}

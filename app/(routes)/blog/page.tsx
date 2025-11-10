@@ -20,7 +20,7 @@ export default function Blogs() {
                 <div className="flex cursor-pointer items-center justify-between gap-4">
                   <div>
                     <div className="mb-1 text-xs text-[#D6D6DC]">{blog.date}</div>
-                    <div className="text-sm text-[#D6D6DC]">{blog.name}</div>
+                    <div className="text-sm text-[#D6D6DC] xl:text-base">{blog.name}</div>
                     <br />
                     <span className="text-xs text-[#D6D6DC]">{blog.tools}</span>
                   </div>
