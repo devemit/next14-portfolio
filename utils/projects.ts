@@ -31,6 +31,15 @@ export const projects = [
       'Easy Travel is an innovative travel web application currently in beta phase, allowing users to explore destinations, check the weather, and plan their trips with the help of AI. Users can browse featured locations, access essential travel information, and receive personalized recommendations to enhance their travel experience. With a user-friendly interface, Easy Travel makes trip planning simple and enjoyable.',
   },
   {
+	title: 'Plexusmenu QR Menus',
+	imgUrl: 'https://i.postimg.cc/JzYMK0P4/screencapture-plexusmenu-vercel-app-2025-11-28-00-04-04.png',
+	tech: ['Typescript', 'ReactJS', 'Tailwind CSS'],
+	liveSite: 'https://plexusmenu.vercel.app/',
+	seeCode: 'https://github.com/devemit/plexusmenu',
+	description:
+	  'A business promotion platform I developed and own, specializing in creating custom QR menu solutions for restaurants, bars, and hotels. The platform offers a selection of professional templates that clients can choose from, with full customization capabilities including branding, color schemes, and layout preferences. I work directly with clients through a collaborative process, implementing updates and refinements based on their specific needs and feedback to ensure each digital menu reflects their unique brand identity.',
+ },
+  {
     title: 'Reform Beach&Bar',
     imgUrl: 'https://user-images.githubusercontent.com/107273888/229608163-2a1aeed4-a133-4549-98cd-35f5abe72a35.png',
     tech: ['Typescript', 'ReactJS', 'CSS'],
