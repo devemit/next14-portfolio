@@ -34,10 +34,10 @@ export const projects = [
 	title: 'Plexusmenu QR Menus',
 	imgUrl: 'https://i.postimg.cc/Kz0nQpXW/screencapture-menusinternational-vercel-app-2025-12-16-13-12-39.png',
 	tech: ['Typescript', 'Nextjs', 'Prisma','Supabase', 'Tailwind CSS'],
-	liveSite: 'https://menusinternational.vercel.app/',
+	liveSite: 'https://plexusmenus.com/',
 	seeCode: 'https://github.com/devemit/menusinternational',
 	description:
-	  'plexusmenu is a SaaS platform that lets restaurants create digital menus accessible via QR codes: owners sign up, add menu items (name, price, description, currency), and generate QR codes for customers to scan; the app offers free and premium subscriptions (via PayPal) with premium features including custom QR code styles, downloadable codes, unlimited items, and no watermark, enabling instant menu updates without reprinting physical menus..',
+	  'plexusmenu is a SaaS platform that lets restaurants create digital menus accessible via QR codes: owners sign up, add menu items (name, price, description, currency), and generate QR codes for customers to scan; the app offers free and premium subscriptions (via PayPal - currently running free) with premium features including custom QR code styles, downloadable codes, unlimited items, and no watermark, enabling instant menu updates without reprinting physical menus..',
  },
   {
 	title: 'Plexusmenu QR Menus - Promote App',
