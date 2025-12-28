@@ -11,7 +11,7 @@ export default function About() {
       <h1 className="text-xl italic text-[#e87d7d]">what i do</h1>
       <br />
       <p className="text-sm text-[#D6D6DC] xl:text-base">
-        I have nearly two years of professional experience specializing in React, TypeScript, and Redux, primarily at Technoperia, where I
+        I have nearly three years of professional experience specializing in React, TypeScript, and Redux, primarily at Technoperia, where I
         contribute to the development of Aduvi. My expertise includes designing reusable components, implementing efficient state
         management, and ensuring cross-device compatibility to deliver seamless user experiences.
       </p>
