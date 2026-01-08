@@ -1,6 +1,6 @@
 export const projects = [
   {
-    title: 'Aduvi – Business Management Platform',
+    title: 'Aduvi – White-label CRM Platform',
     status: '',
     imgUrl: 'https://i.postimg.cc/jjcfD3gv/screencapture-aduvi-2025-11-01-18-09-31-2.png',
     tech: ['Typescript', 'ReactJS', 'SASS', 'Redux', 'Ant Design'],
