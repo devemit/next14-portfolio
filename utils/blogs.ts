@@ -14,6 +14,20 @@ Grok helps shortlist destinations, flag visa or safety notes, and returns realis
     category: 'Personal Project',
     status: 'Beta Phase',
   },
+
+  {
+    date: 'Dec 2025 - Present',
+    slug: 'plexusmenu-qr-menus',
+    name: 'Plexusmenu QR Menus',
+    tools: 'TypeScript, Next.js 16, Tailwind CSS, Prisma, Supabase',
+    description: `I built Plexusmenu QR Menus to solve a real problem I saw in the restaurant industry—the constant need to reprint physical menus whenever prices or items change. Restaurants were spending time and money on menu updates, and customers were often looking at outdated information. This SaaS platform lets restaurant owners create digital menus accessible via QR codes, enabling instant updates without any printing costs.
+
+I'm using TypeScript with strict mode and custom types to ensure type safety across the application, and Next.js 16 with server components for fast page loads and optimal performance. Tailwind CSS handles the responsive design so menus look great on any device customers use to scan and view.
+
+Prisma and Supabase manage the menu data with proper relationships and real-time capabilities. Restaurant owners can sign up, add menu items with details like name, price, description, and currency, then generate QR codes for their customers to scan. The platform offers both free and premium subscriptions (currently running free), with premium features including custom QR code styles, downloadable codes, unlimited menu items, and no watermark. The ability to update menus instantly means restaurants can respond quickly to seasonal changes, pricing adjustments, or ingredient availability without the hassle and expense of reprinting.`,
+    category: 'Personal Project',
+    status: 'Live, free to use',
+  },
 ]
 
 export default blogs

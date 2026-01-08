@@ -14,7 +14,7 @@ export const projects = [
     status: '',
     imgUrl:
       'https://i.postimg.cc/xTNL6R8f/screencapture-viewecg-Doctor-Monitoring-b374668e-ee0f-4395-a019-ed0e94e577fb-2025-11-01-18-10-32.png',
-    tech: ['.NET C# Blazor'],
+    tech: ['.NET C# Blazor Javascript'],
     liveSite: 'https://viewecg.com/',
     seeCode: 'https://viewecg.com/',
     description:
