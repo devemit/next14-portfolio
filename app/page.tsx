@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
 import { ContactForm } from '@/components/contact-form'
+import GithubActivity from '@/components/github-activity'
 
 export const metadata: Metadata = {
   title: 'Mitko | Developer, Designer, Creator',
@@ -27,6 +28,7 @@ export default function Home() {
         </div>
         <ContactForm />
       </div>
+      <GithubActivity />
     </main>
   )
 }
