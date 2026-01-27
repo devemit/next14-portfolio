@@ -9,16 +9,14 @@ export const metadata: Metadata = {
 }
 
 export default function TechStack() {
-  const shuffledStack = [...stack].sort(() => Math.random() - 0.5)
-
   return (
     <section className="flex flex-col gap-4 py-2">
       <h1 className="text-xl italic text-[#e87d7d]">tech stack</h1>
       <p className="max-w-sm text-sm text-[#D6D6DC] md:max-w-md xl:text-base">
-        here is my favourite tech stack, languages and frameworks that i use every day in most of my projects.
+        here is my favourite tech stack, languages and frameworks and tools that i use every day in most of my projects.
       </p>
       <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2">
-        {shuffledStack.map((ele, index) => (
+        {stack?.map((ele, index) => (
           <div className="flex items-center gap-5" key={index}>
             {ele.src ? (
               <Image src={ele.src} width={26} height={26} alt="tech" className="rounded-sm" />
