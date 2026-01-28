@@ -13,7 +13,7 @@ export default function TechStack() {
     <section className="flex flex-col gap-4 py-2">
       <h1 className="text-xl italic text-[#e87d7d]">tech stack</h1>
       <p className="max-w-sm text-sm text-[#D6D6DC] md:max-w-md xl:text-base">
-        here is my favourite tech stack, languages and frameworks and tools that i use every day in most of my projects.
+        here is my favourite tech stack, languages, frameworks and tools that i use every day in most of my projects.
       </p>
       <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2">
         {stack?.map((ele, index) => (
