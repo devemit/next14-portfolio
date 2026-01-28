@@ -18,11 +18,11 @@ export default function TechStack() {
       <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2">
         {stack?.map((ele, index) => (
           <div className="flex items-center gap-5" key={index}>
-            {ele.src ? (
-              <Image src={ele.src} width={26} height={26} alt="tech" className="rounded-sm" />
-            ) : (
-              <div className="h-8 w-8 rounded-sm bg-[#111016]" />
-            )}
+            <div className="relative h-8 w-8 overflow-hidden rounded-sm bg-[#111016]">
+              {ele.src && (
+                <Image src={ele.src} alt={ele.label} fill sizes="32px" className="object-contain" loading={index < 4 ? 'eager' : 'lazy'} />
+              )}
+            </div>
             <span className="rounded-sm bg-slate-900 p-1 text-xs tracking-wider text-[#D6D6DC] xl:text-sm">{ele.label}</span>
           </div>
         ))}
