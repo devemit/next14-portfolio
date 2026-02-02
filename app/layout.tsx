@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Loading from './loading'
 
+import { Analytics } from '@vercel/analytics/next'
 import Navbar from '@/components/navbar'
 
 import { Manrope, JetBrains_Mono } from 'next/font/google'
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="mx-4 flex max-w-4xl flex-col gap-12 px-4 py-12 md:mt-20 md:flex-row lg:mx-auto lg:mt-32">
             <Navbar />
             {children}
+            <Analytics />
           </div>
         </Suspense>
       </body>
