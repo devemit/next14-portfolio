@@ -24,12 +24,12 @@ export default function TruncatedText({
   const displayText = isExpanded ? text : truncateText(text, maxLength)
 
   if (!needsTruncation) {
-    return <p className={`${className} text-[#D6D6DC]`}>{text}</p>
+    return <p className={`${className} text-muted-foreground`}>{text}</p>
   }
 
   return (
     <div className={className}>
-      <p className="text-[#D6D6DC]">{displayText}</p>
+      <p className="text-muted-foreground">{displayText}</p>
       <button onClick={() => setIsExpanded(!isExpanded)} className="mt-1 text-xs font-medium text-yellow-400">
         {isExpanded ? showLessText : showMoreText}
       </button>

@@ -85,24 +85,24 @@ export const ContactForm = () => {
 
   return (
     <div>
-      <FaRobot className="animate-pulse cursor-pointer text-2xl text-white" onClick={() => setIsModalOpen(true)} />
+      <FaRobot className="animate-pulse cursor-pointer text-2xl text-foreground" onClick={() => setIsModalOpen(true)} />
       {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-6">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-6">
           <div
             onKeyDown={(e) => {
               if (e.key === 'Escape') {
                 setIsModalOpen(false)
               }
             }}
-            className="relative w-96 rounded-lg bg-white p-6 shadow-lg"
+            className="relative w-96 rounded-lg border border-border bg-card p-6 text-card-foreground shadow-lg"
           >
-            <button onClick={() => setIsModalOpen(false)} className="absolute right-2 top-2 text-gray-500 hover:text-gray-700">
+            <button onClick={() => setIsModalOpen(false)} className="absolute right-2 top-2 text-muted-foreground transition-colors hover:text-foreground">
               ×
             </button>
             <h2 className="mb-4 text-xl font-bold">Leave a message!</h2>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
-                <Label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                <Label htmlFor="name" className="block text-sm font-medium text-card-foreground">
                   Name
                 </Label>
                 <Input
@@ -112,12 +112,12 @@ export const ContactForm = () => {
                   value={formState.name}
                   onChange={(e) => setFormState((prev) => ({ ...prev, name: e.target.value }))}
                   required
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  className="mt-1 block w-full rounded-md border-border bg-background text-foreground shadow-sm focus:border-blue-500 focus:ring-blue-500"
                 />
               </div>
 
               <div className="mb-4">
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="email" className="block text-sm font-medium text-card-foreground">
                   Email
                 </label>
                 <Input
@@ -127,12 +127,12 @@ export const ContactForm = () => {
                   value={formState.email}
                   onChange={(e) => setFormState((prev) => ({ ...prev, email: e.target.value }))}
                   required
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  className="mt-1 block w-full rounded-md border-border bg-background text-foreground shadow-sm focus:border-blue-500 focus:ring-blue-500"
                 />
               </div>
 
               <div className="mb-4">
-                <Label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                <Label htmlFor="message" className="block text-sm font-medium text-card-foreground">
                   Message
                 </Label>
                 <Textarea
@@ -142,7 +142,7 @@ export const ContactForm = () => {
                   onChange={(e) => setFormState((prev) => ({ ...prev, message: e.target.value }))}
                   required
                   rows={4}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  className="mt-1 block w-full rounded-md border-border bg-background text-foreground shadow-sm focus:border-blue-500 focus:ring-blue-500"
                 ></Textarea>
               </div>
 

@@ -27,5 +27,28 @@
 @layer base {
   :root {
     --radius: 0.5rem;
+    --background: 245 30% 97%;
+    --foreground: 228 20% 16%;
+    --muted: 230 20% 92%;
+    --muted-foreground: 225 10% 40%;
+    --card: 0 0% 100%;
+    --card-foreground: 228 20% 16%;
+    --border: 228 16% 84%;
+    --accent: 48 96% 53%;
+  }
+
+  .dark {
+    --background: 240 9% 9%;
+    --foreground: 240 10% 85%;
+    --muted: 240 5% 18%;
+    --muted-foreground: 240 10% 85%;
+    --card: 250 17% 8%;
+    --card-foreground: 240 10% 85%;
+    --border: 0 0% 23%;
+    --accent: 48 96% 53%;
+  }
+
+  body {
+    @apply bg-background text-foreground;
   }
 }

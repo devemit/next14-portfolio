@@ -12,7 +12,7 @@ const formatTime = (time: string) => (time.startsWith("'") ? time : time.replace
 
 const page = () => {
   return (
-    <div className="space-y-12 text-[#D6D6DC]">
+    <div className="space-y-12 text-foreground">
       <section className="space-y-6">
         <h2 className="text-xs text-yellow-400">work</h2>
         <div className="space-y-8">
@@ -20,7 +20,7 @@ const page = () => {
             <article key={experience.workplace} className="space-y-2">
               <Link
                 href={experience.href}
-                className="group inline-flex items-center text-base font-semibold text-white transition-colors duration-150 hover:text-[#FACC15]"
+                className="group inline-flex items-center text-base font-semibold text-foreground transition-colors duration-150 hover:text-[#FACC15]"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -34,11 +34,11 @@ const page = () => {
                   <span>{experience.workplace}</span>
                 </span>
               </Link>
-              <div className="text-[#9CA3AF]">
+              <div className="text-muted-foreground">
                 <div className="text-xs lowercase">{experience.position}</div>
-                <div className="text-xs lowercase text-[#6B7280]">{formatTime(experience.time)}</div>
+                <div className="text-xs lowercase text-muted-foreground/80">{formatTime(experience.time)}</div>
               </div>
-              <p className="text-xs lowercase text-[#D1D5DB]">{experience.description}</p>
+              <p className="text-xs lowercase text-muted-foreground">{experience.description}</p>
             </article>
           ))}
         </div>

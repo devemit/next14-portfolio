@@ -10,19 +10,19 @@ export default function About() {
     <section className="py-2">
       <h1 className="text-xl italic text-[#e87d7d]">what i do</h1>
       <br />
-      <p className="text-sm text-[#D6D6DC] xl:text-base">
+      <p className="text-sm text-muted-foreground xl:text-base">
         I have nearly three years of professional experience specializing in React, TypeScript, and Redux. At Technoperia, I worked on
         Aduvi, an enterprise platform used by 2000+ clients across multiple industries. My core focus included building reusable components,
         implementing efficient state management, and ensuring consistent cross-device performance.
       </p>
       <br />
-      <p className="text-sm text-[#D6D6DC] xl:text-base">
+      <p className="text-sm text-muted-foreground xl:text-base">
         Alongside my core front-end stack, I have solid experience with Blazor .NET, where I developed interactive web components and
         handled complex state logic for enterprise healthcare and business applications. This cross-stack experience helps me deliver robust,
         scalable, and maintainable solutions.
       </p>
       <br />
-      <p className="text-sm text-[#D6D6DC] xl:text-base">
+      <p className="text-sm text-muted-foreground xl:text-base">
         I am proficient with modern UI tooling such as Tailwind CSS and Ant Design, and I regularly use Next.js for server-side rendering
         and performance-focused delivery. I also have practical backend experience with Node.js and Express, allowing me to contribute to
         full-stack products with a strong emphasis on maintainability and user-centered design.

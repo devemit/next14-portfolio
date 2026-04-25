@@ -20,15 +20,15 @@ export default function Blogs() {
               <Link href={`/blog/${blog.slug}`}>
                 <div className="flex cursor-pointer items-center justify-between gap-4">
                   <div className="flex-1">
-                    <div className="mb-1 text-xs text-[#D6D6DC]">{blog.date}</div>
-                    <div className="text-sm text-[#D6D6DC] xl:text-base">{blog.name}</div>
+                    <div className="mb-1 text-xs text-muted-foreground">{blog.date}</div>
+                    <div className="text-sm text-foreground xl:text-base">{blog.name}</div>
                     <br />
-                    <span className="text-xs text-[#D6D6DC]">{blog.tools}</span>
-                    {!isLast && <hr className="mt-4 border-t border-[#3A3A3A]" />}
+                    <span className="text-xs text-muted-foreground">{blog.tools}</span>
+                    {!isLast && <hr className="mt-4 border-t border-border" />}
                   </div>
 
                   <div>
-                    <span className="text-[#D6D6DC]">
+                    <span className="text-foreground">
                       <FiArrowUpRight />
                     </span>
                   </div>

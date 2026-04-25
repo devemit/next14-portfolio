@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import { getGitHubActivity, GitHubActivityData } from '@/app/actions/github-activity'
+import { useTheme } from 'next-themes'
 
 const GITHUB_USERNAME = 'devemit' // Change this to your GitHub username
 
@@ -9,6 +10,8 @@ const GitHubActivity = () => {
   const [data, setData] = useState<GitHubActivityData | null>(null)
   const [loading, setLoading] = useState(true)
   const [hoveredDay, setHoveredDay] = useState<{ count: number; date: string } | null>(null)
+  const [mounted, setMounted] = useState(false)
+  const { resolvedTheme } = useTheme()
 
   useEffect(() => {
     const fetchData = async () => {
@@ -17,6 +20,10 @@ const GitHubActivity = () => {
       setLoading(false)
     }
     fetchData()
+  }, [])
+
+  useEffect(() => {
+    setMounted(true)
   }, [])
 
   const formatDate = (dateStr: string) => {
@@ -33,9 +40,9 @@ const GitHubActivity = () => {
     return (
       <div className="mt-8">
         <div className="mb-3 flex items-center gap-2">
-          <div className="h-4 w-32 animate-pulse rounded bg-[#2a2a2e]" />
+          <div className="h-4 w-32 animate-pulse rounded bg-muted" />
         </div>
-        <div className="h-[100px] w-full animate-pulse rounded-lg bg-[#2a2a2e]" />
+        <div className="h-[100px] w-full animate-pulse rounded-lg bg-muted" />
       </div>
     )
   }
@@ -43,7 +50,7 @@ const GitHubActivity = () => {
   if (!data) {
     return (
       <div className="mt-8">
-        <p className="text-sm text-[#6e6e73]">Unable to load GitHub activity. Please check your configuration.</p>
+        <p className="text-sm text-muted-foreground">Unable to load GitHub activity. Please check your configuration.</p>
       </div>
     )
   }
@@ -52,7 +59,7 @@ const GitHubActivity = () => {
     <div className="mt-8">
       <span className="text-sm font-medium text-yellow-400">github activity</span>
       <div className="mb-3 flex items-center gap-2">
-        <span className="mt-4 text-sm font-medium text-[#d6d6dc]">
+        <span className="mt-4 text-sm font-medium text-foreground">
           {data.totalContributions.toLocaleString()} contributions in the last year
         </span>
       </div>
@@ -65,9 +72,9 @@ const GitHubActivity = () => {
               {week.days.map((day, dayIndex) => (
                 <div
                   key={`${weekIndex}-${dayIndex}`}
-                  className="contribution-cell relative h-[11px] w-[11px] rounded-[2px] transition-all hover:ring-1 hover:ring-[#484848]"
+                  className="contribution-cell relative h-[11px] w-[11px] rounded-[2px] transition-all hover:ring-1 hover:ring-border"
                   style={{
-                    backgroundColor: getLevelColor(day.level),
+                    backgroundColor: getLevelColor(day.level, mounted ? resolvedTheme === 'dark' : true),
                   }}
                   onMouseEnter={() => setHoveredDay({ count: day.count, date: day.date })}
                   onMouseLeave={() => setHoveredDay(null)}
@@ -79,20 +86,24 @@ const GitHubActivity = () => {
 
         {/* Tooltip */}
         {hoveredDay && (
-          <div className="pointer-events-none fixed left-1/2 top-4 z-50 -translate-x-1/2 transform rounded-md bg-[#1c1c1e] px-3 py-2 text-xs shadow-lg ring-1 ring-[#3a3a3c]">
-            <span className="font-semibold text-[#d6d6dc]">
+          <div className="pointer-events-none fixed left-1/2 top-4 z-50 -translate-x-1/2 transform rounded-md bg-card px-3 py-2 text-xs shadow-lg ring-1 ring-border">
+            <span className="font-semibold text-card-foreground">
               {hoveredDay.count} contribution{hoveredDay.count !== 1 ? 's' : ''}
             </span>
-            <span className="text-[#6e6e73]"> on {formatDate(hoveredDay.date)}</span>
+            <span className="text-muted-foreground"> on {formatDate(hoveredDay.date)}</span>
           </div>
         )}
 
         {/* Legend */}
-        <div className="mt-4 flex items-center justify-end gap-2 text-xs text-[#6e6e73]">
+        <div className="mt-4 flex items-center justify-end gap-2 text-xs text-muted-foreground">
           <span>Less</span>
           <div className="flex gap-[3px]">
             {[0, 1, 2, 3, 4].map((level) => (
-              <div key={level} className="h-[11px] w-[11px] rounded-[2px]" style={{ backgroundColor: getLevelColor(level) }} />
+              <div
+                key={level}
+                className="h-[11px] w-[11px] rounded-[2px]"
+                style={{ backgroundColor: getLevelColor(level, mounted ? resolvedTheme === 'dark' : true) }}
+              />
             ))}
           </div>
           <span>More</span>
@@ -102,15 +113,25 @@ const GitHubActivity = () => {
   )
 }
 
-function getLevelColor(level: number): string {
-  const colors = [
+function getLevelColor(level: number, isDark: boolean): string {
+  const darkColors = [
     '#222225', // Level 0 - no contributions (subtle)
     '#0e4429', // Level 1 - few contributions
     '#006d32', // Level 2 - some contributions
     '#26a641', // Level 3 - more contributions
     '#39d353', // Level 4 - many contributions
   ]
-  return colors[level] || colors[0]
+
+  const lightColors = [
+    '#ebedf0', // Level 0 - no contributions (subtle)
+    '#9be9a8', // Level 1 - few contributions
+    '#40c463', // Level 2 - some contributions
+    '#30a14e', // Level 3 - more contributions
+    '#216e39', // Level 4 - many contributions
+  ]
+
+  const palette = isDark ? darkColors : lightColors
+  return palette[level] || palette[0]
 }
 
 export default GitHubActivity

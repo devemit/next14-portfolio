@@ -1,5 +1,4 @@
-export const name = 'mitko'
-export const greet = `hey, i'm ${name} 👋`
+export const greet = 'Mitko'
 export const about = () => {
   return (
     <>
