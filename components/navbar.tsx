@@ -40,7 +40,7 @@ export default function Navbar() {
           {isDark ? <Sun size={13} /> : <Moon size={13} />}
         </button>
       </div>
-      <ul className="flex gap-4 py-4 md:mt-4 md:flex-col">
+      <ul className="mt-3 flex w-full justify-center gap-6 rounded-xl border border-border/70 bg-card/70 py-2 backdrop-blur-sm md:mt-4 md:w-auto md:justify-start md:gap-4 md:rounded-none md:border-0 md:bg-transparent md:py-0 md:backdrop-blur-none md:flex-col">
         {pages.map((page) => (
           <li key={page.label}>
             <Link
