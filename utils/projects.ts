@@ -7,7 +7,7 @@ export const projects = [
     liveSite: 'https://aduvi.com/',
     seeCode: 'https://aduvi.com/',
     description:
-      'Joined the frontend development team at Technoperia in September 2024 to work on Aduvi, a comprehensive enterprise white-label CRM platform serving 2000+ clients across multiple industries. Working collaboratively with a talented team of developers, I contribute to building this all-in-one solution for managing leads, bookings, events, custom forms, and client communication through a dedicated portal. My focus is on developing responsive, user-friendly interfaces and ensuring a smooth user experience across the platform, while implementing advanced features like real-time data synchronization, multi-view management systems, and comprehensive business automation tools.',
+      'I joined the frontend development team at Technoperia in September 2024 to work on Aduvi, a comprehensive enterprise white-label CRM platform serving 2000+ clients across multiple industries. Working collaboratively with a talented team of developers, I helped build this all-in-one solution for managing leads, bookings, events, custom forms, and client communication through a dedicated portal. My focus was on developing responsive, user-friendly interfaces and ensuring a smooth user experience across the platform, while implementing advanced features like real-time data synchronization, multi-view management systems, and comprehensive business automation tools.',
   },
   {
     title: 'View ECG',
@@ -82,7 +82,7 @@ export const projects = [
     liveSite: 'https://glassmaestros.vercel.app/',
     seeCode: 'https://github.com/devemit/business-promote-website',
     description:
-      'Another early build, this site highlights the work of a glass installation studio. I focused on clear storytelling, simple navigation, and responsive galleries so the team could show off their projects without needing a complicated CMS.',
+      'This project showcases the work of a glass installation studio through a clean, professional web presence. I focused on clear storytelling, simple navigation, and responsive galleries so the team could present their projects effectively without relying on a complex CMS.',
   },
   {
     title: 'Landing Page',
@@ -91,7 +91,7 @@ export const projects = [
     liveSite: 'https://managepro.vercel.app/',
     seeCode: 'https://github.com/devemit/next14-landing-page-manage',
     description:
-      'Also from my first wave of projects, this Next.js landing page let me practice clean layouts, subtle animations, and making sure the design stayed sharp on every screen size.',
+      'This Next.js landing page project highlights clean layout structure, subtle motion design, and responsive implementation across all screen sizes. It helped refine my attention to visual hierarchy and polished UI details in marketing-focused pages.',
   },
   {
     title: 'Password Generator',
@@ -100,7 +100,7 @@ export const projects = [
     liveSite: 'https://password-generator-pro.vercel.app/',
     seeCode: 'https://github.com/devemit/password-generator',
     description:
-      'This early utility app generates secure passwords and gave me a chance to understand component structure, simple state management, and practical UX touches like copy-to-clipboard.',
+      'This utility app generates secure passwords with a simple, user-friendly interface. While building it, I strengthened my understanding of component structure, lightweight state management, and practical UX details such as one-click copy to clipboard.',
   },
 ]
 
@@ -118,7 +118,7 @@ export const experiences = [
     position: 'Frontend Developer',
     time: "24 - '25",
     description:
-      'Contributing to Aduvi, an enterprise platform used by 2000+ clients, with a focus on responsive UI, multi-view management, and real-time data sync across the frontend.',
+      'Contributed to Aduvi, an enterprise platform used by 2000+ clients, with a focus on responsive UI, multi-view management, and real-time data synchronization across the frontend.',
     href: 'https://technoperia.com/',
   },
 ]

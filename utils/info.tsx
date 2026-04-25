@@ -3,14 +3,14 @@ export const greet = `hey, i'm ${name} 👋`
 export const about = () => {
   return (
     <>
-      Software Developer, Designer and Creator.
+      Software Developer, Designer, and Creator.
       <br />
       <br />
-      I&apos;m a self-taught Software Developer and made the transition from my previous career to tech in 2023.
+      I&apos;m a self-taught software developer who transitioned from my previous career into tech in 2023.
       <br />
       <br />
-      I&apos;ve had the pleasure of working alongside some incredible engineers, designers. I&apos;m passionate about code standards,
-      ECMAScript, strongly typed interfaces, and reactive Javascript frameworks.
+      I&apos;ve had the opportunity to work alongside incredible engineers and designers. I&apos;m passionate about clean code standards,
+      modern ECMAScript, strongly typed interfaces, and reactive JavaScript frameworks.
     </>
   )
 }
