@@ -40,7 +40,7 @@ export default function Navbar() {
           {isDark ? <Sun size={13} /> : <Moon size={13} />}
         </button>
       </div>
-      <ul className="mt-3 flex w-full justify-center gap-6 rounded-xl border border-border/70 bg-card/70 py-2 backdrop-blur-sm md:mt-4 md:w-auto md:justify-start md:gap-4 md:rounded-none md:border-0 md:bg-transparent md:py-0 md:backdrop-blur-none md:flex-col">
+      <ul className="mt-3 flex w-full justify-center gap-6 rounded-xl border border-border/70 bg-card/70 py-2 backdrop-blur-sm md:mt-4 md:w-auto md:flex-col md:justify-start md:gap-4 md:rounded-none md:border-0 md:bg-transparent md:py-0 md:backdrop-blur-none">
         {pages.map((page) => (
           <li key={page.label}>
             <Link
@@ -58,7 +58,7 @@ export default function Navbar() {
         type="button"
         onClick={() => setTheme(isDark ? 'light' : 'dark')}
         aria-label={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
-        className="hidden h-6 w-6 items-center justify-center rounded bg-transparent text-card-foreground transition-colors hover:bg-muted md:inline-flex"
+        className="mt-2 hidden h-6 w-6 items-center justify-center rounded bg-transparent text-card-foreground transition-colors hover:bg-muted md:inline-flex"
       >
         {isDark ? <Sun size={13} /> : <Moon size={13} />}
       </button>
