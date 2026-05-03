@@ -10,6 +10,9 @@ export const about = () => {
       <br />
       I&apos;ve had the opportunity to work alongside incredible engineers and designers. I&apos;m passionate about clean code standards,
       modern ECMAScript, strongly typed interfaces, and reactive JavaScript frameworks.
+      <br />
+      <br />
+      Currently advancing toward AI engineering with a focus on intelligent, data-driven software solutions.
     </>
   )
 }
