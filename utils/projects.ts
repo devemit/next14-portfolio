@@ -21,7 +21,22 @@ export const projects = [
       "Current Work: I joined the development team in August 2025 to work on this innovative AI-powered healthcare platform that connects doctors and patients. Working alongside a multidisciplinary team of healthcare professionals and developers, I contribute to building and enhancing the cloud-based ECG monitoring system. Our cloud system seamlessly integrates with measurements from mobile devices and enables comprehensive data analysis. The platform features special beat detection and classification algorithms designed by a team of doctors and computer scientists. Among the capabilities we've developed are:\nBeat classification (Normal, PVC, VEB, PAC, SVEB)\nRun-to-run identification (ventricular and supraventricular couplets, short and long runs)\nEpisode identification (atrial fibrillation, ventricular tachycardia, bigeminy, trigeminy)",
   },
   {
+    title: 'AI Support Copilot',
+    status: 'Deployed MVP',
+    imgUrl: 'https://i.postimg.cc/brQqYMKq/screencapture-support-agent-copilot-production-up-railway-app-app-2026-06-07-21-34-34.png',
+    tech: ['Python FastAPI', 'PostgreSQL pgvector', 'SQLAlchemy', 'Groq API', 'Docker', 'Railway', 'HTML CSS JavaScript'],
+    liveSite: 'https://support-agent-copilot-production.up.railway.app/app/',
+    seeCode: 'https://github.com/devemit/support-agent-copilot',
+    description: `AI Support Copilot is an internal support-agent dashboard designed to help customer support teams understand tickets faster, retrieve relevant company knowledge, and draft grounded responses for human review. The system allows support agents to seed or upload knowledge-base documents such as refund policies, billing rules, subscription guides, and account access instructions. These documents are split into chunks, embedded, and stored in PostgreSQL with pgvector for similarity search.
+
+When a support ticket is created, the app classifies the issue by category, priority, sentiment, and summary using Groq's LLM API. The ticket is then used to retrieve relevant knowledge-base chunks, which are passed to the model to generate a support reply draft with citations and suggested next actions. The agent can review, edit, accept, or reject the draft, creating a human-in-the-loop workflow.
+
+The project covers core AI engineering concepts including RAG, vector search, document ingestion, embeddings, LLM prompting, structured JSON outputs, cited generation, feedback collection, Dockerized development, PostgreSQL/pgvector storage, and Railway deployment. It demonstrates how AI can assist support agents without directly replacing human review.`,
+  },
+
+  {
     title: 'Plexusmenu QR Menus',
+    status: 'Live',
     imgUrl: 'https://i.postimg.cc/Kz0nQpXW/screencapture-menusinternational-vercel-app-2025-12-16-13-12-39.png',
     tech: ['Typescript', 'Nextjs', 'Prisma', 'Supabase', 'Tailwind CSS'],
     liveSite: 'https://plexusmenus.com/',
@@ -50,6 +65,7 @@ export const projects = [
   },
   {
     title: 'Reform Beach&Bar',
+    status: 'Live',
     imgUrl: 'https://user-images.githubusercontent.com/107273888/229608163-2a1aeed4-a133-4549-98cd-35f5abe72a35.png',
     tech: ['Typescript', 'ReactJS', 'CSS'],
     liveSite: 'https://reformbeachbar.vercel.app/',
