@@ -23,7 +23,7 @@ export const projects = [
   {
     title: 'AI Support Copilot',
     status: 'Deployed MVP',
-    imgUrl: 'https://i.postimg.cc/brQqYMKq/screencapture-support-agent-copilot-production-up-railway-app-app-2026-06-07-21-34-34.png',
+    imgUrl: 'https://i.postimg.cc/4d061Mn7/Screenshot.png',
     tech: ['Python FastAPI', 'PostgreSQL pgvector', 'SQLAlchemy', 'Groq API', 'Docker', 'Railway', 'HTML CSS JavaScript'],
     liveSite: 'https://support-agent-copilot-production.up.railway.app/app/',
     seeCode: 'https://github.com/devemit/support-agent-copilot',
