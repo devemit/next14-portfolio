@@ -3,7 +3,8 @@ import Button from '@/components/button'
 
 export const metadata: Metadata = {
   title: 'What I do',
-  description: 'Software developer focused on scalable web applications, maintainable architecture, and AI-driven solutions.',
+  description:
+    'Software developer focused on scalable web applications, maintainable architecture, healthcare platforms, and AI-driven solutions.',
 }
 export default function About() {
   return (
@@ -11,23 +12,22 @@ export default function About() {
       <h1 className="text-xl italic text-[#e87d7d]">what i do</h1>
       <br />
       <p className="text-sm text-muted-foreground xl:text-base">
-        I have nearly three years of professional experience building scalable, user-centered applications with React, TypeScript, and Redux.
-        At Technoperia, I worked on Aduvi, an enterprise platform used by 2000+ clients across multiple industries. My core focus included
-        building reusable components, implementing efficient state management, and ensuring consistent cross-device performance.
+        I have nearly three years of professional experience building scalable, user-focused web applications with React, TypeScript, Redux,
+        and modern UI frameworks. At Technoperia, I worked on Aduvi, an enterprise white-label CRM platform used by 2000+ clients across
+        multiple industries. My work focused on reusable front-end components, efficient state management, responsive interfaces, and
+        consistent performance across devices.
       </p>
       <br />
       <p className="text-sm text-muted-foreground xl:text-base">
-        Alongside my core front-end stack, I have solid experience with Blazor .NET, where I developed interactive web components and
-        handled complex state logic for enterprise healthcare and business applications. This cross-stack experience helps me deliver robust,
-        scalable, and maintainable solutions across different product environments.
+        In my current role, I work with Blazor, .NET, C#, and JavaScript on View ECG, an AI-powered healthcare platform that connects doctors
+        and patients through cloud-based ECG monitoring. I contribute to interactive clinical interfaces, complex state flows, real-time
+        device data handling, and tools that support ECG analysis, beat classification, and clinician workflows.
       </p>
       <br />
       <p className="text-sm text-muted-foreground xl:text-base">
-        I am proficient with modern UI tooling such as Tailwind CSS and Ant Design, and I regularly use Next.js for server-side rendering
-        and performance-focused delivery. I also have practical backend experience with Node.js and Express.
-        <br />
-        <br />
-        Currently expanding toward AI engineering, intelligent applications, and data-driven systems.
+        Alongside my front-end experience, I use Next.js, Tailwind CSS, Ant Design, Node.js, and Express to build maintainable,
+        performance-focused applications. I am also expanding deeper into AI engineering, intelligent applications, and data-driven systems,
+        with a focus on practical products that solve real workflow problems.
       </p>
       <br />
       <div className="flex gap-2">
