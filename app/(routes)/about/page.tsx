@@ -4,7 +4,7 @@ import Button from '@/components/button'
 export const metadata: Metadata = {
   title: 'What I do',
   description:
-    'Software developer focused on scalable web applications, maintainable architecture, healthcare platforms, and AI-driven solutions.',
+    'Software developer focused on scalable web applications, maintainable architecture, healthcare platforms, and AI support tools.',
 }
 export default function About() {
   return (
@@ -26,8 +26,13 @@ export default function About() {
       <br />
       <p className="text-sm text-muted-foreground xl:text-base">
         Alongside my front-end experience, I use Next.js, Tailwind CSS, Ant Design, Node.js, and Express to build maintainable,
-        performance-focused applications. I am also expanding deeper into AI engineering, intelligent applications, and data-driven systems,
-        with a focus on practical products that solve real workflow problems.
+        performance-focused applications across different product environments.
+      </p>
+      <br />
+      <p className="text-sm text-muted-foreground xl:text-base">
+        I am also actively building my AI engineering skills with Python, FastAPI, vector databases, RAG workflows, embeddings, and LLM
+        integrations. My live AI Support Copilot project applies these concepts in a real support-agent workflow, including knowledge-base
+        ingestion, ticket classification, cited response generation, and human-in-the-loop review.
       </p>
       <br />
       <div className="flex gap-2">

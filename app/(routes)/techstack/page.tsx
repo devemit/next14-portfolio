@@ -11,6 +11,7 @@ const skills = [
   'Cursor CLI',
   'Cursor AI',
   'OpenAI API',
+  'Python',
   'Typescript',
   'Javascript ES6+',
   'React',
