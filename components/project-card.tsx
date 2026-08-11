@@ -30,7 +30,7 @@ export default function ProjectCard({ title, description, tech, seeCode, liveSit
           ))}
           <div className="mt-4 flex gap-4">
             <Button to={seeCode}>See Code</Button>
-            <Button to={liveSite}>Live Preview</Button>
+            {liveSite && <Button to={liveSite}>Live Preview</Button>}
           </div>
         </div>
       </div>

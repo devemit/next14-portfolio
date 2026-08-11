@@ -22,10 +22,9 @@ export const projects = [
   },
   {
     title: 'AI Support Copilot',
-    status: 'Deployed MVP',
+    status: '',
     imgUrl: 'https://i.postimg.cc/4d061Mn7/Screenshot.png',
     tech: ['Python FastAPI', 'PostgreSQL pgvector', 'SQLAlchemy', 'Groq API', 'Docker', 'Railway', 'HTML CSS JavaScript'],
-    liveSite: 'https://support-agent-copilot-production.up.railway.app/app/',
     seeCode: 'https://github.com/devemit/support-agent-copilot',
     description: `AI Support Copilot is an internal support-agent dashboard designed to help customer support teams understand tickets faster, retrieve relevant company knowledge, and draft grounded responses for human review. The system allows support agents to seed or upload knowledge-base documents such as refund policies, billing rules, subscription guides, and account access instructions. These documents are split into chunks, embedded, and stored in PostgreSQL with pgvector for similarity search.
 

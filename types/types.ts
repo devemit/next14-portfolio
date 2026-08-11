@@ -3,7 +3,7 @@ export interface ProjectProps {
    status?: string;
    imgUrl: string;
    tech: string[];
-   liveSite: string;
+   liveSite?: string;
    seeCode: string;
    description: string;
 }
