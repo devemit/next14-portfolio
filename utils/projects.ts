@@ -82,40 +82,14 @@ The project covers core AI engineering concepts including RAG, vector search, do
       'A high-performance CLI tool for checking npm dependencies, security vulnerabilities, and update recommendations. What it does: Dependency Analysis: Check which packages are outdated and need updates Security Auditing: Scan for known vulnerabilities in your dependencies Smart Recommendations: Get safe update suggestions with breaking change warnings High Performance: Parallel processing, caching, and connection pooling for speed Key Features: Multiple Output Formats: Table, JSON, CSV for different use cases Safety-First Updates: Shows safe patch/minor updates by default, major updates with warnings Ready-to-Use Commands: Provides exact npm commands you can copy-paste Performance Optimized: Handles large projects efficiently with configurable concurrency',
   },
   {
-    title: 'Crypto DEFI',
-    imgUrl: 'https://i.postimg.cc/FFWxWzZt/screencapture-cryptowebdefi-netlify-app-2025-11-01-18-11-36.png',
-    tech: ['Typescript', 'ReactJS', 'Tailwind CSS, Crypyo API'],
-    liveSite: 'https://cryptowebdefi.netlify.app/',
-    seeCode: 'https://github.com/devemit/crypto-react',
+    title: 'Union Protect',
+    status: 'Live',
+    imgUrl: 'https://i.postimg.cc/SsfK0WcV/unionprotekt-com-20260817-173421.png',
+    tech: ['TypeScript', 'Next.js', 'Three.js', 'Tailwind CSS'],
+    liveSite: 'https://unionprotekt.com/',
+    seeCode: 'YOUR_GITHUB_REPO',
     description:
-      'This was one of the first projects I shipped when I started coding. It’s a straightforward crypto hub that pulls market news and stats, and it taught me how to connect APIs, organise data-heavy screens, and keep things readable for anyone curious about digital assets.',
-  },
-  {
-    title: 'Glass Maestros',
-    imgUrl: 'https://i.postimg.cc/J4FPn0Dm/screencapture-glassmaestros-vercel-app-2025-11-01-18-12-01.png',
-    tech: ['Typescript', 'NextJS', 'TailwindCSS'],
-    liveSite: 'https://glassmaestros.vercel.app/',
-    seeCode: 'https://github.com/devemit/business-promote-website',
-    description:
-      'This project showcases the work of a glass installation studio through a clean, professional web presence. I focused on clear storytelling, simple navigation, and responsive galleries so the team could present their projects effectively without relying on a complex CMS.',
-  },
-  {
-    title: 'Landing Page',
-    imgUrl: 'https://github.com/devemit/cinemania-movies/assets/107273888/1c92ebbf-6c58-449a-b66e-f72807a6aae7',
-    tech: ['NextJS', 'CSS', 'Framer Motion'],
-    liveSite: 'https://managepro.vercel.app/',
-    seeCode: 'https://github.com/devemit/next14-landing-page-manage',
-    description:
-      'This Next.js landing page project highlights clean layout structure, subtle motion design, and responsive implementation across all screen sizes. It helped refine my attention to visual hierarchy and polished UI details in marketing-focused pages.',
-  },
-  {
-    title: 'Password Generator',
-    imgUrl: 'https://github.com/devemit/Weather-app-JS/assets/107273888/447b98a4-2149-444d-8bcb-cd561a29bfe1',
-    tech: ['Typescript', 'NextJS', 'Tailwind CSS'],
-    liveSite: 'https://password-generator-pro.vercel.app/',
-    seeCode: 'https://github.com/devemit/password-generator',
-    description:
-      'This utility app generates secure passwords with a simple, user-friendly interface. While building it, I strengthened my understanding of component structure, lightweight state management, and practical UX details such as one-click copy to clipboard.',
+      'Union Protect is a professional multilingual website for an industrial safety and branding company. It showcases protective equipment and custom production services through interactive  3D product visuals, structured service pages, product categories, and contact inquiry flows. The site was built to present the brand in a more premium way while helping customers	explore services and request information quickly.',
   },
 ]
 
