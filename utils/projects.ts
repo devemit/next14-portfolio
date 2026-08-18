@@ -84,7 +84,7 @@ The project covers core AI engineering concepts including RAG, vector search, do
   {
     title: 'Union Protect',
     status: 'Live',
-    imgUrl: 'https://i.postimg.cc/SsfK0WcV/unionprotekt-com-20260817-173421.png',
+    imgUrl: 'https://i.postimg.cc/vTqTbpZD/goc.png',
     tech: ['TypeScript', 'Next.js', 'Three.js', 'Tailwind CSS'],
     liveSite: 'https://unionprotekt.com/',
     seeCode: 'YOUR_GITHUB_REPO',
