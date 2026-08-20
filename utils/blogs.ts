@@ -4,17 +4,15 @@ const blogs = [
     slug: 'building-with-ai-every-day',
     name: 'How I Use AI Tools in My Daily Dev Workflow',
     tools: '',
-    description: `I don’t treat AI tools as a magic button that writes my code for me. Instead, I think of them as teammates that sit next to me in the editor, helping me move faster, stay unblocked, and keep a higher level of focus on architecture and product decisions.
+    description: `AI is most useful to me when it shortens the distance between an idea and a well-considered implementation. I do not use it as a button that writes code unattended; I use it as a collaborator that helps me stay unblocked while I keep my attention on product decisions, architecture, and quality.
 
-My main hub is Cursor. I use it as my editor, but the real power comes from having AI deeply integrated with the codebase. I’ll start a feature by writing a plain‑language plan in a comment or in a scratch file—what I want to build, edge cases to cover, and how it should feel in the UI. Then I ask Cursor to scaffold components, routes, or API handlers based on that plan. I don’t accept everything blindly; I review, refactor, and shape the code so it matches my style and standards.
+Most features start with a short plain-language plan: the user problem, the intended behavior, the edge cases, and what the interface should feel like. I use that context to scaffold components, routes, or API handlers, then review and reshape the result until it fits the codebase. The useful part is not accepting a first draft—it is getting to a reviewable starting point faster.
 
-For more complex reasoning—like designing data models, breaking down big refactors, or exploring alternative architectures—I lean on tools like Claude Code and GPT-based assistants. I’ll paste in relevant parts of the codebase and ask questions like “what’s the safest way to introduce this without breaking existing behavior?” or “how would you structure this module so it’s easier to test?”. The goal isn’t just to get an answer, but to pressure-test my own ideas and see tradeoffs I might miss when I’m too deep in the code.
+For decisions that need more careful reasoning, such as a data model, a risky refactor, or the boundaries of a new module, I use AI to test my thinking. I ask for alternative approaches, likely failure points, and ways to introduce a change without disturbing existing behavior. That second perspective is especially valuable when I have been looking at the same problem for too long.
 
-Cursor CLI is something I started using to escape living entirely inside the Cursor IDE. It lets me keep the AI context and assistance I like from Cursor, while doing the actual editing in VS Code or whatever IDE I feel like using that day. I stay in the terminal, run my usual workflows, and still have access to AI help without being locked into a single editor.
+I also use AI for the small but important tasks around development: turning an idea into actionable todos, summarizing a large diff, drafting documentation after a feature ships, and writing commit messages that explain the reason for a change.
 
-Day to day, AI also helps with the “glue work” that usually slows developers down: writing commit messages that actually explain the why, drafting documentation or README updates right after a feature ships, summarizing big diffs, and turning vague ideas into concrete todos. I try to keep a tight feedback loop: describe what I’m doing, get a suggestion, adapt it, run the tests, and repeat.
-
-The most important rule I have is that I stay in control of the codebase. AI can propose implementations, but I’m responsible for the final design, security, and performance. Used this way, tools like Cursor, Claude Code, and assistants like this one don’t replace the craft of software engineering—they free up more mental space so I can focus on building better products and shipping faster.`,
+The feedback loop still ends with me. I adapt the suggestion, run the application and tests, and take responsibility for the final design, security, and performance. Used this way, AI does not replace engineering judgment; it gives me more room to apply it where it matters.`,
     category: 'Writing',
     status: 'Ongoing reflections',
   },
@@ -23,11 +21,13 @@ The most important rule I have is that I stay in control of the codebase. AI can
     slug: 'plexusmenu-qr-menus',
     name: 'Plexusmenu QR Menus',
     tools: 'TypeScript, Next.js 16, Tailwind CSS, Prisma, Supabase',
-    description: `I built Plexusmenu QR Menus to solve a real problem I saw in the restaurant industry—the constant need to reprint physical menus whenever prices or items change. Restaurants were spending time and money on menu updates, and customers were often looking at outdated information. This SaaS platform lets restaurant owners create digital menus accessible via QR codes, enabling instant updates without any printing costs.
+    description: `Plexusmenu began with a simple restaurant problem: a printed menu becomes outdated the moment a price, item, or availability changes. Reprinting is slow and expensive, while customers can still be handed information that is no longer accurate. I built Plexusmenu so restaurant owners can manage a digital menu and share it with customers through a QR code.
 
-I'm using TypeScript with strict mode and custom types to ensure type safety across the application, and Next.js 16 with server components for fast page loads and optimal performance. Tailwind CSS handles the responsive design so menus look great on any device customers use to scan and view.
+The owner workflow is intentionally straightforward. After signing up, a restaurant can create menu items with a name, price, description, and currency, then generate a QR code for customers to scan. A change made to the menu is available immediately, which makes seasonal updates, price changes, and temporary availability much easier to handle.
 
-Prisma and Supabase manage the menu data with proper relationships and real-time capabilities. Restaurant owners can sign up, add menu items with details like name, price, description, and currency, then generate QR codes for their customers to scan. The platform offers both free and premium subscriptions (currently running free), with premium features including custom QR code styles, downloadable codes, unlimited menu items, and no watermark. The ability to update menus instantly means restaurants can respond quickly to seasonal changes, pricing adjustments, or ingredient availability without the hassle and expense of reprinting.`,
+I built the platform with TypeScript, Next.js, Tailwind CSS, Prisma, and Supabase. The stack supports a responsive experience for both the owner managing the menu and the customer viewing it from a phone. I focused on keeping the product practical: the restaurant should be able to update information without needing design or development help.
+
+Plexusmenu includes free and premium subscription options, with the premium tier covering custom QR-code styles, downloadable codes, unlimited menu items, and no watermark. The product is currently available to use for free while I continue refining the experience and learning from the real workflow it supports.`,
     category: 'Personal Project',
     status: 'Live, free to use',
   },
@@ -36,13 +36,13 @@ Prisma and Supabase manage the menu data with proper relationships and real-time
     slug: 'easy-travel-ai-platform',
     name: 'Easy Travel AI-Powered Platform',
     tools: 'TypeScript, Next.js 15, Tailwind CSS, Shadcn UI, Prisma, PostgreSQL, OpenAI API, Weather APIs',
-    description: `I started building Easy Travel because I want to explore more of the world, but planning trips by myself was chaotic—endless tabs, outdated blogs, and disconnected tools for budgeting, weather, and itineraries. This app brings everything into one place.
+    description: `Easy Travel started from a familiar frustration: planning a trip often means juggling destination guides, weather forecasts, budgets, and itinerary ideas across too many tabs. I wanted to explore a simpler workflow—one place to discover destinations, understand the essentials, and turn loose travel preferences into a plan.
 
-I’m using TypeScript with strict mode and custom types to keep the data model tight, and Next.js 15 with server components and streaming so pages load quickly even while AI suggestions render. Tailwind CSS and Shadcn UI handle the responsive layout so the planner feels at home on desktop or on my phone.
+The app is designed for both quick getaways and longer trips. A user can explore destinations, check weather information, and ask for AI-assisted recommendations that reflect their budget, interests, and available time. The goal is not to make every decision automatically; it is to give the user a useful starting point that they can adapt to their own trip.
 
-Prisma and PostgreSQL manage the itinerary data with proper relationships and caching so I can store and revisit past trips. I use Grok AI to plan both weekend getaways and longer trips by asking for itineraries that match my budget, vibe, and time constraints.
+I am building Easy Travel with TypeScript, Next.js, Tailwind CSS, Shadcn UI, Prisma, and PostgreSQL. The application combines stored trip and itinerary data with AI-powered planning and weather information, giving the planning process a more connected feel than a collection of separate tools.
 
-Grok helps shortlist destinations, flag visa or safety notes, and returns realistic daily routes that I can edit. The app blends those recommendations with live weather forecasts, cost breakdowns. It’s still very much a work in progress—this is the initial version I’m using to prove out the workflow before layering in more automation and collaboration. Solving that messy planning workflow lets me go from dream board to booked ticket without the spreadsheet fatigue.`,
+Easy Travel is currently in beta. This version is focused on proving that the core planning workflow is genuinely helpful before I add more automation and collaboration. The next stage is to keep refining the recommendations and make it easier to revisit, edit, and build on a trip plan over time.`,
     category: 'Personal Project',
     status: 'Beta Phase',
   },
