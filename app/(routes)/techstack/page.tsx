@@ -1,9 +1,11 @@
 import { Metadata } from 'next'
+import { createPageMetadata } from '@/lib/site'
 
-export const metadata: Metadata = {
-  title: 'Tech Stack',
-  description: 'Technologies, frameworks, AI tools, and platforms I use to build modern software products.',
-}
+export const metadata: Metadata = createPageMetadata(
+  'Tech Stack',
+  'Technologies and tools Mitko Iliev uses to build modern software products, including TypeScript, React, Next.js, .NET, Python, and AI workflows.',
+  '/techstack',
+)
 
 const skills = [
   'AI Engineering',

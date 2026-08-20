@@ -1,6 +1,18 @@
-const blogs = [
+export interface BlogPost {
+  slug: string
+  name: string
+  description: string
+  date: string
+  publishedAt: string
+  tools: string
+  category: string
+  status: string
+}
+
+const blogs: BlogPost[] = [
   {
     date: 'Jan 2026',
+    publishedAt: '2026-01-01',
     slug: 'building-with-ai-every-day',
     name: 'How I Use AI Tools in My Daily Dev Workflow',
     tools: '',
@@ -18,6 +30,7 @@ The feedback loop still ends with me. I adapt the suggestion, run the applicatio
   },
   {
     date: 'Dec 2025 - Present',
+    publishedAt: '2025-12-01',
     slug: 'plexusmenu-qr-menus',
     name: 'Plexusmenu QR Menus',
     tools: 'TypeScript, Next.js 16, Tailwind CSS, Prisma, Supabase',
@@ -33,6 +46,7 @@ Plexusmenu includes free and premium subscription options, with the premium tier
   },
   {
     date: 'June 2025 - December 2025',
+    publishedAt: '2025-06-01',
     slug: 'easy-travel-ai-platform',
     name: 'Easy Travel AI-Powered Platform',
     tools: 'TypeScript, Next.js 15, Tailwind CSS, Shadcn UI, Prisma, PostgreSQL, OpenAI API, Weather APIs',

@@ -7,6 +7,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 
 import { Manrope, JetBrains_Mono } from 'next/font/google'
 import { Suspense } from 'react'
+import { site } from '@/lib/site'
 
 import './globals.css'
 
@@ -24,8 +25,32 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Mitko | Developer, Designer, Creator',
-  description: 'Portfolio Application',
+  metadataBase: new URL(site.url),
+  title: {
+    default: site.title,
+    template: '%s | Mitko Iliev',
+  },
+  description: site.description,
+  alternates: {
+    canonical: '/',
+  },
+  authors: [{ name: site.name, url: site.url }],
+  creator: site.name,
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: '/',
+    siteName: site.name,
+    title: site.title,
+    description: site.description,
+    images: [{ url: site.socialImage, width: 1200, height: 630, alt: site.title }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: site.title,
+    description: site.description,
+    images: [site.socialImage],
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

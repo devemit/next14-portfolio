@@ -2,11 +2,13 @@ import Link from 'next/link'
 import blogs from '@/utils/blogs'
 import { FiArrowUpRight } from 'react-icons/fi'
 import { Metadata } from 'next'
+import { createPageMetadata } from '@/lib/site'
 
-export const metadata: Metadata = {
-  title: 'Blog',
-  description: 'Blog posts about my projects and experiences',
-}
+export const metadata: Metadata = createPageMetadata(
+  'Blog',
+  'Writing by Mitko Iliev about software development, AI-assisted workflows, and the projects he is building.',
+  '/blog',
+)
 
 export default function Blogs() {
   return (

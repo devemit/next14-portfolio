@@ -1,11 +1,12 @@
 import { Metadata } from 'next'
 import Button from '@/components/button'
+import { createPageMetadata } from '@/lib/site'
 
-export const metadata: Metadata = {
-  title: 'What I do',
-  description:
-    'Software developer focused on scalable web applications, maintainable architecture, healthcare platforms, and AI support tools.',
-}
+export const metadata: Metadata = createPageMetadata(
+  'About',
+  'Learn about Mitko Iliev, a software developer with experience building React, TypeScript, .NET, healthcare, and AI-powered applications.',
+  '/about',
+)
 export default function About() {
   return (
     <section className="py-2">

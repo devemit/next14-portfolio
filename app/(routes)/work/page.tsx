@@ -2,11 +2,13 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import ProjectCard from '@/components/project-card'
 import { experiences, projects } from '@/utils/projects'
+import { createPageMetadata } from '@/lib/site'
 
-export const metadata: Metadata = {
-  title: 'Some of my work',
-  description: 'Professional experience and selected projects showcasing my frontend development work.',
-}
+export const metadata: Metadata = createPageMetadata(
+  'Work',
+  'Selected software projects and professional experience by Mitko Iliev, including React, Next.js, .NET, AI, and SaaS applications.',
+  '/work',
+)
 
 const formatTime = (time: string) => (time.startsWith("'") ? time : time.replace(/^(\d{2})/, "'$1"))
 
