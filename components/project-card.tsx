@@ -1,6 +1,7 @@
 import { ProjectProps } from '@/types/types'
 import Button from './button'
 import Image from 'next/image'
+import { FiArrowUpRight } from 'react-icons/fi'
 import TruncatedText from './truncated-text'
 
 export default function ProjectCard({ title, description, tech, seeCode, liveSite, imgUrl, status }: ProjectProps) {
@@ -29,8 +30,30 @@ export default function ProjectCard({ title, description, tech, seeCode, liveSit
             </button>
           ))}
           <div className="mt-4 flex gap-4">
-            <Button to={seeCode}>See Code</Button>
-            {liveSite && <Button to={liveSite}>Live Preview</Button>}
+            {seeCode ? (
+              <Button to={seeCode}>See Code</Button>
+            ) : (
+              <button
+                type="button"
+                disabled
+                className="flex cursor-not-allowed items-center gap-2 whitespace-nowrap rounded border border-border bg-card px-2 py-1 text-xs text-card-foreground opacity-50 xl:text-sm"
+              >
+                See Code
+                <FiArrowUpRight />
+              </button>
+            )}
+            {liveSite ? (
+              <Button to={liveSite}>Live Preview</Button>
+            ) : (
+              <button
+                type="button"
+                disabled
+                className="flex cursor-not-allowed items-center gap-2 whitespace-nowrap rounded border border-border bg-card px-2 py-1 text-xs text-card-foreground opacity-50 xl:text-sm"
+              >
+                Live Preview
+                <FiArrowUpRight />
+              </button>
+            )}
           </div>
         </div>
       </div>

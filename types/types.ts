@@ -4,6 +4,6 @@ export interface ProjectProps {
    imgUrl: string;
    tech: string[];
    liveSite?: string;
-   seeCode: string;
+   seeCode?: string;
    description: string;
 }
