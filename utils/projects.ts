@@ -1,8 +1,11 @@
-export const projects = [
+import type { ProjectProps } from '@/types/types'
+
+export const projects: ProjectProps[] = [
   {
     title: 'Aduvi – White-label CRM Platform',
     status: '',
     imgUrl: 'https://i.postimg.cc/jjcfD3gv/screencapture-aduvi-2025-11-01-18-09-31-2.png',
+    preserveImageAspect: true,
     tech: ['Typescript', 'ReactJS', 'SASS', 'Redux', 'Ant Design'],
     liveSite: 'https://aduvi.com/',
     description:
@@ -35,30 +38,44 @@ The project covers core AI engineering concepts including RAG, vector search, do
     title: 'Plexusmenu QR Menus',
     status: 'Live',
     imgUrl: 'https://i.postimg.cc/Kz0nQpXW/screencapture-menusinternational-vercel-app-2025-12-16-13-12-39.png',
+    videoUrl: 'https://www.image2url.com/r2/default/videos/1788981328901-40a3f357-e02c-430b-a2af-45445ddd1f59.mp4',
+    cropVideoTop: true,
     tech: ['Typescript', 'Nextjs', 'Prisma', 'Supabase', 'Tailwind CSS'],
     liveSite: 'https://plexusmenus.com/',
     description:
       'plexusmenu is a SaaS platform that lets restaurants create digital menus accessible via QR codes: owners sign up, add menu items (name, price, description, currency), and generate QR codes for customers to scan; the app offers free and premium subscriptions (via PayPal - currently running free) with premium features including custom QR code styles, downloadable codes, unlimited items, and no watermark, enabling instant menu updates without reprinting physical menus..',
   },
   {
-    title: 'Easy Travel',
-    status: 'beta',
-    imgUrl: 'https://github.com/user-attachments/assets/eec04cfa-c5b0-4457-8247-4b6ae2c61729',
-    tech: ['Typescript', 'NextJS', 'Tailwind CSS', 'PostgreSQL', 'Prisma'],
-    liveSite: 'https://travelsmart-devemits-projects.vercel.app/',
-    seeCode: 'https://github.com/devemit/smart-travel',
+    title: 'Union Protect',
+    status: 'Live',
+    imgUrl: 'https://i.postimg.cc/vTqTbpZD/goc.png',
+    videoUrl: 'https://www.image2url.com/r2/default/videos/1788980029829-092e8144-344b-498b-8d6a-444bbbddf552.webm',
+    tech: ['TypeScript', 'Next.js', 'GSAP', 'Framer Motion', 'Tailwind CSS'],
+    liveSite: 'https://unionprotekt.com/',
     description:
-      'Easy Travel is an innovative travel web application currently in beta phase, allowing users to explore destinations, check the weather, and plan their trips with the help of AI. Users can browse featured locations, access essential travel information, and receive personalized recommendations to enhance their travel experience. With a user-friendly interface, Easy Travel makes trip planning simple and enjoyable.',
+      'Union Protect is a bilingual corporate website for a workplace safety and apparel-branding company. Its homepage uses cinematic, scroll-driven storytelling with layered imagery, sticky scenes, parallax, and camera-like transitions to guide visitors through protective equipment, embroidery, DTF printing, and promotional products—creating a sense of depth without real-time 3D. Dedicated service pages, organized product categories, external catalogs, and a localized inquiry form help customers explore the offer and request a quote quickly. The experience is responsive, SEO-friendly,accessible with reduced motion, and available in Macedonian and Albanian.',
   },
   {
     title: 'Reform Beach&Bar',
     status: 'Live',
     imgUrl: 'https://user-images.githubusercontent.com/107273888/229608163-2a1aeed4-a133-4549-98cd-35f5abe72a35.png',
+    videoUrl: 'https://www.image2url.com/r2/default/videos/1788980550814-05fc1ea2-47af-4e03-bac6-590917ec3a10.webm',
     tech: ['Typescript', 'ReactJS', 'CSS'],
     liveSite: 'https://reformbeachbar.vercel.app/',
     seeCode: 'https://github.com/devemit/reform-menu',
     description:
       'Beach Bar Reform is a React web application designed to enhance the dining experience in restaurants by providing a seamless QR-scanning menu for customers. The application aims to reduce physical contact between customers and menus, making it more hygienic and convenient, especially in a post-pandemic world.',
+  },
+  {
+    title: 'Easy Travel',
+    status: 'beta',
+    imgUrl: 'https://github.com/user-attachments/assets/eec04cfa-c5b0-4457-8247-4b6ae2c61729',
+    preserveImageAspect: true,
+    tech: ['Typescript', 'NextJS', 'Tailwind CSS', 'PostgreSQL', 'Prisma'],
+    liveSite: 'https://travelsmart-devemits-projects.vercel.app/',
+    seeCode: 'https://github.com/devemit/smart-travel',
+    description:
+      'Easy Travel is an innovative travel web application currently in beta phase, allowing users to explore destinations, check the weather, and plan their trips with the help of AI. Users can browse featured locations, access essential travel information, and receive personalized recommendations to enhance their travel experience. With a user-friendly interface, Easy Travel makes trip planning simple and enjoyable.',
   },
   {
     title: 'Dependency Checker',
@@ -69,18 +86,11 @@ The project covers core AI engineering concepts including RAG, vector search, do
     description:
       'A high-performance CLI tool for checking npm dependencies, security vulnerabilities, and update recommendations. What it does: Dependency Analysis: Check which packages are outdated and need updates Security Auditing: Scan for known vulnerabilities in your dependencies Smart Recommendations: Get safe update suggestions with breaking change warnings High Performance: Parallel processing, caching, and connection pooling for speed Key Features: Multiple Output Formats: Table, JSON, CSV for different use cases Safety-First Updates: Shows safe patch/minor updates by default, major updates with warnings Ready-to-Use Commands: Provides exact npm commands you can copy-paste Performance Optimized: Handles large projects efficiently with configurable concurrency',
   },
-  {
-    title: 'Union Protect',
-    status: 'Live',
-    imgUrl: 'https://i.postimg.cc/vTqTbpZD/goc.png',
-    tech: ['TypeScript', 'Next.js', 'Three.js', 'Tailwind CSS'],
-    liveSite: 'https://unionprotekt.com/',
-    description:
-      'Union Protect is a professional multilingual website for an industrial safety and branding company. It showcases protective equipment and custom production services through interactive  3D product visuals, structured service pages, product categories, and contact inquiry flows. The site was built to present the brand in a more premium way while helping customers	explore services and request information quickly.',
-  },
+
   {
     title: 'Plexusmenu QR Menus - Promote App',
     imgUrl: 'https://i.postimg.cc/JzYMK0P4/screencapture-plexusmenu-vercel-app-2025-11-28-00-04-04.png',
+    preserveImageAspect: true,
     tech: ['Typescript', 'ReactJS', 'Tailwind CSS'],
     liveSite: 'https://plexusmenu.vercel.app/',
     seeCode: 'https://github.com/devemit/plexusmenu',

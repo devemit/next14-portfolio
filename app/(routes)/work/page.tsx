@@ -54,6 +54,9 @@ const page = () => {
             title={project.title}
             description={project.description}
             imgUrl={project.imgUrl}
+            videoUrl={project.videoUrl}
+            cropVideoTop={project.cropVideoTop}
+            preserveImageAspect={project.preserveImageAspect}
             seeCode={project.seeCode}
             liveSite={project.liveSite}
             tech={project.tech}
