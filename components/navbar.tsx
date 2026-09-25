@@ -30,21 +30,23 @@ export default function Navbar() {
           <ThemeToggle />
         </div>
       </div>
-      <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-base">
-        {pages.map((page) => (
-          <li key={page.label}>
-            <Link
-              aria-current={pathname.startsWith(page.href) ? 'page' : undefined}
-              className={`inline-flex hover:text-foreground hover:underline ${
-                pathname.startsWith(page.href) ? 'font-medium text-foreground' : 'text-foreground/65'
-              }`}
-              href={page.href}
-            >
-              {page.label}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      {pathname !== '/' && (
+        <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-base">
+          {pages.map((page) => (
+            <li key={page.label}>
+              <Link
+                aria-current={pathname.startsWith(page.href) ? 'page' : undefined}
+                className={`inline-flex hover:text-foreground hover:underline ${
+                  pathname.startsWith(page.href) ? 'font-medium text-foreground' : 'text-foreground/65'
+                }`}
+                href={page.href}
+              >
+                {page.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
     </nav>
   )
 }
