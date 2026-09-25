@@ -9,6 +9,7 @@ export const site = {
   profiles: {
     github: 'https://github.com/devemit',
     linkedin: 'https://www.linkedin.com/in/mitko-iliev/',
+    x: 'https://x.com/mitcodes',
   },
 } as const
 

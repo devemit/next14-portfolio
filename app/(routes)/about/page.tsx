@@ -1,5 +1,4 @@
 import { Metadata } from 'next'
-import Button from '@/components/button'
 import { createPageMetadata } from '@/lib/site'
 
 export const metadata: Metadata = createPageMetadata(
@@ -10,36 +9,28 @@ export const metadata: Metadata = createPageMetadata(
 export default function About() {
   return (
     <section className="py-2">
-      <h1 className="text-xl italic text-[#e87d7d]">what i do</h1>
+      <h1 className="text-xl italic text-[#e87d7d]">about me</h1>
       <br />
-      <p className="text-sm text-muted-foreground xl:text-base">
-        I have nearly three years of professional experience building scalable, user-focused web applications with React, TypeScript, Redux,
-        and modern UI frameworks. At Technoperia, I worked on Aduvi, an enterprise white-label CRM platform used by 2000+ clients across
-        multiple industries. My work focused on reusable front-end components, efficient state management, responsive interfaces, and
-        consistent performance across devices.
+      <p className="text-base leading-relaxed text-muted-foreground">
+        I&apos;m a self-taught software developer who transitioned into tech in 2023 after changing careers. Since then, I&apos;ve focused
+        on building clear, reliable products and learning through real user problems.
       </p>
       <br />
-      <p className="text-sm text-muted-foreground xl:text-base">
-        In my current role, I work with Blazor, .NET, C#, and JavaScript on View ECG, an AI-powered healthcare platform that connects doctors
-        and patients through cloud-based ECG monitoring. I contribute to interactive clinical interfaces, complex state flows, real-time
-        device data handling, and tools that support ECG analysis, beat classification, and clinician workflows.
+      <p className="text-base leading-relaxed text-muted-foreground">
+        My professional experience spans enterprise React applications and AI-powered healthcare software. I contributed to Aduvi, a CRM
+        platform used by more than 2,000 clients, and I currently work on View ECG with Blazor, .NET, C#, and JavaScript.
       </p>
       <br />
-      <p className="text-sm text-muted-foreground xl:text-base">
-        Alongside my front-end experience, I use Next.js, Tailwind CSS, Ant Design, Node.js, and Express to build maintainable,
-        performance-focused applications across different product environments.
+      <p className="text-base leading-relaxed text-muted-foreground">
+        Working alongside experienced engineers and designers shaped how I approach software: thoughtful interfaces, clean code, strongly
+        typed systems, and solutions that remain maintainable as products grow.
       </p>
       <br />
-      <p className="text-sm text-muted-foreground xl:text-base">
-        I am also actively building my AI engineering skills with Python, FastAPI, vector databases, RAG workflows, embeddings, and LLM
-        integrations. My live AI Support Copilot project applies these concepts in a real support-agent workflow, including knowledge-base
-        ingestion, ticket classification, cited response generation, and human-in-the-loop review.
+      <p className="text-base leading-relaxed text-muted-foreground">
+        I&apos;m now moving deeper into AI engineering through practical work with Python, FastAPI, RAG, vector search, and human-reviewed
+        LLM workflows. I&apos;m especially interested in AI features that stay grounded in real information and give people meaningful
+        control.
       </p>
-      <br />
-      <div className="flex gap-2">
-        <Button to={'https://github.com/devemit'}>GitHub</Button>
-        <Button to={'https://www.linkedin.com/in/mitko-iliev/'}>LinkedIn</Button>
-      </div>
     </section>
   )
 }

@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import ProjectCard from '@/components/project-card'
+import GithubActivity from '@/components/github-activity'
 import { experiences, projects } from '@/utils/projects'
 import { createPageMetadata } from '@/lib/site'
 
@@ -16,37 +17,29 @@ const page = () => {
   return (
     <div className="space-y-12 text-foreground">
       <section className="space-y-6">
-        <h2 className="text-xs text-yellow-400">work</h2>
+        <h2 className="text-xl italic text-[#e87d7d]">work / github activity</h2>
         <div className="space-y-8">
           {experiences.map((experience) => (
             <article key={experience.workplace} className="space-y-2">
               <Link
                 href={experience.href}
-                className="group inline-flex items-center text-base font-semibold text-foreground transition-colors duration-150 hover:text-[#FACC15]"
+                className="inline-flex items-center text-base font-semibold text-foreground hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="relative inline-flex items-center">
-                  <span
-                    aria-hidden
-                    className="absolute -left-4 inline-block text-xs text-[#FACC15] opacity-0 transition-all duration-150 group-hover:-left-6 group-hover:opacity-100"
-                  >
-                    →
-                  </span>
-                  <span>{experience.workplace}</span>
-                </span>
+                <span>{experience.workplace}</span>
               </Link>
               <div className="text-muted-foreground">
-                <div className="text-xs lowercase">{experience.position}</div>
-                <div className="text-xs lowercase text-muted-foreground/80">{formatTime(experience.time)}</div>
+                <div className="text-sm lowercase">{experience.position}</div>
+                <div className="text-sm lowercase text-muted-foreground/80">{formatTime(experience.time)}</div>
               </div>
-              <p className="text-xs lowercase text-muted-foreground">{experience.description}</p>
+              <p className="text-sm lowercase leading-relaxed text-muted-foreground">{experience.description}</p>
             </article>
           ))}
         </div>
       </section>
 
-      <h2 className="text-xs text-yellow-400">projects</h2>
+      <h2 className="text-sm text-muted-foreground">projects</h2>
       <section className="grid gap-x-6 gap-y-1 md:grid-cols-2">
         {projects.map((project) => (
           <ProjectCard
@@ -64,6 +57,7 @@ const page = () => {
           />
         ))}
       </section>
+      <GithubActivity />
     </div>
   )
 }

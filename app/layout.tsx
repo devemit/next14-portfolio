@@ -5,23 +5,16 @@ import { Analytics } from '@vercel/analytics/next'
 import Navbar from '@/components/navbar'
 import { ThemeProvider } from '@/components/theme-provider'
 
-import { Manrope, JetBrains_Mono } from 'next/font/google'
+import localFont from 'next/font/local'
 import { Suspense } from 'react'
 import { site } from '@/lib/site'
 
 import './globals.css'
 
-const manrope = Manrope({
-  subsets: ['latin'],
-  variable: '--font-manrope',
+const iowanOldStyle = localFont({
+  src: '../public/fonts/iowanoldstyle_bold.otf',
   display: 'swap',
-})
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ['latin'],
-  variable: '--font-jetbrains-mono',
-  display: 'swap',
-  style: ['normal', 'italic'],
+  fallback: ['Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', 'Georgia', 'serif'],
 })
 
 export const metadata: Metadata = {
@@ -55,11 +48,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${manrope.variable} ${jetbrainsMono.variable}`}>
-      <body className="bg-background text-foreground font-mono transition-colors">
+    <html lang="en" suppressHydrationWarning className={iowanOldStyle.className}>
+      <body className="bg-background text-foreground">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <Suspense fallback={<Loading />}>
-            <div className="mx-4 flex max-w-4xl flex-col gap-12 px-4 py-12 md:mt-20 md:flex-row lg:mx-auto lg:mt-32">
+            <div className="mx-auto flex w-full max-w-3xl flex-col gap-10 px-6 py-10 md:py-16">
               <Navbar />
               {children}
               <Analytics />

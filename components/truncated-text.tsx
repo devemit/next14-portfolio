@@ -30,7 +30,10 @@ export default function TruncatedText({
   return (
     <div className={className}>
       <p className="text-muted-foreground">{displayText}</p>
-      <button onClick={() => setIsExpanded(!isExpanded)} className="mt-1 text-xs font-medium text-yellow-400">
+      <button
+        onClick={() => setIsExpanded(!isExpanded)}
+        className="mt-1 text-xs font-medium text-foreground underline-offset-4 hover:underline"
+      >
         {isExpanded ? showLessText : showMoreText}
       </button>
     </div>

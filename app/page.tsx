@@ -1,12 +1,8 @@
 import { Metadata } from 'next'
-import { greet, about } from '../utils/info'
 import Link from 'next/link'
 
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-
-import { ContactForm } from '@/components/contact-form'
-import GithubActivity from '@/components/github-activity'
 import { createPageMetadata, site } from '@/lib/site'
+import blogs from '@/utils/blogs'
 
 export const metadata: Metadata = createPageMetadata(
   'Software Developer',
@@ -22,7 +18,7 @@ export default function Home() {
       name: site.name,
       url: site.url,
       jobTitle: 'Software Developer',
-      sameAs: [site.profiles.github, site.profiles.linkedin],
+      sameAs: [site.profiles.github, site.profiles.linkedin, site.profiles.x],
     },
     {
       '@context': 'https://schema.org',
@@ -33,27 +29,44 @@ export default function Home() {
   ]
 
   return (
-    <main className="py-2">
+    <main className="w-full py-2">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }} />
-      <h1 className="text-lg font-bold text-foreground xl:text-xl">{greet}</h1>
-      <p className="my-4 max-w-lg text-sm text-muted-foreground xl:text-base">{about()}</p>
-      <div className="mt-6 flex items-center justify-between">
-        <div className="flex gap-2">
-          <Link href="https://github.com/devemit" target="_blank" rel="noopener noreferrer" aria-label="Visit Mitko's GitHub profile">
-            <AiFillGithub size={20} className="my-2 cursor-pointer text-muted-foreground transition-colors hover:text-foreground dark:hover:text-white" />
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/mitko-iliev/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Visit Mitko's LinkedIn profile"
-          >
-            <AiFillLinkedin size={20} className="my-2 cursor-pointer text-muted-foreground transition-colors hover:text-[#0A66C2]" />
-          </Link>
+
+      <section aria-labelledby="bio-heading">
+        <h2 id="bio-heading" className="text-base font-medium text-foreground">
+          Bio
+        </h2>
+        <div className="mt-3 space-y-4 text-base leading-relaxed text-muted-foreground">
+          <p>
+            I&apos;m a self-taught software developer who transitioned into tech in 2023. I build reliable web products across React,
+            Next.js, and .NET, with experience contributing to enterprise software used by more than 2,000 clients and AI-powered healthcare
+            workflows.
+          </p>
+          <p>
+            I&apos;m now focused on applied AI engineering with Python, FastAPI, RAG, vector search, and human-reviewed LLM workflows. I
+            care about clear interfaces, maintainable systems, and AI that stays grounded in real information.
+          </p>
         </div>
-        <ContactForm />
-      </div>
-      <GithubActivity />
+        <hr className="mt-8 border-0 border-t border-foreground/25" />
+      </section>
+
+      <section className="mt-10" aria-labelledby="blogs-heading">
+        <h2 id="blogs-heading" className="text-base font-medium text-foreground">
+          Blogs
+        </h2>
+        <ul className="mt-3 space-y-3">
+          {blogs.map((blog) => (
+            <li key={blog.slug} className="flex items-baseline justify-between gap-4 border-b border-border pb-3">
+              <Link href={`/blog/${blog.slug}`} className="min-w-0 flex-1 text-base text-foreground hover:underline">
+                {blog.name}
+              </Link>
+              <time dateTime={blog.publishedAt} className="shrink-0 text-sm text-muted-foreground">
+                {blog.date}
+              </time>
+            </li>
+          ))}
+        </ul>
+      </section>
     </main>
   )
 }

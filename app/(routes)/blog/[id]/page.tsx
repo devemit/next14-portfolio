@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { site } from '@/lib/site'
 import blogs from '@/utils/blogs'
@@ -86,28 +87,37 @@ export default function Page({ params }: BlogPostPageProps) {
   }
 
   return (
-    <article className="mx-auto max-w-3xl px-4 py-10 text-foreground">
+    <article className="w-full py-2 text-foreground">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }} />
+      <nav aria-label="Breadcrumb" className="mb-8 flex min-w-0 items-center gap-2 text-sm text-muted-foreground">
+        <Link href="/blog" className="shrink-0 hover:text-foreground hover:underline">
+          Writing
+        </Link>
+        <span aria-hidden>/</span>
+        <span aria-current="page" className="truncate">
+          {blog.name}
+        </span>
+      </nav>
       <header className="mb-10">
-        <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">{blog.category}</p>
+        <p className="text-sm uppercase tracking-[0.18em] text-muted-foreground">{blog.category}</p>
         <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">{blog.name}</h1>
 
-        <div className="mt-4 flex flex-wrap items-center gap-3 text-xs text-muted-foreground">
+        <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
           <span>{blog.date}</span>
           <span className="h-1 w-1 rounded-full bg-muted-foreground/70" />
           <span className="rounded-full bg-muted px-2 py-1 text-[11px] uppercase tracking-wide text-muted-foreground">{blog.status}</span>
         </div>
       </header>
 
-      <section className="space-y-6 text-sm leading-relaxed text-muted-foreground md:text-base md:leading-relaxed">
+      <section className="space-y-6 text-base leading-relaxed text-muted-foreground">
         {paragraphs.map((paragraph, index) => (
           <p key={index}>{paragraph.trim()}</p>
         ))}
       </section>
 
       {blog.tools.length > 0 && (
-        <p className="mt-5 text-sm text-muted-foreground">
-          <span className="font-medium text-yellow-400">Tech stack:</span> {blog.tools}
+        <p className="mt-5 text-base text-muted-foreground">
+          <span className="font-medium text-foreground">Tech stack:</span> {blog.tools}
         </p>
       )}
     </article>

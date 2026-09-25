@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
+import Link from 'next/link'
 import { getGitHubActivity, GitHubActivityData } from '@/app/actions/github-activity'
 import { useTheme } from 'next-themes'
 
@@ -38,28 +39,38 @@ const GitHubActivity = () => {
 
   if (loading) {
     return (
-      <div className="mt-8">
+      <div className="border-t border-border/60 pt-6">
         <div className="mb-3 flex items-center gap-2">
-          <div className="h-4 w-32 animate-pulse rounded bg-muted" />
+          <div className="h-4 w-32 rounded bg-muted" />
         </div>
-        <div className="h-[100px] w-full animate-pulse rounded-lg bg-muted" />
+        <div className="h-[100px] w-full rounded-lg bg-muted" />
       </div>
     )
   }
 
   if (!data) {
     return (
-      <div className="mt-8">
+      <div className="border-t border-border/60 pt-6">
         <p className="text-sm text-muted-foreground">Unable to load GitHub activity. Please check your configuration.</p>
       </div>
     )
   }
 
   return (
-    <div className="mt-8">
-      <span className="text-sm font-medium text-yellow-400">github activity</span>
+    <div className="border-t border-border/60 pt-6">
+      <div className="flex items-center justify-between gap-4">
+        <span className="text-sm text-muted-foreground">GitHub activity</span>
+        <Link
+          href="https://github.com/devemit"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm text-muted-foreground hover:text-foreground hover:underline"
+        >
+          View profile ↗
+        </Link>
+      </div>
       <div className="mb-3 flex items-center gap-2">
-        <span className="mt-4 text-sm font-medium text-foreground">
+        <span className="mt-3 text-sm text-muted-foreground">
           {data.totalContributions.toLocaleString()} contributions in the last year
         </span>
       </div>
@@ -72,7 +83,7 @@ const GitHubActivity = () => {
               {week.days.map((day, dayIndex) => (
                 <div
                   key={`${weekIndex}-${dayIndex}`}
-                  className="contribution-cell relative h-[11px] w-[11px] rounded-[2px] transition-all hover:ring-1 hover:ring-border"
+                  className="contribution-cell relative h-[11px] w-[11px] rounded-[2px] hover:ring-1 hover:ring-border"
                   style={{
                     backgroundColor: getLevelColor(day.level, mounted ? resolvedTheme === 'dark' : true),
                   }}

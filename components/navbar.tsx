@@ -1,51 +1,42 @@
 'use client'
 
 import { pages } from '../utils/routes'
-import { SiMonzo } from 'react-icons/si'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import { useTheme } from 'next-themes'
-import { Moon, Sun } from 'lucide-react'
-import { useEffect, useState } from 'react'
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { FaXTwitter } from 'react-icons/fa6'
+import { site } from '@/lib/site'
+import { ThemeToggle } from './theme-toggle'
 
 export default function Navbar() {
   const pathname = usePathname()
-  const { resolvedTheme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  const isDark = mounted ? resolvedTheme === 'dark' : true
 
   return (
-    <nav>
-      <div className="flex items-center justify-between md:justify-start md:gap-3">
-        <Link href="/">
-          <span
-            className={`relative inline-flex items-center text-lg text-foreground/65 transition-colors duration-200 ease-out after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-yellow-400 after:transition-transform after:duration-200 after:ease-out hover:text-foreground hover:after:scale-x-100 ${
-              pathname === '/' ? 'text-foreground after:scale-x-100' : ''
-            }`}
-          >
-            <SiMonzo size={26} />
-          </span>
+    <nav className="w-full border-b border-border pb-4" aria-label="Primary navigation">
+      <div className="flex items-center justify-between gap-4">
+        <Link href="/" className="text-xl font-semibold text-foreground hover:underline">
+          @mitcodes
         </Link>
-        <button
-          type="button"
-          onClick={() => setTheme(isDark ? 'light' : 'dark')}
-          aria-label={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
-          className="inline-flex h-6 w-6 items-center justify-center rounded bg-transparent text-card-foreground transition-colors hover:bg-muted md:hidden"
-        >
-          {isDark ? <Sun size={13} /> : <Moon size={13} />}
-        </button>
+        <div className="flex items-center gap-3">
+          <Link href={site.profiles.github} target="_blank" rel="noopener noreferrer" aria-label="Visit Mitko's GitHub profile">
+            <AiFillGithub size={18} className="text-muted-foreground hover:text-foreground" />
+          </Link>
+          <Link href={site.profiles.linkedin} target="_blank" rel="noopener noreferrer" aria-label="Visit Mitko's LinkedIn profile">
+            <AiFillLinkedin size={18} className="text-muted-foreground hover:text-foreground" />
+          </Link>
+          <Link href={site.profiles.x} target="_blank" rel="noopener noreferrer" aria-label="Visit @mitcodes on X">
+            <FaXTwitter size={16} className="text-muted-foreground hover:text-foreground" />
+          </Link>
+          <ThemeToggle />
+        </div>
       </div>
-      <ul className="mt-3 flex w-full justify-center gap-6 rounded-xl border border-border/70 bg-card/70 py-2 backdrop-blur-sm md:mt-4 md:w-auto md:flex-col md:justify-start md:gap-4 md:rounded-none md:border-0 md:bg-transparent md:py-0 md:backdrop-blur-none">
+      <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-base">
         {pages.map((page) => (
           <li key={page.label}>
             <Link
-              className={`relative inline-flex text-sm text-foreground/65 transition-colors duration-200 ease-out after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-yellow-400 after:transition-transform after:duration-200 after:ease-out hover:text-foreground hover:after:scale-x-100 xl:text-base ${
-                pathname.startsWith(page.href) ? 'text-foreground after:scale-x-100' : ''
+              aria-current={pathname.startsWith(page.href) ? 'page' : undefined}
+              className={`inline-flex hover:text-foreground hover:underline ${
+                pathname.startsWith(page.href) ? 'font-medium text-foreground' : 'text-foreground/65'
               }`}
               href={page.href}
             >
@@ -54,14 +45,6 @@ export default function Navbar() {
           </li>
         ))}
       </ul>
-      <button
-        type="button"
-        onClick={() => setTheme(isDark ? 'light' : 'dark')}
-        aria-label={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
-        className="mt-2 hidden h-6 w-6 items-center justify-center rounded bg-transparent text-card-foreground transition-colors hover:bg-muted md:inline-flex"
-      >
-        {isDark ? <Sun size={13} /> : <Moon size={13} />}
-      </button>
     </nav>
   )
 }

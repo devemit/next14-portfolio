@@ -49,7 +49,7 @@ export default function ProjectCard({
         type="button"
         onClick={() => setIsMediaOpen(true)}
         aria-label={`Open a larger ${videoUrl ? 'video' : 'image'} preview of ${title}`}
-        className="group relative my-3 block aspect-video w-full cursor-zoom-in overflow-hidden rounded-lg border border-border bg-card text-left transition-all duration-300 hover:border-muted-foreground/50"
+        className="relative my-3 block aspect-video w-full cursor-zoom-in overflow-hidden rounded-lg border border-border bg-card text-left hover:border-muted-foreground/50"
       >
         {videoUrl ? (
           <video
@@ -68,15 +68,10 @@ export default function ProjectCard({
             src={imgUrl}
             alt={`${title} project thumbnail`}
             fill
-            className={
-              preserveImageAspect
-                ? 'object-cover object-top transition-all duration-500 group-hover:object-center'
-                : 'object-fill'
-            }
+            className={preserveImageAspect ? 'object-cover object-top' : 'object-fill'}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
       </button>
       <div className="pb-4">
         <TruncatedText text={description} maxLength={320} className="my-2 text-sm text-muted-foreground" />
@@ -131,7 +126,7 @@ export default function ProjectCard({
                 type="button"
                 onClick={() => setIsMediaOpen(false)}
                 aria-label="Close enlarged preview"
-                className="absolute right-3 top-3 z-20 flex h-9 w-9 items-center justify-center rounded-full bg-black/70 text-xl text-white transition-colors hover:bg-black"
+                className="absolute right-3 top-3 z-20 flex h-9 w-9 items-center justify-center rounded-full bg-black/70 text-xl text-white hover:bg-black"
               >
                 ×
               </button>
@@ -148,14 +143,7 @@ export default function ProjectCard({
                   className="h-full w-full object-contain"
                 />
               ) : (
-                <Image
-                  src={imgUrl}
-                  alt={`${title} enlarged project preview`}
-                  fill
-                  className="object-contain"
-                  sizes="100vw"
-                  priority
-                />
+                <Image src={imgUrl} alt={`${title} enlarged project preview`} fill className="object-contain" sizes="100vw" priority />
               )}
             </div>
           </div>,
