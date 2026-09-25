@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 import { createPageMetadata, site } from '@/lib/site'
 import blogs from '@/utils/blogs'
+import { pages } from '@/utils/routes'
 
 export const metadata: Metadata = createPageMetadata(
   'Software Developer',
@@ -38,19 +39,31 @@ export default function Home() {
         </h2>
         <div className="mt-3 space-y-4 text-base leading-relaxed text-muted-foreground">
           <p>
-            I&apos;m a self-taught software developer who transitioned into tech in 2023. With experience contributing to enterprise software
-            used by more than 2,000 clients and AI-powered healthcare workflows, I build reliable web products across React, Next.js, and
-            .NET.
+            I&apos;m a software developer working on enterprise web products and AI-powered healthcare software. I work across React,
+            Next.js, and .NET, building interfaces and systems used in real-world workflows.
           </p>
           <p>
-            On the side, I&apos;m building SylvOps: a local-first command center for coding agents. The idea is simple: run agents in
-            parallel, keep their work isolated, and know when they need you—no terminal juggling, no worktree chaos.
+            On the side I&apos;m building <strong className="font-medium text-foreground">SylvOps</strong>, a local-first command center for
+            coding agents. The idea is simple: run agents in parallel, keep their work isolated, and know when they need you—without terminal
+            juggling or worktree chaos.
           </p>
           <p>
-            With Python, FastAPI, RAG, vector search, and human-reviewed LLM workflows, I&apos;m now focused on applied AI engineering. I
-            care about AI that stays grounded in real information, clear interfaces, and maintainable systems.
+            I&apos;m moving deeper into applied AI engineering, working with Python, FastAPI, RAG, and LLM workflows. I care about useful AI,
+            clean interfaces, and software that stays simple to understand and maintain.
           </p>
         </div>
+        <nav aria-label="Explore portfolio" className="mt-6">
+          <ul className="space-y-2">
+            {pages.map((page) => (
+              <li key={page.href} className="flex items-center gap-3">
+                <span aria-hidden="true" className="h-2 w-2 shrink-0 bg-foreground/70" />
+                <Link href={page.href} className="text-base text-foreground hover:underline">
+                  {page.homeLabel}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
         <hr className="mt-8 border-0 border-t border-foreground/25" />
       </section>
 
