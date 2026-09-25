@@ -41,7 +41,8 @@ export default function Home() {
             I&apos;m a self-taught software developer who transitioned into tech in 2023. With experience contributing to enterprise software
             used by more than 2,000 clients and AI-powered healthcare workflows, I build reliable web products across React, Next.js, and
             .NET.
-            <br />
+          </p>
+          <p>
             On the side, I&apos;m building SylvOps: a local-first command center for coding agents. The idea is simple: run agents in
             parallel, keep their work isolated, and know when they need you—no terminal juggling, no worktree chaos.
           </p>
