@@ -38,14 +38,16 @@ export default function Home() {
         </h2>
         <div className="mt-3 space-y-4 text-base leading-relaxed text-muted-foreground">
           <p>
-            I&apos;m a self-taught software developer who transitioned into tech in 2023. I build reliable web products across React,
-            Next.js, and .NET, with experience contributing to enterprise software used by more than 2,000 clients and AI-powered healthcare
-            workflows. On the side I&apos;m building SylvOps, a local-first command center for coding agents. The idea is simple: run agents
-            in parallel, keep their work isolated, and know when they need you. No terminal juggling, no worktree chaos.
+            I&apos;m a self-taught software developer who transitioned into tech in 2023. With experience contributing to enterprise software
+            used by more than 2,000 clients and AI-powered healthcare workflows, I build reliable web products across React, Next.js, and
+            .NET.
+            <br />
+            On the side, I&apos;m building SylvOps: a local-first command center for coding agents. The idea is simple: run agents in
+            parallel, keep their work isolated, and know when they need you—no terminal juggling, no worktree chaos.
           </p>
           <p>
-            I&apos;m now focused on applied AI engineering with Python, FastAPI, RAG, vector search, and human-reviewed LLM workflows. I
-            care about clear interfaces, maintainable systems, and AI that stays grounded in real information.
+            With Python, FastAPI, RAG, vector search, and human-reviewed LLM workflows, I&apos;m now focused on applied AI engineering. I
+            care about AI that stays grounded in real information, clear interfaces, and maintainable systems.
           </p>
         </div>
         <hr className="mt-8 border-0 border-t border-foreground/25" />
