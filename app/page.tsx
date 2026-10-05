@@ -43,9 +43,18 @@ export default function Home() {
             Next.js, and .NET, building interfaces and systems used in real-world workflows.
           </p>
           <p>
-            On the side I&apos;m building <strong className="font-medium text-foreground">SylvOps</strong>, a local-first command center for
-            coding agents. The idea is simple: run agents in parallel, keep their work isolated, and know when they need you—without terminal
-            juggling or worktree chaos.
+            On the side I&apos;m building{' '}
+            <a
+              href="https://devemit.github.io/sylvops-docs/"
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium text-foreground underline decoration-[#e87d7d] underline-offset-4 transition-colors hover:text-[#e87d7d]"
+            >
+              SylvOps
+              <span className="sr-only"> documentation</span>
+            </a>
+            , a local-first mission control for coding agents. The idea is simple: run agents in parallel, keep their work isolated, and know
+            when they need you—without terminal juggling or worktree chaos.
           </p>
           <p>
             I&apos;m moving deeper into applied AI engineering, working with Python, FastAPI, RAG, and LLM workflows. I care about useful AI,

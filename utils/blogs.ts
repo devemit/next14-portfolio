@@ -7,15 +7,47 @@ export interface BlogPost {
   tools: string
   category: string
   status: string
+  links?: {
+    label: string
+    href: string
+  }[]
 }
 
 const blogs: BlogPost[] = [
+  {
+    date: 'Oct 2026',
+    publishedAt: '2026-10-04',
+    slug: 'building-sylvops-agent-mission-control',
+    name: 'Building SylvOps: One Task, One Branch, One Agent',
+    tools: 'Rust, SQLite, Git worktrees, PTYs, MessagePack',
+    description: `SylvOps started with a coordination problem. Codex, Cursor, and terminal applications are all useful places to work, but running several tasks across them leaves me carrying a fragile mental map: which window belongs to which repository, which branch an agent is changing, and whether a process is still running after I close its terminal.
+
+I am building SylvOps as a local-first mission-control layer for that work. The early MVP gives interactive Shell and Codex sessions a visible structure—Workspace → Repository → Checkout → Session—so each task has a named place instead of becoming another nearly identical terminal tab.
+
+A workspace groups related repositories without moving them. Each registered repository keeps its original root checkout, while a task can get a managed checkout backed by a real Git worktree and its own branch. That creates isolation without duplicating the repository, and it keeps integration explicit: changes only meet when I deliberately bring them together through Git.
+
+Sessions are owned by a local daemon rather than the desktop window. A build, shell, or Codex process can keep running when I leave the terminal or close the client, and I can return to it later. The desktop app, keyboard-first terminal UI, and CLI all connect to the same local authority through authenticated IPC.
+
+The safety rules are as important to me as the happy path. SylvOps does not remove the root checkout, refuses to delete a managed checkout when tracked, untracked, or ignored files are present, and preserves its branch after clean removal. Repositories, worktrees, state, and processes stay on the computer, and SylvOps does not copy or store provider credentials.
+
+The current MVP is intentionally narrow. It focuses on registering repositories, creating guarded worktrees, starting and reconnecting to Shell or Codex sessions, inspecting bounded changes, and stopping complete process trees explicitly. It is a coordination tool, not another editor or coding model.
+
+There is still plenty outside the preview. Commit, push, merge, pull-request management, GitHub integration, remote execution, desktop notifications, file search, Git grep, and additional agent providers remain roadmap work. Keeping those boundaries visible matters: the goal of this stage is to prove that one calm, durable map makes parallel local development easier to understand before the product grows broader.
+
+The principle behind SylvOps is simple: the more work I run in parallel, the less I should have to remember about where it lives. One task, one branch, one checkout, and one agent session gives that work a shape I can leave and confidently return to.`,
+    category: 'Personal Project',
+    status: 'Early-stage MVP',
+    links: [
+      { label: 'Read the SylvOps docs', href: 'https://devemit.github.io/sylvops-docs/' },
+      { label: 'View the source on GitHub', href: 'https://github.com/devemit/sylvops' },
+    ],
+  },
   {
     date: 'Sep 2026',
     publishedAt: '2026-09-01',
     slug: 'evaluating-rag-beyond-a-good-demo',
     name: 'Evaluating RAG Beyond a Good Demo',
-    tools: 'Python, FastAPI, PostgreSQL, pgvector, LLM APIs',
+    tools: '',
     description: `A retrieval-augmented generation feature can look impressive in a demo and still fail when real users depend on it. A fluent answer is not enough. The system needs to find the right source material, use it faithfully, and make uncertainty visible when the available context is weak.
 
 I think about evaluation as a pipeline rather than one final score. Retrieval should be checked first: did the relevant document appear, how highly was it ranked, and did the query contain enough information to find it? Generation comes next: does the answer follow the retrieved context, include useful citations, and avoid inventing details that are not supported?

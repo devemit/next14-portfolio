@@ -120,6 +120,26 @@ export default function Page({ params }: BlogPostPageProps) {
           <span className="font-medium text-foreground">Tech stack:</span> {blog.tools}
         </p>
       )}
+
+      {blog.links && blog.links.length > 0 && (
+        <div className="mt-10 border-t border-border pt-6">
+          <p className="text-sm uppercase tracking-[0.18em] text-muted-foreground">Explore the project</p>
+          <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2">
+            {blog.links.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm font-medium text-foreground underline decoration-[#e87d7d] underline-offset-4 transition-colors hover:text-[#e87d7d]"
+              >
+                {link.label}
+                <span aria-hidden="true"> ↗</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
     </article>
   )
 }
