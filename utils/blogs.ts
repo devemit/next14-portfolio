@@ -20,19 +20,19 @@ const blogs: BlogPost[] = [
     slug: 'building-sylvops-agent-mission-control',
     name: 'Building SylvOps: One Task, One Branch, One Agent',
     tools: 'Rust, SQLite, Git worktrees, PTYs, MessagePack',
-    description: `SylvOps started with a coordination problem. Codex, Cursor, and terminal applications are all useful places to work, but running several tasks across them leaves me carrying a fragile mental map: which window belongs to which repository, which branch an agent is changing, and whether a process is still running after I close its terminal.
+    description: `SylvOps started with a coordination problem. Codex, Claude Code, Cursor, and terminal applications are all useful places to work, but running several tasks across them leaves me carrying a fragile mental map: which window belongs to which repository, which branch an agent is changing, and whether a process is still running after I close its terminal.
 
-I am building SylvOps as a local-first mission-control layer for that work. The early MVP gives interactive Shell and Codex sessions a visible structure—Workspace → Repository → Checkout → Session—so each task has a named place instead of becoming another nearly identical terminal tab.
+I am building SylvOps as a local-first mission-control layer for that work. The early MVP gives interactive Shell, Codex, and Claude Code sessions a visible structure—Workspace → Repository → Checkout → Session—so each task has a named place instead of becoming another nearly identical terminal tab.
 
 A workspace groups related repositories without moving them. Each registered repository keeps its original root checkout, while a task can get a managed checkout backed by a real Git worktree and its own branch. That creates isolation without duplicating the repository, and it keeps integration explicit: changes only meet when I deliberately bring them together through Git.
 
-Sessions are owned by a local daemon rather than the desktop window. A build, shell, or Codex process can keep running when I leave the terminal or close the client, and I can return to it later. The desktop app, keyboard-first terminal UI, and CLI all connect to the same local authority through authenticated IPC.
+Sessions are owned by a local daemon rather than the desktop window. A build, shell, Codex, or Claude Code process can keep running when I leave the terminal or close the client, and I can return to it later. The desktop app, keyboard-first terminal UI, and CLI all connect to the same local authority through authenticated IPC.
 
 The safety rules are as important to me as the happy path. SylvOps does not remove the root checkout, refuses to delete a managed checkout when tracked, untracked, or ignored files are present, and preserves its branch after clean removal. Repositories, worktrees, state, and processes stay on the computer, and SylvOps does not copy or store provider credentials.
 
-The current MVP is intentionally narrow. It focuses on registering repositories, creating guarded worktrees, starting and reconnecting to Shell or Codex sessions, inspecting bounded changes, and stopping complete process trees explicitly. It is a coordination tool, not another editor or coding model.
+The current MVP is intentionally narrow. It focuses on registering repositories, creating guarded worktrees, starting and reconnecting to Shell, Codex, or Claude Code sessions, inspecting bounded changes, and stopping complete process trees explicitly. It is a coordination tool, not another editor or coding model.
 
-There is still plenty outside the preview. Commit, push, merge, pull-request management, GitHub integration, remote execution, desktop notifications, file search, Git grep, and additional agent providers remain roadmap work. Keeping those boundaries visible matters: the goal of this stage is to prove that one calm, durable map makes parallel local development easier to understand before the product grows broader.
+There is still plenty outside the preview. Commit, push, merge, pull-request management, GitHub integration, remote execution, desktop notifications, file search, Git grep, and further agent providers remain roadmap work. Keeping those boundaries visible matters: the goal of this stage is to prove that one calm, durable map makes parallel local development easier to understand before the product grows broader.
 
 The principle behind SylvOps is simple: the more work I run in parallel, the less I should have to remember about where it lives. One task, one branch, one checkout, and one agent session gives that work a shape I can leave and confidently return to.`,
     category: 'Personal Project',
