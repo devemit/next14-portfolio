@@ -53,8 +53,8 @@ export default function Home() {
               SylvOps
               <span className="sr-only"> documentation</span>
             </a>
-            , a local-first mission control for coding agents. The idea is simple: run agents in parallel, keep their work isolated, and know
-            when they need you—without terminal juggling or worktree chaos.
+            , a local-first mission control for coding agents with Codex and Claude Code integration. The idea is simple: run agents in
+            parallel, keep their work isolated, and know when they need you—without terminal juggling or worktree chaos.
           </p>
           <p>
             I&apos;m moving deeper into applied AI engineering, working with Python, FastAPI, RAG, and LLM workflows. I care about useful AI,
