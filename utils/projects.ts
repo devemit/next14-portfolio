@@ -15,6 +15,29 @@ When a support ticket is created, the app classifies the issue by category, prio
 The project covers core AI engineering concepts including RAG, vector search, document ingestion, embeddings, LLM prompting, structured JSON outputs, cited generation, feedback collection, Dockerized development, PostgreSQL/pgvector storage, and Railway deployment. It demonstrates how AI can assist support agents without directly replacing human review.`,
   },
   {
+    title: 'SylvOps',
+    status: 'Preview',
+    imgUrl: '/projects/sylvops-desktop.png',
+    gallery: [
+      {
+        src: '/projects/sylvops-desktop.png',
+        alt: 'SylvOps native desktop interface showing repositories, checkouts, sessions, and an active Codex terminal',
+        label: 'Desktop',
+      },
+      {
+        src: '/projects/sylvops-tui.png',
+        alt: 'SylvOps keyboard-first terminal interface showing a repository, checkout, and coding-agent session',
+        label: 'TUI',
+      },
+    ],
+    preserveImageAspect: true,
+    tech: ['Rust', 'Iced', 'Tokio', 'SQLite', 'Git Worktrees', 'PTYs'],
+    liveSite: 'https://devemit.github.io/sylvops-docs/',
+    seeCode: 'https://github.com/devemit/sylvops',
+    description:
+      'SylvOps is a local-first mission control for supervising interactive coding-agent sessions in isolated Git worktrees. Its native desktop and keyboard-first TUI clients provide one place to organize repositories, branches, checkouts, and persistent Shell, Codex, or Claude Code sessions. An authoritative local daemon owns each terminal and process tree, so sessions keep running when a client disconnects and can be reattached later, while SQLite persistence and local IPC keep workspace state on the developer\'s machine.',
+  },
+  {
     title: 'Aduvi – White-label CRM Platform',
     status: '',
     imgUrl: 'https://i.postimg.cc/jjcfD3gv/screencapture-aduvi-2025-11-01-18-09-31-2.png',

@@ -7,7 +7,7 @@ import { createPageMetadata } from '@/lib/site'
 
 export const metadata: Metadata = createPageMetadata(
   'Work',
-  'Selected software projects and professional experience by Mitko Iliev, including React, Next.js, .NET, AI, and SaaS applications.',
+  'Selected software projects and professional experience by Mitko Iliev, including React, Next.js, .NET, AI, Rust, and native developer tooling.',
   '/work',
 )
 
@@ -47,6 +47,7 @@ const page = () => {
             title={project.title}
             description={project.description}
             imgUrl={project.imgUrl}
+            gallery={project.gallery}
             videoUrl={project.videoUrl}
             cropVideoTop={project.cropVideoTop}
             preserveImageAspect={project.preserveImageAspect}

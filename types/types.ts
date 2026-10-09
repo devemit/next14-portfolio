@@ -2,6 +2,11 @@ export interface ProjectProps {
   title: string
   status?: string
   imgUrl: string
+  gallery?: {
+    src: string
+    alt: string
+    label: string
+  }[]
   videoUrl?: string
   cropVideoTop?: boolean
   preserveImageAspect?: boolean
