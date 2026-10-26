@@ -15,7 +15,7 @@ export default function Navbar() {
     <nav className="w-full border-b border-border pb-4" aria-label="Primary navigation">
       <div className="flex items-center justify-between gap-4">
         <Link href="/" className="text-xl font-semibold text-foreground hover:underline">
-          @mitcodes
+          Mitko
         </Link>
         <div className="flex items-center gap-3">
           <Link href={site.profiles.github} target="_blank" rel="noopener noreferrer" aria-label="Visit Mitko's GitHub profile">
