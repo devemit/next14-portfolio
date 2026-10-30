@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import SylvopsDemo from '@/components/sylvops-demo'
 
 import { createPageMetadata, site } from '@/lib/site'
 import blogs from '@/utils/blogs'
@@ -74,6 +75,13 @@ export default function Home() {
           </ul>
         </nav>
         <hr className="mt-8 border-0 border-t border-foreground/25" />
+      </section>
+
+      <section className="mt-10" aria-labelledby="demo-heading">
+        <h2 id="demo-heading" className="text-base font-medium text-foreground">
+          SylvOps demo
+        </h2>
+        <SylvopsDemo />
       </section>
 
       <section className="mt-10" aria-labelledby="blogs-heading">
