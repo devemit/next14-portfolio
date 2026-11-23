@@ -7,7 +7,7 @@ import { createPageMetadata } from '@/lib/site'
 
 export const metadata: Metadata = createPageMetadata(
   'Work',
-  'Selected software projects and professional experience by Mitko Iliev, including React, Next.js, .NET, AI, Rust, and native developer tooling.',
+  'Software projects and professional experience by Mitko Iliev, featuring SylvOps developer tooling for AI coding agents, RAG workflows, and React and .NET applications.',
   '/work',
 )
 

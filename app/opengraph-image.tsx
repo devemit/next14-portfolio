@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og'
 import { site } from '@/lib/site'
 
 export const runtime = 'edge'
-export const alt = 'Mitko Iliev — Software Developer'
+export const alt = 'Mitko Iliev — Software Developer focused on AI'
 export const size = {
   width: 1200,
   height: 630,
@@ -27,7 +27,7 @@ export default function OpenGraphImage() {
         <div style={{ color: '#e87d7d', fontSize: 32, letterSpacing: 2 }}>MITKODEV.COM</div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
           <div style={{ fontSize: 72, fontWeight: 700 }}>{site.name}</div>
-          <div style={{ color: '#facc15', fontSize: 38 }}>Software Developer</div>
+          <div style={{ color: '#facc15', fontSize: 38 }}>Software Developer focused on AI</div>
         </div>
         <div style={{ color: '#a4a4ac', fontSize: 26 }}>React · TypeScript · Next.js · .NET · AI</div>
       </div>

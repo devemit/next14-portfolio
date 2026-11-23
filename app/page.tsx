@@ -7,8 +7,8 @@ import blogs from '@/utils/blogs'
 import { pages } from '@/utils/routes'
 
 export const metadata: Metadata = createPageMetadata(
-  'Software Developer',
-  'Portfolio of Mitko Iliev, a software developer building user-focused web applications with React, TypeScript, Next.js, .NET, and AI-powered workflows.',
+  'Software Developer focused on AI',
+  'Portfolio of Mitko Iliev, a software developer focused on AI, building web applications with React and .NET and developer tools for AI agents, including SylvOps.',
   '/',
 )
 
@@ -40,7 +40,7 @@ export default function Home() {
         </h2>
         <div className="mt-3 space-y-4 text-base leading-relaxed text-muted-foreground">
           <p>
-            I&apos;m a software developer working on enterprise web products and AI-powered healthcare software. I work across React,
+            I&apos;m a Software Developer focused on AI, working on enterprise web products and AI-powered healthcare software. I work across React,
             Next.js, and .NET, building interfaces and systems used in real-world workflows.
           </p>
           <p>
@@ -54,12 +54,12 @@ export default function Home() {
               SylvOps
               <span className="sr-only"> documentation</span>
             </a>
-            , a local-first mission control for coding agents with Codex and Claude Code integration. The idea is simple: run agents in
+            , a local-first developer tool for supervising AI coding agents with Codex and Claude Code integration. The idea is simple: run agents in
             parallel, keep their work isolated, and know when they need you—without terminal juggling or worktree chaos.
           </p>
           <p>
-            I&apos;m moving deeper into applied AI engineering, working with Python, FastAPI, RAG, and LLM workflows. I care about useful AI,
-            clean interfaces, and software that stays simple to understand and maintain.
+            I&apos;m exploring agentic AI and intelligent automation through practical projects with Python, FastAPI, RAG, and LLM workflows.
+            I care about useful tools, clean interfaces, and software that stays simple to understand and maintain.
           </p>
         </div>
         <nav aria-label="Explore portfolio" className="mt-6">

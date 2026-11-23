@@ -3,7 +3,7 @@ import { createPageMetadata } from '@/lib/site'
 
 export const metadata: Metadata = createPageMetadata(
   'About',
-  'Learn about Mitko Iliev, a software developer with experience building React, TypeScript, .NET, healthcare, and AI-powered applications.',
+  'Meet Mitko Iliev, a software developer with a React and .NET background, exploring AI agents, intelligent automation, and developer tools through practical projects.',
   '/about',
 )
 export default function About() {
@@ -27,9 +27,10 @@ export default function About() {
       </p>
       <br />
       <p className="text-base leading-relaxed text-muted-foreground">
-        I&apos;m now moving deeper into AI engineering through practical work with Python, FastAPI, RAG, vector search, and human-reviewed
-        LLM workflows. I&apos;m especially interested in AI features that stay grounded in real information and give people meaningful
-        control.
+        I&apos;m exploring AI agents, agentic AI, and intelligent automation through practical projects, including SylvOps, my main AI
+        developer tooling project. Alongside it, I&apos;m learning through work with Python, FastAPI, RAG, vector search, and human-reviewed
+        LLM workflows. I&apos;m especially interested in developer tools and AI features that stay grounded in real information and give
+        people meaningful control.
       </p>
     </section>
   )

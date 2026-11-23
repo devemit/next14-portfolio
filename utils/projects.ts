@@ -8,11 +8,11 @@ export const projects: ProjectProps[] = [
     tech: ['Python FastAPI', 'PostgreSQL pgvector', 'SQLAlchemy', 'Groq API', 'Docker', 'Railway', 'HTML CSS JavaScript'],
     seeCode: 'https://github.com/devemit/support-agent-copilot',
     homepageOutcome: 'Grounded support drafts with citations.',
-    description: `AI Support Copilot is an internal support-agent dashboard designed to help customer support teams understand tickets faster, retrieve relevant company knowledge, and draft grounded responses for human review. The system allows support agents to seed or upload knowledge-base documents such as refund policies, billing rules, subscription guides, and account access instructions. These documents are split into chunks, embedded, and stored in PostgreSQL with pgvector for similarity search.
+    description: `AI Support Copilot is an internal customer support dashboard using retrieval-augmented generation (RAG) to help teams understand tickets faster, retrieve relevant company knowledge, and draft grounded responses for human review. The system allows support agents to seed or upload knowledge-base documents such as refund policies, billing rules, subscription guides, and account access instructions. These documents are split into chunks, embedded, and stored in PostgreSQL with pgvector for similarity search.
 
 When a support ticket is created, the app classifies the issue by category, priority, sentiment, and summary using Groq's LLM API. The ticket is then used to retrieve relevant knowledge-base chunks, which are passed to the model to generate a support reply draft with citations and suggested next actions. The agent can review, edit, accept, or reject the draft, creating a human-in-the-loop workflow.
 
-The project covers core AI engineering concepts including RAG, vector search, document ingestion, embeddings, LLM prompting, structured JSON outputs, cited generation, feedback collection, Dockerized development, PostgreSQL/pgvector storage, and Railway deployment. It demonstrates how AI can assist support agents without directly replacing human review.`,
+The project explores applied AI concepts including RAG, vector search, document ingestion, embeddings, LLM prompting, structured JSON outputs, cited generation, feedback collection, Dockerized development, PostgreSQL/pgvector storage, and Railway deployment. It demonstrates how AI can assist support agents while keeping human review central to the workflow.`,
   },
   {
     title: 'SylvOps',
@@ -35,7 +35,7 @@ The project covers core AI engineering concepts including RAG, vector search, do
     liveSite: 'https://devemit.github.io/sylvops-docs/',
     seeCode: 'https://github.com/devemit/sylvops',
     description:
-      'SylvOps is a local-first mission control for supervising interactive coding-agent sessions in isolated Git worktrees. Its native desktop and keyboard-first TUI clients provide one place to organize repositories, branches, checkouts, and persistent Shell, Codex, or Claude Code sessions. An authoritative local daemon owns each terminal and process tree, so sessions keep running when a client disconnects and can be reattached later, while SQLite persistence and local IPC keep workspace state on the developer\'s machine.',
+      'SylvOps is a local-first developer tool for supervising interactive AI coding-agent sessions in isolated Git worktrees. Its native desktop and keyboard-first TUI clients provide one place to organize repositories, branches, checkouts, and persistent Shell, Codex, or Claude Code sessions. An authoritative local daemon owns each terminal and process tree, so sessions keep running when a client disconnects and can be reattached later, while SQLite persistence and local IPC keep workspace state on the developer\'s machine.',
   },
   {
     title: 'Aduvi – White-label CRM Platform',
@@ -99,7 +99,7 @@ The project covers core AI engineering concepts including RAG, vector search, do
     seeCode: 'https://github.com/devemit/smart-travel',
     homepageOutcome: 'AI-assisted trip planning.',
     description:
-      'Easy Travel is an innovative travel web application currently in beta phase, allowing users to explore destinations, check the weather, and plan their trips with the help of AI. Users can browse featured locations, access essential travel information, and receive personalized recommendations to enhance their travel experience. With a user-friendly interface, Easy Travel makes trip planning simple and enjoyable.',
+      'Easy Travel is a travel web application currently in beta, allowing users to explore destinations, check the weather, and use AI-assisted trip planning. Users can browse featured locations, access essential travel information, and receive personalized recommendations to enhance their travel experience. With a user-friendly interface, Easy Travel makes trip planning simple and enjoyable.',
   },
   {
     title: 'Dependency Checker',

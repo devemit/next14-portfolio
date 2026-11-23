@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 
 export const site = {
   name: 'Mitko Iliev',
-  title: 'Mitko Iliev | Software Developer',
-  description: 'Software developer building user-focused web applications with React, TypeScript, Next.js, .NET, and AI-powered workflows.',
+  title: 'Mitko Iliev | Software Developer focused on AI',
+  description: 'Software developer focused on AI, building web applications with React, TypeScript, Next.js, and .NET, and developer tools for AI agents, including SylvOps.',
   url: 'https://www.mitkodev.com',
   socialImage: '/opengraph-image',
   profiles: {
